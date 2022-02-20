@@ -1,0 +1,48 @@
+///////////////////BANNIERE 2/////////////////////////////////////////
+#banniere2{
+    margin-top:5%;
+    background-position: 50%;
+    align-items: center;
+    width: 100vw;
+    height: 430px;
+    display: flex;
+    background-size: cover;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image.png);
+    .conteneur2{
+        box-sizing: border-box;
+        flex-wrap: nowrap;
+        display: flex;
+        margin-bottom: 1.75em;
+        width: 100%;
+       
+    .petitconteneur2{
+    background-color: #616658;
+    flex-basis: 30%;
+    color: white;
+    vertical-align: middle;
+    margin-left: 20px;
+
+    ul:nth-child(1){
+        margin-top: 10px;
+    }
+
+    }
+    .petitconteneurs2{
+    flex-basis: 230px;
+    vertical-align: middle;
+    color: white;
+    margin-left: 3%;
+    .expJeu{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 40%;
+    }
+    .listeJeu{
+    font-size: small;
+    color: white;
+    }
+    
+    }
+    }
+}
