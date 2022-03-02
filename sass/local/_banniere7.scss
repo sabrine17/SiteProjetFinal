@@ -1,7 +1,7 @@
 ///////////////////BANNIERE 5/////////////////////////////////////////
 
 
-#banniere5{
+#banniere7{
    
     
     // align-items: center;
@@ -12,31 +12,34 @@
      background-size: cover;
      background-position: 50%;
      width: 100%;
+     height: 630px;
      display: flex;
      justify-content: center;
      align-items: center;
      padding: 1em;
      box-sizing: border-box;
      margin-top:5%;
+     background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/26141.jpeg);
      
-     .conteneur5{
+     .conteneur7{
        
          display: flex;
          flex-wrap: nowrap;
          margin-bottom: 1.75em;
          box-sizing: border-box;
          width: 100%;
+         margin: 30px;
        // height: 430px;
+       
     
-    
-     .petitconteneur9{
+     .petitconteneur15{
  
      //position: relative;
      background-size: cover;
-     background-position: 50%;
+     background-position: 63%;
      align-items: center;
      width: 100%;
-     height: 430px;
+     height: 300px;
      justify-content: center;
      align-content:center;
      padding: 1em;
@@ -45,77 +48,89 @@
      background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/b4e92aeae421fed072de99aa8bdf3338.jpeg);
          p{
              color: white;
-             font-size: 40px;
+             font-size: 30px;
+             text-align: center;
          }
      
      }
-     .petitconteneur10{
+     .petitconteneur16{
        
          background-size: cover;
          background-position: 50%;
          align-items: center;
          width: 100%;
-         height: 430px;
+         height: 300px;
          justify-content: center;
          align-content:center;
          padding: 1em;
          box-sizing: border-box;
          display: flex;
          margin-left: 30px;
-         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF12-e1644979375226.jpeg);
+         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/d31ba74b454adaee4599084fc82b5a33.jpeg);
        
          p{
              color: white;
-             font-size: 40px;
+             font-size: 30px;
+             text-align: center;
          }
    
      
      }
-     .petitconteneur11{
+     .petitconteneur17{
         
             
          background-size: cover;
          background-position: 50%;
          align-items: center;
          width: 100%;
-         height: 430px;
+         height: 300px;
          justify-content: center;
          align-content:center;
          padding: 1em;
          box-sizing: border-box;
          display: flex;
          margin-left: 30px;
-         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF7.jpeg);
+         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/352890-admin-scaled.jpeg);
          p{
              color: white;
-             font-size: 40px;
+             font-size: 30px;
+             text-align: center;
          }
    
      
      }
+
+     .petitconteneur18{
+        
+            
+        background-size: cover;
+        background-position: 50%;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        align-content:center;
+        padding: 1em;
+        box-sizing: border-box;
+        display: flex;
+        margin-left: 30px;
+        background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image-1.png);
+        p{
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+  
+    
+    }
     
      }
  }
  
  
-  .button5{
-     background-color: #72735b;
-     border-radius: 90px;
-     padding: 20px;
-    
-     border-style: none;
-     justify-content: center;
-     margin: 0 auto;
-     display: flex;
-     position: absolute;
-     margin-top:500px;
-   a{
-       color: white;
-       font-size: 1em;
-   }
-  }
+
  
-  .titreconteneur5{
+  .titreconteneur7{
     font-size: 40px;
     justify-content: center;
     text-align: center;

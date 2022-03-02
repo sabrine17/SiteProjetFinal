@@ -523,11 +523,11 @@ a {
 }
 
 a:visited {
-  color: #800080;
+  color: #13441c;
 }
 
 a:hover, a:focus, a:active {
-  color: #191970;
+  color: #1a5e3c;
 }
 
 a:focus {
@@ -646,6 +646,7 @@ textarea {
   top: 100%;
   left: -999em;
   z-index: 99999;
+  background-color: black;
 }
 
 .main-navigation ul ul ul {
@@ -715,6 +716,177 @@ textarea {
 .post-navigation .nav-next {
   text-align: end;
   flex: 1 0 50%;
+}
+
+/* -----------------------------------------------------------------------------
+Bouton burger 
+------------------------------------------------------------------------------*/
+.menu-toggle {
+  padding: 0;
+  border: 0;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background: #fafbfc;
+}
+
+.menu-toggle:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+.menu-toggle:active {
+  transform: scale(0.99);
+}
+
+/*
+.main-navigation.toggled .menu-toggle{
+	transform : rotate(90deg);
+}
+*/
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+/* ---------------------------------------------------------------------------
+menu tablet
+------------------------------------------------------------------------------ */
+@media screen and (min-width: 37.5em) {
+  .essai1 {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+  .line1 {
+    display: none;
+  }
+  .line2 {
+    display: none;
+  }
+  .line3 {
+    display: none;
+  }
+  .main-navigation.toggled ul,
+  .main-navigation ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .main-navigation.toggled ul a[href='#']::after,
+  .main-navigation ul a[href='#']::after {
+    display: none;
+  }
+  .main-navigation.toggled ul li:hover ul,
+  .main-navigation ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 400px;
+    animation: anim-sous-menu .5s both;
+  }
+  .main-navigation.toggled ul ul,
+  .main-navigation ul ul {
+    display: none;
+  }
+}
+
+@keyframes anim-sous-menu {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+  margin: 0 0 1.5em;
+}
+
+.comment-navigation .nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
+  display: flex;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  flex: 1 0 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  text-align: end;
+  flex: 1 0 50%;
+}
+
+button {
+  margin-top: -10%;
+  margin-left: 80%;
+  float: right;
+}
+
+/* --------------------------------------------------------------------------------------
+  Les variables 
+  ---------------------------------------------------------------------------------------- */
+/*---------------------------------------------------------------------------------------
+  Le bouton burger
+  ----------------------------------------------------------------------------------------- */
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  background: none;
+}
+
+.line {
+  fill: none;
+  stroke: white;
+  stroke-width: 10;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 10;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 10;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 10;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 10;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 10;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 10;
 }
 
 /* Posts and pages
@@ -948,12 +1120,13 @@ textarea {
 #primary-menu {
   background-color: #72735b;
   width: 100%;
-  height: 5vh;
+  height: 7.5vh;
 }
 
 #primary-menu a {
   color: white;
-  margin: 10px;
+  margin: 20px;
+  font-weight: bold;
 }
 
 .page-title {
@@ -968,13 +1141,27 @@ textarea {
   display: none;
 }
 
+@media (min-width: 690px) and (max-width: 1200px) {
+  .main-navigation {
+    width: 100%;
+    height: 15%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-navigation {
+    width: 100%;
+    height: 15%;
+  }
+}
+
 /* Banniere1
 --------------------------------------------- */
 #bannierePrincipale {
   background-position: 50%;
   align-items: center;
   width: 100vw;
-  height: 430px;
+  height: 700px;
   justify-content: center;
   display: flex;
   background-size: cover;
@@ -983,15 +1170,16 @@ textarea {
 
 #bannierePrincipale .conteneur1 .soustitre1 {
   font-style: normal;
-  font-size: 50px;
+  font-size: 80px;
   font-weight: 300;
   letter-spacing: 5px;
   color: white;
   font-family: song of coronos;
+  text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
 }
 
 #bannierePrincipale .conteneur1 .soustitre2 {
-  font-size: 30px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 100;
   color: white;
@@ -1005,8 +1193,11 @@ textarea {
   padding: 15px;
   border-style: none;
   justify-content: center;
+  align-content: center;
+  right: 220px;
   margin: 0 auto;
   display: flex;
+  position: relative;
 }
 
 #bannierePrincipale .conteneur1 .button1 a {
@@ -1323,7 +1514,7 @@ textarea {
   padding: 1em;
   box-sizing: border-box;
   display: flex;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image.png);
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/b4e92aeae421fed072de99aa8bdf3338.jpeg);
 }
 
 #banniere5 .conteneur5 .petitconteneur9 p {
@@ -1494,4 +1685,269 @@ textarea {
   color: black;
   margin-top: 10%;
 }
+
+/* Banniere 7
+--------------------------------------------- */
+#banniere7 {
+  height: 430px;
+  display: flex;
+  position: relative;
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 630px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  box-sizing: border-box;
+  margin-top: 5%;
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/26141.jpeg);
+}
+
+#banniere7 .conteneur7 {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 1.75em;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 30px;
+}
+
+#banniere7 .conteneur7 .petitconteneur15 {
+  background-size: cover;
+  background-position: 63%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/b4e92aeae421fed072de99aa8bdf3338.jpeg);
+}
+
+#banniere7 .conteneur7 .petitconteneur15 p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+#banniere7 .conteneur7 .petitconteneur16 {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/d31ba74b454adaee4599084fc82b5a33.jpeg);
+}
+
+#banniere7 .conteneur7 .petitconteneur16 p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+#banniere7 .conteneur7 .petitconteneur17 {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/352890-admin-scaled.jpeg);
+}
+
+#banniere7 .conteneur7 .petitconteneur17 p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+#banniere7 .conteneur7 .petitconteneur18 {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image-1.png);
+}
+
+#banniere7 .conteneur7 .petitconteneur18 p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.titreconteneur7 {
+  font-size: 40px;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  color: black;
+  margin-top: 10%;
+}
+
+/* Banniere8
+--------------------------------------------- */
+/* Banniere9
+--------------------------------------------- */
+/* Banniere10
+--------------------------------------------- */
+/* Banniere11
+--------------------------------------------- */
+#banniere11 {
+  height: 430px;
+  display: flex;
+  position: relative;
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 630px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  box-sizing: border-box;
+  margin-top: 5%;
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
+}
+
+#banniere11 .conteneur11 {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 1.75em;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 30px;
+}
+
+#banniere11 .conteneur11 .petitconteneur19 {
+  background-size: cover;
+  background-position: 63%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  background-color: white;
+}
+
+#banniere11 .conteneur11 .petitconteneur19 p {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+#banniere11 .conteneur11 .petitconteneur20 {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-color: white;
+}
+
+#banniere11 .conteneur11 .petitconteneur20 p {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+#banniere11 .conteneur11 .petitconteneur21 {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-color: white;
+}
+
+#banniere11 .conteneur11 .petitconteneur21 p {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+#banniere11 .conteneur11 .petitconteneur22 {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-color: white;
+}
+
+#banniere11 .conteneur11 .petitconteneur22 p {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.titreconteneur11 {
+  font-size: 40px;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  color: black;
+  margin-top: 10%;
+}
+
+/* Acte 1
+--------------------------------------------- */
+.entry-title {
+  display: none;
+}
+
+.entry-meta {
+  display: none;
+}
+
+.entry-footer {
+  display: none;
+}
+
+/* Acte 2
+--------------------------------------------- */
 /*# sourceMappingURL=style.css.map */

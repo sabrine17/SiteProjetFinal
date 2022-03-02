@@ -46,7 +46,16 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'siteformation' ); ?></button>
+		<button class='"menu-toggle"'  onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+     		<svg class="essai1" width="30" height="30" viewBox="0 0 100 100">
+      	 	<path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+       		<path class="line line2" d="M 20,50 H 80" />
+        	<path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      		</svg>
+
+			  
+    		</button>
+
 			<?php
 			wp_nav_menu(
 				array(
@@ -67,13 +76,15 @@
 		<p class="soustitre2">Odyssey Game Creator</p>
 		<button class="button1">
 		<div>
-			<a class="textButton1">NAVIGUER DANS MES APPRENTISSAGES</a>
+			<a href="http://localhost:8888/siteFormationSab/category/acte-1/" class="textButton1">NAVIGUER DANS MES APPRENTISSAGES</a>
 		</div>
 		</button>
 	</div>
 </section>
 
-<!-------BANNIERE 2--------------------->
+
+<!--
+-----BANNIERE 2--------------------
 <section id="banniere2">
 	<div class="conteneur2">
 	<div class="petitconteneur2">
@@ -94,10 +105,10 @@
 	<br>
 </section>
 
+		-->
 
 
-
-<!--BANNIERE 3--------------------------->
+<!--BANNIERE 3-------------------------
 <p class="titreconteneur3">Compétences mentales et inputs</p>
 
 <section id="banniere3">
@@ -116,15 +127,15 @@
 		</div>
 		<button class="button3">
 		<div>
-			<a class="textButton2">Explorer d'autres compétences</a>
+			<a href="#banniere4"class="textButton2">Explorer d'autres compétences</a>
 		</div>
 		</button>
 	
 </section>
+		-->
 
 
-
-<!--BANNIERE 4--------------------------->
+<!--BANNIERE 4--------------------------
 
 <p class="titreconteneur4">Compétences sociales et inputs</p>
 <section id="banniere4">
@@ -143,15 +154,15 @@
 		</div>
 		<button class="button4">
 		<div>
-			<a class="textButton2">Explorer d'autres compétences</a>
+			<a href="#banniere5" class="textButton2">Explorer d'autres compétences</a>
 		</div>
 		</button>
 	
 </section>
 
+		-->
 
-
-<!--BANNIERE 5--------------------------->
+<!--BANNIERE 5--------------------------
 <p class="titreconteneur5">Compétences physiques et inputs</p>
 <section id="banniere5">
 
@@ -169,14 +180,14 @@
 		</div>
 		<button class="button5">
 		<div>
-			<a class="textButton2">Explorer d'autres compétences</a>
+			<a href="#banniere1" class="textButton2">Explorer d'autres compétences</a>
 		</div>
 		</button>
 	
 </section>
+		-->
 
-
-<!--BANNIERE 6--------------------------->
+<!--BANNIERE 6--------------------------
 <p class="titreconteneur6">Aide-mémoire</p>
 <section id="banniere6">
 
@@ -196,6 +207,57 @@
 	
 </section>
 
+		-->
+
+<!--BANNIERE 7--------------------------
+<p class="titreconteneur7">Matrice de variétés</p>
+<section id="banniere7">
+
+	<div class="conteneur7">
+
+		<div class="petitconteneur15">
+		<p>Habiletés du personnage</p>
+		</div>
+		<div class="petitconteneur16">
+		<p>Modificateurs d'espace & rythme</p>
+		</div>
+		<div class="petitconteneur17">
+		<p>Interface utilisateur</p>
+		</div>
+		<div class="petitconteneur18">
+		<p>Activités</p>
+		</div>
+		</div>
+		
+	
+</section>
+		-->
+
+<!--BANNIERE 11--------------------------
+<p class="titreconteneur11">La forme defini la fonction</p>
+<section id="banniere11">
+
+	<div class="conteneur11">
+
+		<div class="petitconteneur19">
+		<p>Visuels</p>
+		</div>
+		<div class="petitconteneur20">
+		<p>Sons</p>
+		</div>
+		<div class="petitconteneur21">
+		<p>Vibrations/toucher</p>
+		</div>
+		<div class="petitconteneur22">
+		<p>Odeurs</p>
+		</div>
+		</div>
+		
+	
+</section>
+		-->
+
+
 
 
 </div></div>
@@ -204,3 +266,10 @@
 
 
 	</header><!-- #masthead -->
+	<script>
+        let burger = document.getElementById('burger')
+        let bar1 = document.querySelector('#burger div:nth-of-type(1)')
+        let bar2 = document.querySelector('#burger div:nth-of-type(2)')
+        let bar3 = document.querySelector('#burger div:nth-of-type(3)')
+    </script>
+	
