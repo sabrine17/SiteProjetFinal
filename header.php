@@ -67,20 +67,7 @@
 		</nav><!-- #site-navigation -->
 
 
-<!-----BANNIERE 1 --------------------->
-		
 
-<section id="bannierePrincipale">
-	<div class="conteneur1">
-		<p class="soustitre1">Rational Game Design</p>
-		<p class="soustitre2">Odyssey Game Creator</p>
-		<button class="button1">
-		<div>
-			<a href="http://localhost:8888/siteFormationSab/category/acte-1/" class="textButton1">NAVIGUER DANS MES APPRENTISSAGES</a>
-		</div>
-		</button>
-	</div>
-</section>
 
 
 <!--
@@ -117,12 +104,24 @@
 
 		<div class="petitconteneur4">
 		<p>Mémorisation</p>
+		 <figcaption>
+   		<h3>Mémorisation</h3>
+    	<p>Weekends don't count unless you spend them doing something completely pointless.</p>
+  		</figcaption>
 		</div>
 		<div class="petitconteneur5">
 		<p>Logique</p>
+		 <figcaption>
+		<h3>Logique</h3>
+    	<p>Weekends don't count unless you spend them doing something completely pointless.</p>
+  		</figcaption>
 		</div>
 		<div class="petitconteneur6">
 		<p>Sens de l'observation</p>
+		 <figcaption>
+		<h3>Sens de l'observation</h3>
+    	<p>Weekends don't count unless you spend them doing something completely pointless.</p>
+  		</figcaption>
 		</div>
 		</div>
 		<button class="button3">
@@ -133,6 +132,7 @@
 	
 </section>
 		-->
+
 
 
 <!--BANNIERE 4--------------------------
@@ -159,7 +159,33 @@
 		</button>
 	
 </section>
+<p class="titreconteneur4">Compétences sociales et inputs</p>
+<section id="banniere4">
+<div class="conteneur4">
+<figure class="petitconteneur7"><figcaption>
+<h3>Face à face</h3>
+Weekends don't count unless you spend them doing something completely pointless.
 
+</figcaption><a href="#"></a></figure>
+<figure class="petitconteneur8">
+<figcaption>
+<h3>Communication en ligne</h3>
+I'm killing time while I wait for life to shower me with meaning and happiness. -
+
+</figcaption>  <a href="#"></a></figure>
+<figure class="petitconteneur9">
+<figcaption>
+<h3>Réalité virtuelle</h3>
+The only skills I have the patience to learn are those that have no real application in life.
+
+</figcaption>  <a href="#"></a></figure>
+</div>
+<button class="button4">
+<div>
+			<a href="#banniere5" class="textButton2">Explorer d'autres compétences</a></div>
+</button>
+
+</section>
 		-->
 
 <!--BANNIERE 5--------------------------
@@ -185,8 +211,33 @@
 		</button>
 	
 </section>
-		-->
+	-->
+<!--BANNIERE 6--------------------------
+<p class="titreconteneur5">Compétences physiques et inputs</p>
+<section id="banniere5">
+<div class="conteneur5">
+<figure class="petitconteneur8"><figcaption>
+<h3>Face à face</h3>
+Weekends don't count unless you spend them doing something completely pointless.
 
+</figcaption><a href="#"></a></figure>
+<figure class="petitconteneur9">
+<figcaption>
+<h3>Communication en ligne</h3>
+I'm killing time while I wait for life to shower me with meaning and happiness. -
+
+</figcaption>  <a href="#"></a></figure>
+<figure class="petitconteneur11">
+<figcaption>
+<h3>Réalité virtuelle</h3>
+The only skills I have the patience to learn are those that have no real application in life.
+
+</figcaption>  <a href="#"></a></figure>
+</div>
+
+
+</section>
+-->
 <!--BANNIERE 6--------------------------
 <p class="titreconteneur6">Aide-mémoire</p>
 <section id="banniere6">
@@ -241,15 +292,23 @@
 
 		<div class="petitconteneur19">
 		<p>Visuels</p>
+		<div class="miniconteneur19">
+		</div>
 		</div>
 		<div class="petitconteneur20">
 		<p>Sons</p>
+		<div class="miniconteneur20">
+		</div>
 		</div>
 		<div class="petitconteneur21">
 		<p>Vibrations/toucher</p>
+		<div class="miniconteneur21">
+		</div>
 		</div>
 		<div class="petitconteneur22">
 		<p>Odeurs</p>
+		<div class="miniconteneur22">
+		</div>
 		</div>
 		</div>
 		
@@ -257,6 +316,24 @@
 </section>
 		-->
 
+<!--BANNIERE 12-------------------------
+<p class="titreconteneur12">Deux types d'approche</p>
+
+<section id="banniere12">
+
+	<div class="conteneur12">
+
+		<div class="petitconteneur23">
+		
+		</div>
+		<div class="petitconteneur24">
+		
+		</div>
+	
+		
+	
+</section>
+		-->
 
 
 

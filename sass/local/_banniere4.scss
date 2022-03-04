@@ -25,6 +25,7 @@
          margin-bottom: 1.75em;
          box-sizing: border-box;
          width: 100%;
+         margin: 30px;
        // height: 430px;
     
     
@@ -42,9 +43,20 @@
      box-sizing: border-box;
      display: flex;
      background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF6.png);
-         p{
-             color: white;
-             font-size: 40px;
+      
+     font-family: 'Quattrocento', Arial, sans-serif;
+     position: relative;
+     overflow: hidden;
+     //margin: 10px;
+   
+     color: #141414;
+     text-align: left;
+     line-height: 1.4em;
+     
+     
+        p{
+             color:black;
+             font-size: 16px;
          }
      
      }
@@ -63,9 +75,18 @@
          margin-left: 30px;
          background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF5.png);
        
+
+         font-family: 'Quattrocento', Arial, sans-serif;
+         position: relative;
+         overflow: hidden;
+         margin: 10px;
+         color: #141414;
+         text-align: left;
+         line-height: 1.4em;
+
          p{
-             color: white;
-             font-size: 40px;
+             color:black; 
+             font-size: 16px;
          }
    
      
@@ -85,9 +106,20 @@
          display: flex;
          margin-left: 30px;
          background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF1-scaled.jpeg);
+         
+         
+         font-family: 'Quattrocento', Arial, sans-serif;
+         position: relative;
+         overflow: hidden;
+         margin: 10px;
+         color: #141414;
+         text-align: left;
+         line-height: 1.4em;
+         
+         
          p{
-             color: white;
-             font-size: 40px;
+             color:black;
+             font-size: 16px;
          }
    
      
@@ -115,11 +147,192 @@
   }
  
   .titreconteneur4{
-    font-size: 40px;
+    font-size: 50px;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
     display: flex;
     color: black;
     margin-top:10%;
+    font-family: song of coronos;
  }
+
+
+ ////////HOVER////////////////////////////////
+
+ @import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+
+.petitconteneur7 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.petitconteneur7 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.petitconteneur7 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 50px 250px;
+}
+.petitconteneur7 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+.petitconteneur7 h3,
+.petitconteneur7 p {
+  margin: 0 0 10px;
+}
+.petitconteneur7 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+.petitconteneur7 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.petitconteneur7 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.petitconteneur7:hover figcaption,
+.petitconteneur7.hover figcaption {
+  top: 80px;
+}
+//8//
+
+  .petitconteneur8 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur8 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur8 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur8 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur8 h3,
+  .petitconteneur8 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur8 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur8 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur8 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur8:hover figcaption,
+  .petitconteneur8.hover figcaption {
+    top: 80px;
+  }
+
+//9
+
+  .petitconteneur9 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur9 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur9 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur9 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur9 h3,
+  .petitconteneur9 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur9 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur9 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur9 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur9:hover figcaption,
+  .petitconteneur9.hover figcaption {
+    top: 80px;
+  }

@@ -26,6 +26,7 @@
          margin-bottom: 1.75em;
          box-sizing: border-box;
          width: 100%;
+         margin: 30px;
        // height: 430px;
     
     
@@ -42,10 +43,22 @@
      padding: 1em;
      box-sizing: border-box;
      display: flex;
-     background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/b4e92aeae421fed072de99aa8bdf3338.jpeg);
-         p{
-             color: white;
-             font-size: 40px;
+     background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image.png);
+         
+     
+     
+     font-family: 'Quattrocento', Arial, sans-serif;
+     position: relative;
+     overflow: hidden;
+     margin: 10px;
+     color: #141414;
+     text-align: left;
+     line-height: 1.4em;
+     
+     
+     p{
+             color: black;
+             font-size: 16px;
          }
      
      }
@@ -64,9 +77,18 @@
          margin-left: 30px;
          background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF12-e1644979375226.jpeg);
        
+         font-family: 'Quattrocento', Arial, sans-serif;
+         position: relative;
+         overflow: hidden;
+         margin: 10px;
+         color: #141414;
+         text-align: left;
+         line-height: 1.4em;
+         
+         
          p{
-             color: white;
-             font-size: 40px;
+             color:black;
+             font-size: 16px;
          }
    
      
@@ -86,9 +108,20 @@
          display: flex;
          margin-left: 30px;
          background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF7.jpeg);
+        
+
+         font-family: 'Quattrocento', Arial, sans-serif;
+         position: relative;
+         overflow: hidden;
+         margin: 10px;
+         color: #141414;
+         text-align: left;
+         line-height: 1.4em;
+         
+         
          p{
-             color: white;
-             font-size: 40px;
+             color:black;
+             font-size: 16px;
          }
    
      
@@ -116,11 +149,193 @@
   }
  
   .titreconteneur5{
-    font-size: 40px;
+    font-size: 50px;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
     display: flex;
     color: black;
     margin-top:10%;
+    font-family: song of coronos;
  }
+
+
+
+  ////////HOVER////////////////////////////////
+
+  @import url(https://fonts.googleapis.com/css?family=Oswald);
+  @import url(https://fonts.googleapis.com/css?family=Quattrocento);
+  
+  .petitconteneur9 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur9 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur9 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur9 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur9 h3,
+  .petitconteneur9 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur9 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur9 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur9 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur9:hover figcaption,
+  .petitconteneur9.hover figcaption {
+    top: 80px;
+  }
+  //10//
+  
+    .petitconteneur10 * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+    .petitconteneur10 img {
+      max-width: 100%;
+      vertical-align: top;
+    }
+    .petitconteneur10 figcaption {
+      position: absolute;
+      top: calc(77%);
+      width: 100%;
+      background-color: #ffffff;
+      padding: 60px 50px 250px;
+    }
+    .petitconteneur10 figcaption:before {
+      position: absolute;
+      content: '';
+      z-index: 2;
+      bottom: 100%;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+      background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+    }
+    .petitconteneur10 h3,
+    .petitconteneur10 p {
+      margin: 0 0 10px;
+    }
+    .petitconteneur10 h3 {
+      font-weight: 300;
+      font-size: 1.4em;
+      line-height: 1.2em;
+      font-family: 'Oswald', Arial, sans-serif;
+      text-transform: uppercase;
+    }
+    .petitconteneur10 p {
+      font-size: 0.9em;
+      letter-spacing: 1px;
+      opacity: 0.9;
+    }
+    .petitconteneur10 a {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+    }
+    .petitconteneur10:hover figcaption,
+    .petitconteneur10.hover figcaption {
+      top: 80px;
+    }
+  
+  //11
+  
+    .petitconteneur11 * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+    .petitconteneur11 img {
+      max-width: 100%;
+      vertical-align: top;
+    }
+    .petitconteneur11 figcaption {
+      position: absolute;
+      top: calc(77%);
+      width: 100%;
+      background-color: #ffffff;
+      padding: 60px 50px 250px;
+    }
+    .petitconteneur11 figcaption:before {
+      position: absolute;
+      content: '';
+      z-index: 2;
+      bottom: 100%;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+      background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+    }
+    .petitconteneur11 h3,
+    .petitconteneur11 p {
+      margin: 0 0 10px;
+    }
+    .petitconteneur11 h3 {
+      font-weight: 300;
+      font-size: 1.4em;
+      line-height: 1.2em;
+      font-family: 'Oswald', Arial, sans-serif;
+      text-transform: uppercase;
+    }
+    .petitconteneur11 p {
+      font-size: 0.9em;
+      letter-spacing: 1px;
+      opacity: 0.9;
+    }
+    .petitconteneur11 a {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+    }
+    .petitconteneur11:hover figcaption,
+    .petitconteneur11.hover figcaption {
+      top: 80px;
+    }

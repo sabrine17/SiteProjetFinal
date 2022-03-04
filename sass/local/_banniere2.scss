@@ -4,10 +4,12 @@
     background-position: 50%;
     align-items: center;
     width: 100vw;
-    height: 430px;
+    height: 700px;
     display: flex;
     background-size: cover;
     background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image.png);
+    background-blend-mode: darken;
+    
     .conteneur2{
         box-sizing: border-box;
         flex-wrap: nowrap;
@@ -39,7 +41,7 @@
     margin-top: 40%;
     }
     .listeJeu{
-    font-size: small;
+    font-size: medium;
     color: white;
     }
     

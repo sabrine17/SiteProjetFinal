@@ -50,3 +50,105 @@ font-weight: bold;
     }
 }
 
+
+.has-text-align-center .has-large-font-size{
+    font-family: song of coronos;
+    font-size: 50px;
+}
+
+
+.titreBanniere{
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    display: flex;
+    color: black;
+    font-family: song of coronos;  
+}
+
+.titreBanniere1{
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    display: flex;
+    color: black;
+    font-family: song of coronos;  
+}
+
+.titreBanniere2{
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+
+    display: flex;
+    color: black;
+    font-family: song of coronos;  
+}
+
+
+
+
+.wp-block-columns {
+        -webkit-filter: blur(3px);
+        filter: blur(3px);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .wp-block-columns:hover {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
+    
+
+
+/*.manette{
+    box-shadow: 0 0 140px 10px rgba(0,0,0,.5);
+    position: relative;
+    height: 300px;
+    width: 500px;
+    overflow: hidden; /* Try removing this to see how the sheen works! */
+  //  --sheenX: 0; /* Set these with JavaScript */
+   // --sheenY: 0;
+//}
+
+
+.demo {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+  }
+  
+  .perspective-container {
+    perspective: 800px;
+  }
+
+  .card {
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/controller.png);
+    background-size: cover;
+    position: relative;
+    height: 311px;
+    width: 500px;
+    overflow: hidden; 
+    --sheenX: 0; /* Set these with JavaScript */
+    --sheenY: 0;
+  }
+
+  .card::after {
+    content: "";
+    position: absolute;
+    top: -400px;
+    right: -400px;
+    bottom: -400px;
+    left: -400px;
+    background: linear-gradient(217deg, rgba(255,255,255,0), rgba(255,255,255,0) 35%, rgba(255,255,255,0.25) 45%, rgba(255,255,255,.25) 50%, rgba(255,255,255,0) 60%, rgba(255,255,255,0) 100%);
+    transform: translateX(var(--sheenX)) translateY(var(--sheenY));
+  }
