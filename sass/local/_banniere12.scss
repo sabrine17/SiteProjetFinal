@@ -51,8 +51,9 @@
 
          .miniconteneur23{
             background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/img_bottomup-e1646338139428.png);
-            width: 500px;
-            height: 500px;
+            width: 600px;
+             height: 700px;
+             background-size: contain;
             background-repeat: no-repeat;
         }
      
@@ -79,8 +80,9 @@
    
          .miniconteneur24{
             background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/273251583_508939893917740_1385691619973133024_n.png);
-            width: 500px;
-            height: 500px;
+            width: 650px;
+            height: 574px;
+            background-size: contain;
             background-repeat: no-repeat;
         }
      
@@ -105,3 +107,19 @@
     margin-bottom:15%;
     font-family: song of coronos;
  }
+
+ //////////FORMAT DESKTOP
+@include desktop{
+
+}
+
+
+//////////FORMAT TABLETTE
+@include tablet{
+
+}
+
+//////////FORMAT MOBILE
+@include mobile{
+
+}

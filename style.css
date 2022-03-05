@@ -67,6 +67,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url(https://fonts.googleapis.com/css?family=Quattrocento);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -1199,55 +1203,60 @@ button {
   font-family: song of coronos;
 }
 
-.wp-block-columns {
+/*.wp-block-columns {
+        -webkit-filter: blur(3px);
+        filter: blur(3px);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .wp-block-columns:hover {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }*/
+.wp-block-columns.are-vertically-aligned-center.bloctopdown {
   filter: blur(3px);
   transition: .3s ease-in-out;
 }
 
-.wp-block-columns:hover {
+.wp-block-columns.are-vertically-aligned-center.bloctopdown:hover {
   filter: blur(0);
 }
 
-/*.manette{
-    box-shadow: 0 0 140px 10px rgba(0,0,0,.5);
-    position: relative;
-    height: 300px;
-    width: 500px;
-    overflow: hidden; /* Try removing this to see how the sheen works! */
-.demo {
-  background-color: white;
-  display: flex;
-  align-items: center;
+.has-text-align-center.txtAM.has-medium-font-size {
+  opacity: 1;
+  animation: animStitre 6s ease-in;
+}
+
+.wp-block-columns.blocAM {
   justify-content: center;
-  height: 50vh;
-  width: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.perspective-container {
-  perspective: 800px;
+@keyframes animStitre {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.card {
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/controller.png);
-  background-size: cover;
-  position: relative;
-  height: 311px;
-  width: 500px;
-  overflow: hidden;
-  --sheenX: 0;
-  /* Set these with JavaScript */
-  --sheenY: 0;
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.card::after {
-  content: "";
-  position: absolute;
-  top: -400px;
-  right: -400px;
-  bottom: -400px;
-  left: -400px;
-  background: linear-gradient(217deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 0.25) 45%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
-  transform: translateX(var(--sheenX)) translateY(var(--sheenY));
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Banniere1
@@ -1319,6 +1328,8 @@ button {
     color: white;
     font-family: song of coronos;
     text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    transform: scale(10);
+    transition: all 0.3s ease-in-out 0.2s;
   }
   #bannierePrincipale .conteneur1 .soustitre2 {
     font-size: 40px;
@@ -1395,376 +1406,1004 @@ button {
 
 /* Banniere2
 --------------------------------------------- */
-#banniere2 {
-  margin-top: 5%;
-  background-position: 50%;
-  align-items: center;
-  width: 100vw;
-  height: 700px;
-  display: flex;
-  background-size: cover;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image.png);
-  background-blend-mode: darken;
+@media (min-width: 1200px) {
+  #banniere2 {
+    margin-top: 5%;
+    background-position: 50%;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    background-size: cover;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image.png);
+    background-blend-mode: darken;
+  }
+  #banniere2 .conteneur2 {
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    display: flex;
+    margin-bottom: 1.75em;
+    width: 100%;
+  }
+  #banniere2 .conteneur2 .petitconteneur2 {
+    background-color: #616658;
+    flex-basis: 30%;
+    color: white;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+  #banniere2 .conteneur2 .petitconteneur2 ul:nth-child(1) {
+    margin-top: 10px;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 {
+    flex-basis: 230px;
+    vertical-align: middle;
+    color: white;
+    margin-left: 3%;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 .expJeu {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 40%;
+    font-family: song of coronos;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 .listeJeu {
+    font-size: medium;
+    color: white;
+  }
 }
 
-#banniere2 .conteneur2 {
-  box-sizing: border-box;
-  flex-wrap: nowrap;
-  display: flex;
-  margin-bottom: 1.75em;
-  width: 100%;
+@media (min-width: 492px) and (max-width: 1200px) {
+  #banniere2 {
+    margin-top: 5%;
+    background-position: 50%;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    background-size: cover;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image.png);
+    background-blend-mode: darken;
+  }
+  #banniere2 .conteneur2 {
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    display: flex;
+    margin-bottom: 1.75em;
+    width: 100%;
+  }
+  #banniere2 .conteneur2 .petitconteneur2 {
+    background-color: #616658;
+    flex-basis: 30%;
+    color: white;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+  #banniere2 .conteneur2 .petitconteneur2 ul:nth-child(1) {
+    margin-top: 10px;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 {
+    flex-basis: 230px;
+    vertical-align: middle;
+    color: white;
+    margin-left: 3%;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 .expJeu {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 40%;
+    font-family: song of coronos;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 .listeJeu {
+    font-size: medium;
+    color: white;
+  }
 }
 
-#banniere2 .conteneur2 .petitconteneur2 {
-  background-color: #616658;
-  flex-basis: 30%;
-  color: white;
-  vertical-align: middle;
-  margin-left: 20px;
-}
-
-#banniere2 .conteneur2 .petitconteneur2 ul:nth-child(1) {
-  margin-top: 10px;
-}
-
-#banniere2 .conteneur2 .petitconteneurs2 {
-  flex-basis: 230px;
-  vertical-align: middle;
-  color: white;
-  margin-left: 3%;
-}
-
-#banniere2 .conteneur2 .petitconteneurs2 .expJeu {
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 300;
-  margin-top: 40%;
-}
-
-#banniere2 .conteneur2 .petitconteneurs2 .listeJeu {
-  font-size: medium;
-  color: white;
+@media (max-width: 492px) {
+  #banniere2 {
+    margin-top: 5%;
+    background-position: 50%;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    background-size: cover;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image.png);
+    background-blend-mode: darken;
+  }
+  #banniere2 .conteneur2 {
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    display: flex;
+    margin-bottom: 1.75em;
+    width: 100%;
+  }
+  #banniere2 .conteneur2 .petitconteneur2 {
+    background-color: #616658;
+    color: white;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+  #banniere2 .conteneur2 .petitconteneur2 ul:nth-child(1) {
+    margin-top: 10px;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 {
+    flex-basis: 230px;
+    vertical-align: middle;
+    color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 .expJeu {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 40%;
+    font-family: song of coronos;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 .listeJeu {
+    font-size: medium;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  }
 }
 
 /* Banniere3
 --------------------------------------------- */
-#banniere3 {
-  height: 430px;
-  display: flex;
-  position: relative;
-  background-size: cover;
-  background-position: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-  box-sizing: border-box;
-  margin-top: 5%;
+@media (min-width: 1200px) {
+  #banniere3 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 5%;
+  }
+  #banniere3 .conteneur3 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  #banniere3 .conteneur3 .petitconteneur4 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF9.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur4 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere3 .conteneur3 .petitconteneur5 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF7.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur5 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere3 .conteneur3 .petitconteneur6 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur6 p {
+    color: #030303;
+    font-size: 16px;
+  }
+  .button3 {
+    background-color: #72735b;
+    border-radius: 90px;
+    padding: 20px;
+    border-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    margin-top: 500px;
+  }
+  .button3 a {
+    color: white;
+    font-size: 1em;
+  }
+  .titreconteneur3 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 5%;
+    font-family: song of coronos;
+  }
+  .petitconteneur4 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur4 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur4 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur4 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur4 h3,
+  .petitconteneur4 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur4 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur4 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur4 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur4:hover figcaption,
+  .petitconteneur4.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur5 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur5 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur5 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur5 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur5 h3,
+  .petitconteneur5 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur5 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur5 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur5 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur5:hover figcaption,
+  .petitconteneur5.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur6 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur6 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur6 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur6 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur6 h3,
+  .petitconteneur6 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur6 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur6 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur6 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur6:hover figcaption,
+  .petitconteneur6.hover figcaption {
+    top: 80px;
+  }
 }
 
-#banniere3 .conteneur3 {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-bottom: 1.75em;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 30px;
-  justify-content: center;
-  align-items: center;
+@media (min-width: 492px) and (max-width: 1200px) {
+  #banniere3 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 5%;
+  }
+  #banniere3 .conteneur3 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  #banniere3 .conteneur3 .petitconteneur4 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF9.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur4 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere3 .conteneur3 .petitconteneur5 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF7.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur5 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere3 .conteneur3 .petitconteneur6 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur6 p {
+    color: #030303;
+    font-size: 16px;
+  }
+  .button3 {
+    background-color: #72735b;
+    border-radius: 90px;
+    padding: 20px;
+    border-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    margin-top: 500px;
+  }
+  .button3 a {
+    color: white;
+    font-size: 1em;
+  }
+  .titreconteneur3 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 5%;
+    font-family: song of coronos;
+  }
+  .petitconteneur4 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur4 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur4 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur4 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur4 h3,
+  .petitconteneur4 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur4 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur4 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur4 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur4:hover figcaption,
+  .petitconteneur4.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur5 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur5 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur5 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur5 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur5 h3,
+  .petitconteneur5 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur5 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur5 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur5 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur5:hover figcaption,
+  .petitconteneur5.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur6 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur6 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur6 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur6 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur6 h3,
+  .petitconteneur6 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur6 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur6 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur6 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur6:hover figcaption,
+  .petitconteneur6.hover figcaption {
+    top: 80px;
+  }
 }
 
-#banniere3 .conteneur3 .petitconteneur4 {
-  background-size: cover;
-  background-position: 50%;
-  align-items: center;
-  width: 100%;
-  height: 430px;
-  justify-content: center;
-  align-content: center;
-  padding: 1em;
-  box-sizing: border-box;
-  display: flex;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF9.jpeg);
-  font-family: 'Quattrocento', Arial, sans-serif;
-  position: relative;
-  overflow: hidden;
-  margin: 10px;
-  color: #141414;
-  text-align: left;
-  line-height: 1.4em;
-}
-
-#banniere3 .conteneur3 .petitconteneur4 p {
-  color: black;
-  font-size: 16px;
-}
-
-#banniere3 .conteneur3 .petitconteneur5 {
-  background-size: cover;
-  background-position: 50%;
-  align-items: center;
-  width: 100%;
-  height: 430px;
-  justify-content: center;
-  align-content: center;
-  padding: 1em;
-  box-sizing: border-box;
-  display: flex;
-  margin-left: 30px;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF7.jpeg);
-  font-family: 'Quattrocento', Arial, sans-serif;
-  position: relative;
-  overflow: hidden;
-  margin: 10px;
-  color: #141414;
-  text-align: left;
-  line-height: 1.4em;
-}
-
-#banniere3 .conteneur3 .petitconteneur5 p {
-  color: black;
-  font-size: 16px;
-}
-
-#banniere3 .conteneur3 .petitconteneur6 {
-  background-size: cover;
-  background-position: 50%;
-  align-items: center;
-  width: 100%;
-  height: 430px;
-  justify-content: center;
-  align-content: center;
-  padding: 1em;
-  box-sizing: border-box;
-  display: flex;
-  margin-left: 30px;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
-  font-family: 'Quattrocento', Arial, sans-serif;
-  position: relative;
-  overflow: hidden;
-  color: #141414;
-  text-align: left;
-  line-height: 1.4em;
-}
-
-#banniere3 .conteneur3 .petitconteneur6 p {
-  color: #030303;
-  font-size: 16px;
-}
-
-.button3 {
-  background-color: #72735b;
-  border-radius: 90px;
-  padding: 20px;
-  border-style: none;
-  justify-content: center;
-  margin: 0 auto;
-  display: flex;
-  position: absolute;
-  margin-top: 500px;
-}
-
-.button3 a {
-  color: white;
-  font-size: 1em;
-}
-
-.titreconteneur3 {
-  font-size: 50px;
-  justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-  display: flex;
-  color: black;
-  margin-top: 5%;
-  font-family: song of coronos;
-}
-
-.petitconteneur4 * {
-  box-sizing: border-box;
-  transition: all 0.35s ease;
-}
-
-.petitconteneur4 img {
-  max-width: 100%;
-  vertical-align: top;
-}
-
-.petitconteneur4 figcaption {
-  position: absolute;
-  top: calc(77%);
-  width: 100%;
-  background-color: #ffffff;
-  padding: 60px 50px 250px;
-}
-
-.petitconteneur4 figcaption:before {
-  position: absolute;
-  content: '';
-  z-index: 2;
-  bottom: 100%;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
-}
-
-.petitconteneur4 h3,
-.petitconteneur4 p {
-  margin: 0 0 10px;
-}
-
-.petitconteneur4 h3 {
-  font-weight: 300;
-  font-size: 1.4em;
-  line-height: 1.2em;
-  font-family: 'Oswald', Arial, sans-serif;
-  text-transform: uppercase;
-}
-
-.petitconteneur4 p {
-  font-size: 0.9em;
-  letter-spacing: 1px;
-  opacity: 0.9;
-}
-
-.petitconteneur4 a {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-}
-
-.petitconteneur4:hover figcaption,
-.petitconteneur4.hover figcaption {
-  top: 80px;
-}
-
-.petitconteneur5 * {
-  box-sizing: border-box;
-  transition: all 0.35s ease;
-}
-
-.petitconteneur5 img {
-  max-width: 100%;
-  vertical-align: top;
-}
-
-.petitconteneur5 figcaption {
-  position: absolute;
-  top: calc(77%);
-  width: 100%;
-  background-color: #ffffff;
-  padding: 60px 50px 250px;
-}
-
-.petitconteneur5 figcaption:before {
-  position: absolute;
-  content: '';
-  z-index: 2;
-  bottom: 100%;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
-}
-
-.petitconteneur5 h3,
-.petitconteneur5 p {
-  margin: 0 0 10px;
-}
-
-.petitconteneur5 h3 {
-  font-weight: 300;
-  font-size: 1.4em;
-  line-height: 1.2em;
-  font-family: 'Oswald', Arial, sans-serif;
-  text-transform: uppercase;
-}
-
-.petitconteneur5 p {
-  font-size: 0.9em;
-  letter-spacing: 1px;
-  opacity: 0.9;
-}
-
-.petitconteneur5 a {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-}
-
-.petitconteneur5:hover figcaption,
-.petitconteneur5.hover figcaption {
-  top: 80px;
-}
-
-.petitconteneur6 * {
-  box-sizing: border-box;
-  transition: all 0.35s ease;
-}
-
-.petitconteneur6 img {
-  max-width: 100%;
-  vertical-align: top;
-}
-
-.petitconteneur6 figcaption {
-  position: absolute;
-  top: calc(77%);
-  width: 100%;
-  background-color: #ffffff;
-  padding: 60px 50px 250px;
-}
-
-.petitconteneur6 figcaption:before {
-  position: absolute;
-  content: '';
-  z-index: 2;
-  bottom: 100%;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
-}
-
-.petitconteneur6 h3,
-.petitconteneur6 p {
-  margin: 0 0 10px;
-}
-
-.petitconteneur6 h3 {
-  font-weight: 300;
-  font-size: 1.4em;
-  line-height: 1.2em;
-  font-family: 'Oswald', Arial, sans-serif;
-  text-transform: uppercase;
-}
-
-.petitconteneur6 p {
-  font-size: 0.9em;
-  letter-spacing: 1px;
-  opacity: 0.9;
-}
-
-.petitconteneur6 a {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-}
-
-.petitconteneur6:hover figcaption,
-.petitconteneur6.hover figcaption {
-  top: 80px;
+@media (max-width: 492px) {
+  #banniere3 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 5%;
+  }
+  #banniere3 .conteneur3 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  #banniere3 .conteneur3 .petitconteneur4 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF9.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur4 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere3 .conteneur3 .petitconteneur5 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF7.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur5 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere3 .conteneur3 .petitconteneur6 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur6 p {
+    color: #030303;
+    font-size: 16px;
+  }
+  .button3 {
+    background-color: #72735b;
+    border-radius: 90px;
+    padding: 20px;
+    border-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    margin-top: 500px;
+  }
+  .button3 a {
+    color: white;
+    font-size: 1em;
+  }
+  .titreconteneur3 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 5%;
+    font-family: song of coronos;
+  }
+  .petitconteneur4 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur4 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur4 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur4 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur4 h3,
+  .petitconteneur4 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur4 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur4 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur4 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur4:hover figcaption,
+  .petitconteneur4.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur5 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur5 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur5 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur5 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur5 h3,
+  .petitconteneur5 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur5 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur5 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur5 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur5:hover figcaption,
+  .petitconteneur5.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur6 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur6 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur6 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur6 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur6 h3,
+  .petitconteneur6 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur6 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur6 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur6 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur6:hover figcaption,
+  .petitconteneur6.hover figcaption {
+    top: 80px;
+  }
 }
 
 /* Banniere4
@@ -2636,6 +3275,93 @@ button {
   font-family: song of coronos;
 }
 
+.petitconteneur15:hover {
+  background-size: cover;
+  background-position: 63%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
+  animation: animStitre 1s ease-in;
+}
+
+.petitconteneur15:hover p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.petitconteneur16:hover {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
+  animation: animStitre 1s ease-in;
+}
+
+.petitconteneur16:hover p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.petitconteneur17:hover {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
+  animation: animStitre 1s ease-in;
+}
+
+.petitconteneur17:hover p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.petitconteneur18:hover {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
+  animation: animStitre 1s ease-in;
+}
+
+.petitconteneur18:hover p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
 /* Banniere8
 --------------------------------------------- */
 /* Banniere9
@@ -2765,6 +3491,85 @@ button {
   font-family: song of coronos;
 }
 
+.petitconteneur19:hover {
+  background-size: cover;
+  background-position: 63%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
+  animation: animStitre 1s ease-in;
+}
+
+.petitconteneur19:hover p {
+  display: none;
+}
+
+.petitconteneur20:hover {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF2.jpeg);
+  animation: animStitre 1s ease-in;
+}
+
+.petitconteneur20:hover p {
+  display: none;
+}
+
+.petitconteneur21:hover {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/d31ba74b454adaee4599084fc82b5a33.jpeg);
+  animation: animStitre 1s ease-in;
+}
+
+.petitconteneur21:hover p {
+  display: none;
+}
+
+.petitconteneur22:hover {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image-1.png);
+  animation: animStitre 1s ease-in;
+}
+
+.petitconteneur22:hover p {
+  display: none;
+}
+
 /* Banniere12
 --------------------------------------------- */
 #banniere12 {
@@ -2812,8 +3617,9 @@ button {
 
 #banniere12 .conteneur12 .petitconteneur23 .miniconteneur23 {
   background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/img_bottomup-e1646338139428.png);
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 700px;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -2839,8 +3645,9 @@ button {
 
 #banniere12 .conteneur12 .petitconteneur24 .miniconteneur24 {
   background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/273251583_508939893917740_1385691619973133024_n.png);
-  width: 500px;
-  height: 500px;
+  width: 650px;
+  height: 574px;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 

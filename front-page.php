@@ -30,16 +30,9 @@ get_header();
 	</div>
 </section>
 
-<!--
-<div class="controller">
-<img class="manette"> </img>
-</div>-->
 
-<div class="demo">
-  <div class="perspective-container">
-    <div class="card"></div>
-  </div>
-</div>
+
+
 
 	</main><!-- #main -->
 

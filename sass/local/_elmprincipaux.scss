@@ -78,7 +78,9 @@ font-weight: bold;
     display: flex;
     color: black;
     font-family: song of coronos;  
+   
 }
+
 
 .titreBanniere2{
     font-size: 50px;
@@ -94,7 +96,7 @@ font-weight: bold;
 
 
 
-.wp-block-columns {
+/*.wp-block-columns {
         -webkit-filter: blur(3px);
         filter: blur(3px);
         -webkit-transition: .3s ease-in-out;
@@ -103,52 +105,69 @@ font-weight: bold;
     .wp-block-columns:hover {
         -webkit-filter: blur(0);
         filter: blur(0);
+    }*/
+    
+    .wp-block-columns.are-vertically-aligned-center.bloctopdown{
+        -webkit-filter: blur(3px);
+        filter: blur(3px);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    
+    .wp-block-columns.are-vertically-aligned-center.bloctopdown:hover{
+        -webkit-filter: blur(0);
+        filter: blur(0);
     }
     
 
+    .has-text-align-center.txtAM.has-medium-font-size{
+        opacity: 1;
+        animation: animStitre 6s ease-in;
+        
+      
+    }
 
-/*.manette{
-    box-shadow: 0 0 140px 10px rgba(0,0,0,.5);
-    position: relative;
-    height: 300px;
-    width: 500px;
-    overflow: hidden; /* Try removing this to see how the sheen works! */
-  //  --sheenX: 0; /* Set these with JavaScript */
-   // --sheenY: 0;
-//}
+   
 
-
-.demo {
-    background-color: white;
-    display: flex;
-    align-items: center;
+    .wp-block-columns.blocAM
+    {
     justify-content: center;
-    height: 50vh;
-    width: 100%;
-  }
+    margin-left: 50px;
+    margin-right: 50px;
+    }
+
+
+    @keyframes animStitre{
+        0% {
   
-  .perspective-container {
-    perspective: 800px;
-  }
+            opacity: 0.3;
+    
+        }
+    
+        100% {
+            opacity: 1;
+          
+        }
+    }
 
-  .card {
-    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/controller.png);
-    background-size: cover;
-    position: relative;
-    height: 311px;
-    width: 500px;
-    overflow: hidden; 
-    --sheenX: 0; /* Set these with JavaScript */
-    --sheenY: 0;
-  }
 
-  .card::after {
-    content: "";
-    position: absolute;
-    top: -400px;
-    right: -400px;
-    bottom: -400px;
-    left: -400px;
-    background: linear-gradient(217deg, rgba(255,255,255,0), rgba(255,255,255,0) 35%, rgba(255,255,255,0.25) 45%, rgba(255,255,255,.25) 50%, rgba(255,255,255,0) 60%, rgba(255,255,255,0) 100%);
-    transform: translateX(var(--sheenX)) translateY(var(--sheenY));
-  }
+
+
+  
+     /* Fading animation */
+     .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }

@@ -336,3 +336,19 @@
   .petitconteneur9.hover figcaption {
     top: 80px;
   }
+
+  //////////FORMAT DESKTOP
+@include desktop{
+
+}
+
+
+//////////FORMAT TABLETTE
+@include tablet{
+
+}
+
+//////////FORMAT MOBILE
+@include mobile{
+
+}
