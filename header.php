@@ -282,7 +282,17 @@ The only skills I have the patience to learn are those that have no real applica
 		
 	
 </section>
+
+<div class="contenu displayed" id="desc-1298">
+	<a class="close">☒</a>
+		<div>
+			<h2>Modélisation d’une statue</h2><img width="640" height="360" src="https://eddym8.sg-host.com/wp-content/uploads/2021/12/statue-3D-KevinLaRue-1024x576.jpg" class="attachment-large size-large wp-post-image" alt="" loading="lazy" srcset="https://eddym8.sg-host.com/wp-content/uploads/2021/12/statue-3D-KevinLaRue-1024x576.jpg 1024w, https://eddym8.sg-host.com/wp-content/uploads/2021/12/statue-3D-KevinLaRue-300x169.jpg 300w, https://eddym8.sg-host.com/wp-content/uploads/2021/12/statue-3D-KevinLaRue-768x432.jpg 768w, https://eddym8.sg-host.com/wp-content/uploads/2021/12/statue-3D-KevinLaRue.jpg 1280w" sizes="(max-width: 640px) 100vw, 640px"><!-- wp:paragraph -->
+			<!--<p>Conception d'une statue crée par un étudiant de 3ème année avec le logiciel de Maya dans le cadre du cours de modélisation 3D.</p>
+/wp:paragraph 	</div>	</div>
 		-->
+
+
+
 
 <!--BANNIERE 11--------------------------
 <p class="titreconteneur11">La forme defini la fonction</p>

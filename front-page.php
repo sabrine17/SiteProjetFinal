@@ -20,8 +20,8 @@ get_header();
 
 <section id="bannierePrincipale">
 	<div class="conteneur1">
-		<p class="soustitre1">Rational Game Design</p>
-		<p class="soustitre2">Odyssey Game Creator</p>
+		<p class="soustitre1">Enchanted</p>
+		<p class="soustitre2">Rational Game Design</p>
 		<button class="button1">
 		<div>
 			<a href="http://localhost:8888/siteFormationSab/category/acte-1/" class="textButton1">NAVIGUER DANS MES APPRENTISSAGES</a>

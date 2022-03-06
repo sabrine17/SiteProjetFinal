@@ -36,7 +36,7 @@
  
      //position: relative;
      background-size: cover;
-     background-position: 63%;
+     background-position: 30%;
      align-items: center;
      width: 100%;
      height: 300px;
@@ -45,14 +45,34 @@
      padding: 1em;
      box-sizing: border-box;
      display: flex;
-     background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/b4e92aeae421fed072de99aa8bdf3338.jpeg);
+    background-color:white;
          p{
-             color: white;
+             color: black;
              font-size: 30px;
              text-align: center;
          }
      
      }
+     .petitconteneur15:hover{
+ 
+        //position: relative;
+        background-size: cover;
+        background-position: 30%;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        align-content:center;
+        padding: 1em;
+        box-sizing: border-box;
+        display: flex;
+        background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/powers.png);
+        animation: animStitre .5s ease-in;
+        p{
+               display: none;
+            }
+        
+        }
      .petitconteneur16{
        
          background-size: cover;
@@ -66,16 +86,40 @@
          box-sizing: border-box;
          display: flex;
          margin-left: 30px;
-         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/d31ba74b454adaee4599084fc82b5a33.jpeg);
-       
+         background-color:white;
          p{
-             color: white;
+             color: black;
              font-size: 30px;
              text-align: center;
          }
    
      
      }
+
+     .petitconteneur16:hover{
+       
+        background-size: cover;
+        background-position: 10%;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        align-content:center;
+        padding: 1em;
+        box-sizing: border-box;
+        display: flex;
+        margin-left: 30px;
+        background-image:url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274932607_2030546407106071_1328556839799243362_n.png);
+        animation: animStitre .5s ease-in;
+        p{
+            display: none;
+        }
+  
+    
+    }
+
+
+
      .petitconteneur17{
         
             
@@ -156,102 +200,15 @@
 
  
   
- .petitconteneur15:hover{
  
-    //position: relative;
-    background-size: cover;
-    background-position: 63%;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-    justify-content: center;
-    align-content:center;
-    padding: 1em;
-    box-sizing: border-box;
-    display: flex;
-    background-image:url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
-
-    animation: animStitre 1s ease-in;
-        p{
-            color: white;
-            font-size: 30px;
-            text-align: center;
-        }
     
-    }
-    .petitconteneur16:hover{
-      
-        background-size: cover;
-        background-position: 50%;
-        align-items: center;
-        width: 100%;
-        height: 300px;
-        justify-content: center;
-        align-content:center;
-        padding: 1em;
-        box-sizing: border-box;
-        display: flex;
-        margin-left: 30px;
-        background-image:url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
-        animation: animStitre 1s ease-in;
-      
-        p{
-            color: white;
-            font-size: 30px;
-            text-align: center;
-        }
+    
+    
   
     
-    }
-    .petitconteneur17:hover{
-       
-           
-        background-size: cover;
-        background-position: 50%;
-        align-items: center;
-        width: 100%;
-        height: 300px;
-        justify-content: center;
-        align-content:center;
-        padding: 1em;
-        box-sizing: border-box;
-        display: flex;
-        margin-left: 30px;
-        background-image:url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
-        animation: animStitre 1s ease-in;
-        p{
-            color: white;
-            font-size: 30px;
-            text-align: center;
-        }
-  
     
-    }
 
-    .petitconteneur18:hover{
-       
-           
-       background-size: cover;
-       background-position: 50%;
-       align-items: center;
-       width: 100%;
-       height: 300px;
-       justify-content: center;
-       align-content:center;
-       padding: 1em;
-       box-sizing: border-box;
-       display: flex;
-       margin-left: 30px;
-       background-image:url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
-       animation: animStitre 1s ease-in;
-       p{
-           color: white;
-           font-size: 30px;
-           text-align: center;
-       }
- 
-   
-   }
+    
 
    //////////FORMAT DESKTOP
 @include desktop{

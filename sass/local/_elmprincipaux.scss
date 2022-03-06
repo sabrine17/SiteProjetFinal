@@ -136,6 +136,51 @@ font-weight: bold;
     margin-right: 50px;
     }
 
+    .wp-block-columns.blocMotivation{
+        justify-content: center;
+        align-items: center;
+      
+    }
+  
+    .wp-block-columns.blocAJ{
+        justify-content: center;
+     
+
+    }
+
+    .wp-block-cover.alignleft.ptblocAj{
+        -webkit-box-shadow: 5px 5px 18px 5px #CBCBCB; 
+        box-shadow: 5px 5px 18px 5px #CBCBCB;
+    }
+
+    .wp-block-cover.ptblocAj{
+        -webkit-box-shadow: 5px 5px 18px 5px #CBCBCB; 
+        box-shadow: 5px 5px 18px 5px #CBCBCB;
+
+        p{
+            opacity: 0;
+        }
+    }
+    .wp-block-cover.ptblocAj:hover{
+        -webkit-box-shadow: 5px 5px 18px 5px #CBCBCB; 
+        box-shadow: 5px 5px 18px 5px #CBCBCB;
+
+        p{
+            opacity: 1;
+        }
+    }
+
+
+    .has-text-align-center.txtInLd.has-black-color.has-text-color.has-large-font-size{
+        opacity: 0;
+    }
+
+    .has-text-align-center.txtInLd.has-black-color.has-text-color.has-large-font-size:hover{
+        opacity: 1;
+    }
+
+
+    
 
     @keyframes animStitre{
         0% {
