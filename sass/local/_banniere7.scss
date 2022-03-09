@@ -18,8 +18,24 @@
      align-items: center;
      padding: 1em;
      box-sizing: border-box;
-     margin-top:5%;
+    
      background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/26141.jpeg);
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      
      .conteneur7{
        
@@ -68,7 +84,7 @@
         display: flex;
         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/powers.png);
         animation: animStitre .5s ease-in;
-        p{
+            p{
                display: none;
             }
         
@@ -118,31 +134,190 @@
     
     }
 
-
-
-     .petitconteneur17{
-        
-            
-         background-size: cover;
-         background-position: 50%;
-         align-items: center;
-         width: 100%;
-         height: 300px;
-         justify-content: center;
-         align-content:center;
-         padding: 1em;
-         box-sizing: border-box;
-         display: flex;
-         margin-left: 30px;
-         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/352890-admin-scaled.jpeg);
-         p{
-             color: white;
-             font-size: 30px;
-             text-align: center;
-         }
    
+        
+      
+        .petitconteneur17{
+        
+            color: black;
+            font-size: 30px;
+            text-align: center;
+
+            background-size: cover;
+            background-position: 50%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content:center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            //margin-left: 30px;
+            background-color:white;
+            p{
+                color: black;
+                font-size: 30px;
+                text-align: center;
+            }
+            //transition: transform 1s ease-in-out;
+           //overflow-y: clip;
+           nav.boutton {
+               font-size: 5vw;
+               display: flex;
+               z-index: 1;
+               position: absolute;
+               flex-direction: row;
+               justify-content: space-between;
+               pointer-events: none;
+               width: 120%;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%,-50%);
+               
+               a{
+                   pointer-events: initial;
+                   transition: all 0.5s ease-in-out;
+                   padding: 5px;
+                   border: transparent 3px solid;
+                   border-radius: 20px;
+               }
+               
+               a:hover{
+                   transform: translateY(-3px);
+                   z-index: 2;
+                   border: whitesmoke 3px solid;
+                   border-radius: 20px;
+                   cursor: pointer;
+               }
+           }
+           
+   
+           
+           }
+
+
+           .conteneurs1{
+            //display: flex;
+           // justify-content: center;
+          //  align-items: center;
+          // position: static;
+           // width: 17.5vw;
+          //  height: 300px;
+          //  width: 100%;
+
+        background-size: cover;
+        background-position: 50%;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        align-content: center;
+        padding: 1em;
+        box-sizing: border-box;
+        display: flex;
+        margin-left: 30px;
+        background-color: white;
+        p{
+            grid-area: text;
+            color: black;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .contenu{
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 95%;
+            border-radius: 20px;
+            background-color: rgb(253, 250, 250);
+            z-index: 10;
+            overflow-y: auto;
+            
+            a{
+                z-index: 100;
+                position: absolute;
+                top: 2%;
+                right: 5%;
+                font-size: 3em;
+                text-decoration: none;
+                border-radius: 20px;
+                cursor: pointer;
+                
+            }
+
+            &.displayed{
+                display: block;
+                padding: 10px;
+                width: 70%;
+                height: 80%;
+                
+                span img{
+                    //position: absolute;
+                    height: 100%;
+                    width: auto;
+                    top: 50%;
+                    left: 50%;
+                    border-radius: 20px;
+                    transform: translate(-50%, -50%);
+                }
+                
+                div{
+                    //display: grid;
+                    //height: 100%;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas: 
+                    "title title"
+                    "image text";
+                    gap: 5%;
+                    
+                    h2{
+                        text-align: center;
+                        justify-self: center;
+                        grid-area: title;
+                        font-family:song of coronos;
+                        font-size: 45px;
+                    }
+                    
+                    img{
+                        grid-area: image;
+                        width: 50%;
+                    }
+                    
+                    p{
+                        grid-area: text;
+                        color: black;
+                        font-size: 30px;
+                        text-align: center;
+
+                        //position: absolute;
+                        font-size: 18px;
+                        bottom: 0;
+                    }
+
+                    figure{
+                        grid-area: image;
+                    }
+                }
+
+            }
+        }
+
+
+
+        
+        
+    }
+
      
-     }
+
+
+
+     
 
      .petitconteneur18{
         
@@ -158,15 +333,42 @@
         box-sizing: border-box;
         display: flex;
         margin-left: 30px;
-        background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image-1.png);
+        background-color:white;
         p{
-            color: white;
+            color: black;
             font-size: 30px;
             text-align: center;
         }
   
     
     }
+
+    .petitconteneur18:hover{
+        
+            
+        background-size: cover;
+        background-position: 10%;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        align-content:center;
+        padding: 1em;
+        box-sizing: border-box;
+        display: flex;
+        margin-left: 30px;
+         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/Knowledge_of_Evil__2_.jpeg);
+         animation: animStitre .5s ease-in;
+         p{
+                display: none;
+             }
+        
+  
+    
+    }
+
+
+
     
      }
  }
@@ -181,7 +383,6 @@
     margin: 0 auto;
     display: flex;
     color: black;
-    margin-top:10%;
     font-family: song of coronos;
  }
 

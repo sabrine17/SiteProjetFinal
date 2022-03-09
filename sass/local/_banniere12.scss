@@ -28,7 +28,8 @@
          width: 100%;
          margin: 30px;
        // height: 430px;
-    
+      -webkit-box-shadow: 1px 5px 25px -1px #485B27; 
+       box-shadow: 1px 5px 25px -1px #485B27;
     
      .petitconteneur23{
  
@@ -50,9 +51,12 @@
          }
 
          .miniconteneur23{
-            background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/img_bottomup-e1646338139428.png);
-            width: 600px;
-             height: 700px;
+            background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/img_bottomup-1.png);
+             width: 500px;
+             height: 500px;
+             justify-content: center;
+             align-items: center;
+             margin: 0 auto;
              background-size: contain;
             background-repeat: no-repeat;
         }
@@ -79,11 +83,12 @@
          }
    
          .miniconteneur24{
-            background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/273251583_508939893917740_1385691619973133024_n.png);
-            width: 650px;
-            height: 574px;
+            background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/img_topdown.png);
+            width: 500px;
+            height: 500px;
             background-size: contain;
             background-repeat: no-repeat;
+            vertical-align: center;
         }
      
      }

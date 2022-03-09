@@ -282,6 +282,15 @@ The only skills I have the patience to learn are those that have no real applica
 		
 	
 </section>
+<div class="info">
+		<img width="150" height="150" src="https://eddym8.sg-host.com/wp-content/uploads/2021/12/projetSab1-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy"><h1>Modélisation 3D</h1>	</div>
+
+
+
+
+
+
+
 
 <div class="contenu displayed" id="desc-1298">
 	<a class="close">☒</a>
@@ -321,10 +330,19 @@ The only skills I have the patience to learn are those that have no real applica
 		</div>
 		</div>
 		</div>
-		
+		<div class="contenu displayed>
+			<a class="close">☒</a>
+			<div>
+			<h2>Modélisation d’une statue</h2><img width="640" height="360" src="https://eddym8.sg-host.com/wp-content/uploads/2021/12/statue-3D-KevinLaRue-1024x576.jpg" class="attachment-large size-large wp-post-image" alt="" loading="lazy" srcset="https://eddym8.sg-host.com/wp-content/uploads/2021/12/statue-3D-KevinLaRue-1024x576.jpg 1024w, https://eddym8.sg-host.com/wp-content/uploads/2021/12/statue-3D-KevinLaRue-300x169.jpg 300w, https://eddym8.sg-host.com/wp-content/uploads/2021/12/statue-3D-KevinLaRue-768x432.jpg 768w, https://eddym8.sg-host.com/wp-content/uploads/2021/12/statue-3D-KevinLaRue.jpg 1280w" sizes="(max-width: 640px) 100vw, 640px"><!-- wp:paragraph -->
+			<!--<p>Conception d'une statue crée par un étudiant de 3ème année avec le logiciel de Maya dans le cadre du cours de modélisation 3D.</p>
+/wp:paragraph 	</div>	</div>
 	
 </section>
 		-->
+	
+
+
+
 
 <!--BANNIERE 12-------------------------
 <p class="titreconteneur12">Deux types d'approche</p>

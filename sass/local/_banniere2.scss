@@ -3,7 +3,7 @@
 //////////FORMAT DESKTOP
 @include desktop{
     #banniere2{
-        margin-top:5%;
+        //margin-top:5%;
         background-position: 50%;
         align-items: center;
         width: 100vw;
@@ -58,7 +58,7 @@
 //////////FORMAT TABLETTE
 @include tablet{
     #banniere2{
-        margin-top:5%;
+       // margin-top:5%;
         background-position: 50%;
         align-items: center;
         width: 100vw;
@@ -112,7 +112,7 @@
 //////////FORMAT MOBILE
 @include mobile{
     #banniere2{
-        margin-top:5%;
+        //margin-top:5%;
         background-position: 50%;
         align-items: center;
         width: 100vw;
