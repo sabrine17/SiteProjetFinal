@@ -38,27 +38,23 @@
 	
 	
 	
-	<p class="has-medium-font-size"><a href="#banniere6">Forme et fonction</a></p>
+	<p class="has-medium-font-size"><a href="http://localhost:8888/siteFormationSab/2022/03/02/banniere-11/">Forme et fonction</a></p>
 	
 	
 	
-	<p class="has-medium-font-size"><a href="#banniere6" data-type="internal" data-id="#banniere6">Top down et bottom-up</a></p>
+	<p class="has-medium-font-size"><a href="http://localhost:8888/siteFormationSab/2022/03/02/banniere-12/" >Top down et bottom-up</a></p>
+	
+	
+
+	<p class="has-medium-font-size"><a href="http://localhost:8888/siteFormationSab/2022/02/23/banniere-6-2/">Ingrédients et ld pattern</a></p>
 	
 	
 	
-	<p>Signes et feedback</p>
+	<p class="has-medium-font-size"><a href="http://localhost:8888/siteFormationSab/2022/03/02/banniere-14/">Gameplay</a></p>
 	
 	
 	
-	<p>Ingrédients et ld pattern</p>
-	
-	
-	
-	<p>Gameplay</p>
-	
-	
-	
-	<p class="has-medium-font-size"><a href="#banniere3" data-type="internal" data-id="#banniere3">Compétences et inputs</a></p>
+	<p class="has-medium-font-size"><a href="http://localhost:8888/siteFormationSab/2022/02/23/banniere-3/" >Compétences et inputs</a></p>
 	</div>
 	
 	
@@ -66,25 +62,24 @@
 	<div class="wp-block-column" id="blocF2">
 	<p>   </p>
 	
-	
-	
-	<p>Prototypage et 3C</p>
-	
-	
-	
-	<p class="has-medium-font-size"><a href="#banniere9" data-type="internal" data-id="#banniere9">Macro et Micro Flow</a></p>
+	<p>   </p>
+
 	
 	
 	
-	<p class="has-medium-font-size"><a href="#banniere8" data-type="internal" data-id="#banniere8">Facteurs psychologiques</a></p>
+	<p class="has-medium-font-size"><a href="http://localhost:8888/siteFormationSab/2022/02/24/banniere-9/">Apprentissage par le jeu</a></p>
 	
 	
 	
-	<p class="has-medium-font-size"><a href="#banniere7" data-type="internal" data-id="#banniere7">Stratégie de motivation</a></p>
+	<p class="has-medium-font-size"><a href="http://localhost:8888/siteFormationSab/2022/02/24/banniere-8/" >Psychologie et type de joueurs</a></p>
 	
 	
 	
-	<p class="has-medium-font-size"><a href="#banniere10">Stratégie de variété</a></p>
+	<p class="has-medium-font-size"><a href="http://localhost:8888/siteFormationSab/2022/02/24/banniere-7/">Stratégie de motivation</a></p>
+	
+	
+	
+	<p class="has-medium-font-size"><a href="http://localhost:8888/siteFormationSab/2022/02/24/banniere-4-2/">Matrice de variétés</a></p>
 	</div>
 	</div>
 	</section>

@@ -1505,6 +1505,21 @@ button {
   }
 }
 
+@media (min-width: 0px) and (max-width: 500px) {
+  .site-footer {
+    margin-top: 400px;
+  }
+  #banniere8 .wp-block-button__link {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+  #banniere8 .wp-block-button__link {
+    font-size: 20px;
+  }
+}
+
 /* Banniere1
 --------------------------------------------- */
 @media (min-width: 1200px) {
@@ -6239,7 +6254,8 @@ button {
     background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
   }
   #banniere11 .conteneur11 {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     flex-wrap: nowrap;
     margin-bottom: 1.75em;
     box-sizing: border-box;
@@ -6252,6 +6268,7 @@ button {
     background-size: cover;
     background-position: 63%;
     align-items: center;
+    width: 400px;
     height: 300px;
     justify-content: center;
     align-content: center;
@@ -6269,6 +6286,7 @@ button {
     background-size: cover;
     background-position: 50%;
     align-items: center;
+    width: 400px;
     height: 300px;
     justify-content: center;
     align-content: center;
@@ -6351,7 +6369,7 @@ button {
     align-items: center;
     padding: 1em;
     box-sizing: border-box;
-    margin-top: 30%;
+    margin-top: 10%;
     background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
   }
   #banniere11 .conteneur11 {
@@ -6407,7 +6425,7 @@ button {
     margin: 0 auto;
     display: flex;
     color: black;
-    margin-top: 15%;
+    margin-top: 300px;
     margin-bottom: 5%;
     font-family: song of coronos;
   }
@@ -6735,7 +6753,6 @@ button {
     margin-bottom: 1.75em;
     box-sizing: border-box;
     width: 100%;
-    margin: 30px;
     box-shadow: 1px 5px 25px -1px #485B27;
   }
   #banniere12 .conteneur12 .petitconteneur23 {
