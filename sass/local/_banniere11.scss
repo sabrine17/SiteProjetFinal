@@ -361,12 +361,12 @@
          align-items: center;
          padding: 1em;
          box-sizing: border-box;
-         margin-top:5%;
+         margin-top:30%;
          background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
        
          .conteneur11{
            
-             display: flex;
+            // display: flex;
              flex-wrap: nowrap;
              margin-bottom: 1.75em;
              box-sizing: border-box;
@@ -382,7 +382,7 @@
          background-size: cover;
          background-position: 63%;
          align-items: center;
-         width: 30%;
+        //width: 30%;
          height: 300px;
          justify-content: center;
          align-content:center;
@@ -390,6 +390,7 @@
          box-sizing: border-box;
          display: flex;
          background-color: white;
+         margin-bottom: 10px;
              p{
                  color: black;
                  font-size: 30px;
@@ -404,14 +405,14 @@
              background-size: cover;
              background-position: 50%;
              align-items: center;
-             width: 30%;
+            // width: 30%;
              height: 300px;
              justify-content: center;
              align-content:center;
              padding: 1em;
              box-sizing: border-box;
              display: flex;
-             margin-left: 30px;
+            // margin-left: 30px;
              background-color: white;
            
              p{
@@ -457,10 +458,11 @@
         background-size: cover;
         background-position: 63%;
         align-items: center;
-        width: 30%;
+        //width: 30%;
         height: 300px;
         justify-content: center;
         align-content:center;
+        margin-bottom: 10px;
         padding: 1em;
         box-sizing: border-box;
         display: flex;
@@ -477,14 +479,14 @@
             background-size: cover;
             background-position: 50%;
             align-items: center;
-            width: 30%;
+           // width: 30%;
             height: 300px;
             justify-content: center;
             align-content:center;
             padding: 1em;
             box-sizing: border-box;
             display: flex;
-            margin-left: 30px;
+           // margin-left: 30px;
            // background-image :url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/Dungeon-Quest-OST-Enchanted-Forest-Theme-Roblox.mp4);
            // animation: animStitre 1s ease-in;
           

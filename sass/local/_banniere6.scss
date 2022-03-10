@@ -1,132 +1,360 @@
 ///////////////////BANNIERE 6/////////////////////////////////////////
 
 
-#banniere6{
-   
-    
-    // align-items: center;
-    // width: 100vw;
-     height: 430px;
-     display: flex;
-     position: relative;
-     background-size: cover;
-     background-position: 50%;
-     width: 100%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding: 1em;
-     box-sizing: border-box;
-     margin-top:5%;
-     height: 600px;
-     background-color:#F2F6F8;
-     
-     .conteneur6{
-       
-         display: flex;
-         flex-wrap: nowrap;
-         margin-bottom: 1.75em;
-         box-sizing: border-box;
-         width: 100%;
-        padding:20%;
-    
-     .petitconteneur12{
- 
-     //position: relative;
-     background-size: cover;
-     background-position: 50%;
-     align-items: center;
-     width: 50%;
-     height: 500px;
-     justify-content: center;
-     align-content:center;
-     padding: 1em;
-     box-sizing: border-box;
-     display: flex;
-     background-color: white ;
-     
-         p{
-             color: black;
-             font-size: 20px;
-         }
-
-         
-     
-     }
-     .petitconteneur13{
-       
-         background-size: cover;
-         background-position: 50%;
-         align-items: center;
-         width: 50%;
-         height: 500px;
-         justify-content: center;
-         align-content:center;
-         padding: 1em;
-         box-sizing: border-box;
-         display: flex;
-         margin-left: 30px;
-         background-color: white;
-       
-         p{
-             color: black;
-             font-size: 20px;
-         }
-   
-     
-     }
-     .petitconteneur14{
-        
-            
-         background-size: cover;
-         background-position: 50%;
-         align-items: center;
-         width: 50%;
-         height: 500px;
-         justify-content: center;
-         align-content:center;
-         padding: 1em;
-         box-sizing: border-box;
-         display: flex;
-         margin-left: 30px;
-         background-color: white ;
-         p{
-             color: black;
-             font-size: 20px;
-         }
-   
-     
-     }
-    
-     }
- }
- 
- 
- 
- 
-  .titreconteneur6{
-    font-size: 50px;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    color: black;
-    margin-top:10%;
-    font-family: song of coronos;
- }
-
  //////////FORMAT DESKTOP
 @include desktop{
 
+
+    #banniere6{
+   
+    
+        // align-items: center;
+        // width: 100vw;
+         height: 430px;
+         display: flex;
+         position: relative;
+         background-size: cover;
+         background-position: 50%;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 1em;
+         box-sizing: border-box;
+         margin-top:5%;
+         height: 600px;
+         background-color:#F2F6F8;
+         
+         .conteneur6{
+           
+             display: flex;
+             flex-wrap: nowrap;
+             margin-bottom: 1.75em;
+             box-sizing: border-box;
+             width: 100%;
+            padding:20%;
+        
+         .petitconteneur12{
+     
+         //position: relative;
+         background-size: cover;
+         background-position: 50%;
+         align-items: center;
+         width: 50%;
+         height: 500px;
+         justify-content: center;
+         align-content:center;
+         padding: 1em;
+         box-sizing: border-box;
+         display: flex;
+         background-color: white ;
+         
+             p{
+                 color: black;
+                 font-size: 20px;
+             }
+    
+             
+         
+         }
+         .petitconteneur13{
+           
+             background-size: cover;
+             background-position: 50%;
+             align-items: center;
+             width: 50%;
+             height: 500px;
+             justify-content: center;
+             align-content:center;
+             padding: 1em;
+             box-sizing: border-box;
+             display: flex;
+             margin-left: 30px;
+             background-color: white;
+           
+             p{
+                 color: black;
+                 font-size: 20px;
+             }
+       
+         
+         }
+         .petitconteneur14{
+            
+                
+             background-size: cover;
+             background-position: 50%;
+             align-items: center;
+             width: 50%;
+             height: 500px;
+             justify-content: center;
+             align-content:center;
+             padding: 1em;
+             box-sizing: border-box;
+             display: flex;
+             margin-left: 30px;
+             background-color: white ;
+             p{
+                 color: black;
+                 font-size: 20px;
+             }
+       
+         
+         }
+        
+         }
+     }
+     
+     
+     
+     
+      .titreconteneur6{
+        font-size: 50px;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        color: black;
+        margin-top:10%;
+        font-family: song of coronos;
+     }
 }
 
 
 //////////FORMAT TABLETTE
 @include tablet{
 
+
+    #banniere6{
+   
+    
+        // align-items: center;
+        // width: 100vw;
+         height: 430px;
+         display: flex;
+         position: relative;
+         background-size: cover;
+         background-position: 50%;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 1em;
+         box-sizing: border-box;
+         margin-top:5%;
+         height: 600px;
+         background-color:#F2F6F8;
+         
+         .conteneur6{
+           
+             display: flex;
+             flex-wrap: nowrap;
+             margin-bottom: 1.75em;
+             box-sizing: border-box;
+             width: 100%;
+            padding:20%;
+        
+         .petitconteneur12{
+     
+         //position: relative;
+         background-size: cover;
+         background-position: 50%;
+         align-items: center;
+         width: 50%;
+         height: 500px;
+         justify-content: center;
+         align-content:center;
+         padding: 1em;
+         box-sizing: border-box;
+         display: flex;
+         background-color: white ;
+         
+             p{
+                 color: black;
+                 font-size: 20px;
+             }
+    
+             
+         
+         }
+         .petitconteneur13{
+           
+             background-size: cover;
+             background-position: 50%;
+             align-items: center;
+             width: 50%;
+             height: 500px;
+             justify-content: center;
+             align-content:center;
+             padding: 1em;
+             box-sizing: border-box;
+             display: flex;
+             margin-left: 30px;
+             background-color: white;
+           
+             p{
+                 color: black;
+                 font-size: 20px;
+             }
+       
+         
+         }
+         .petitconteneur14{
+            
+                
+             background-size: cover;
+             background-position: 50%;
+             align-items: center;
+             width: 50%;
+             height: 500px;
+             justify-content: center;
+             align-content:center;
+             padding: 1em;
+             box-sizing: border-box;
+             display: flex;
+             margin-left: 30px;
+             background-color: white ;
+             p{
+                 color: black;
+                 font-size: 20px;
+             }
+       
+         
+         }
+        
+         }
+     }
+     
+     
+     
+     
+      .titreconteneur6{
+        font-size: 50px;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        color: black;
+        margin-top:10%;
+        font-family: song of coronos;
+     }
 }
 
 //////////FORMAT MOBILE
 @include mobile{
 
+
+    #banniere6{
+   
+    
+        // align-items: center;
+        // width: 100vw;
+         height: 430px;
+         display: flex;
+         position: relative;
+         background-size: cover;
+         background-position: 50%;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 1em;
+         box-sizing: border-box;
+         margin-top:750px;
+         height: 600px;
+         background-color:#F2F6F8;
+         
+         .conteneur6{
+           
+             display: flex;
+             flex-wrap: nowrap;
+             margin-bottom: 1.75em;
+             box-sizing: border-box;
+             width: 100%;
+            padding:20%;
+        
+         .petitconteneur12{
+     
+         //position: relative;
+         background-size: cover;
+         background-position: 50%;
+         align-items: center;
+         width: 50%;
+         height: 500px;
+         justify-content: center;
+         align-content:center;
+         padding: 1em;
+         box-sizing: border-box;
+         display: flex;
+         background-color: white ;
+         
+             p{
+                 color: black;
+                 font-size: 20px;
+             }
+    
+             
+         
+         }
+         .petitconteneur13{
+           
+             background-size: cover;
+             background-position: 50%;
+             align-items: center;
+             width: 50%;
+             height: 500px;
+             justify-content: center;
+             align-content:center;
+             padding: 1em;
+             box-sizing: border-box;
+             display: flex;
+             margin-left: 30px;
+             background-color: white;
+           
+             p{
+                 color: black;
+                 font-size: 20px;
+             }
+       
+         
+         }
+         .petitconteneur14{
+            
+                
+             background-size: cover;
+             background-position: 50%;
+             align-items: center;
+             width: 50%;
+             height: 500px;
+             justify-content: center;
+             align-content:center;
+             padding: 1em;
+             box-sizing: border-box;
+             display: flex;
+             margin-left: 30px;
+             background-color: white ;
+             p{
+                 color: black;
+                 font-size: 20px;
+             }
+       
+         
+         }
+        
+         }
+     }
+     
+     
+     
+     
+      .titreconteneur6{
+        font-size: 50px;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        color: black;
+        margin-top:10%;
+        font-family: song of coronos;
+     }
 }

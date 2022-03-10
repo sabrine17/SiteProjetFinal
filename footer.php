@@ -33,7 +33,7 @@
 	
 	
 	
-	<div class="wp-block-column">
+	<div class="wp-block-column" id="blocF">
 	<p><strong>Table des matières</strong></p>
 	
 	
@@ -63,7 +63,7 @@
 	
 	
 	
-	<div class="wp-block-column">
+	<div class="wp-block-column" id="blocF2">
 	<p>   </p>
 	
 	
@@ -91,6 +91,13 @@
 	<!--dynamic_sidebar_after:sidebar-1:1-->
 	</aside>
 	</footer><!-- #colophon -->
+
+
+
+
+
+
+	
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

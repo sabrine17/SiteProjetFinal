@@ -122,7 +122,7 @@ Bouton burger
 	border: 0;
 
 
-
+	
 
 }
 
@@ -269,7 +269,7 @@ button {
 
 .line {
 	fill: none;
-	stroke: white;
+	stroke: rgb(2, 43, 11);
 	stroke-width: 10;
 	transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
 		stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -313,3 +313,12 @@ button {
 
 
 
+//faire disparaitre box
+.customize-partial-edit-shortcut-button{
+    display: none;
+}
+
+#buttonP{
+	background: none;
+    border: none;
+}

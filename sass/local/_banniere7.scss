@@ -1,84 +1,56 @@
-///////////////////BANNIERE 5/////////////////////////////////////////
+///////////////////BANNIERE 7/////////////////////////////////////////
 
 
-#banniere7{
+
+    
+    
+    
+  
+    
+    
+
+    
+
+   //////////FORMAT DESKTOP
+@include desktop{
+    #banniere7{
    
     
-    // align-items: center;
-    // width: 100vw;
-     height: 430px;
-     display: flex;
-     position: relative;
-     background-size: cover;
-     background-position: 50%;
-     width: 100%;
-     height: 700px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding: 1em;
-     box-sizing: border-box;
-    
-     background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/26141.jpeg);
-
-     
-
-     .conteneur7{
-       
+        // align-items: center;
+        // width: 100vw;
+         height: 430px;
          display: flex;
-         flex-wrap: nowrap;
-         margin-bottom: 1.75em;
-         box-sizing: border-box;
-         width: 100%;
-         margin: 30px;
-       // height: 430px;
-       
-    
-     .petitconteneur15{
- 
-     //position: relative;
-     background-size: cover;
-     background-position: 30%;
-     align-items: center;
-     width: 100%;
-     height: 300px;
-     justify-content: center;
-     align-content:center;
-     padding: 1em;
-     box-sizing: border-box;
-     display: flex;
-    background-color:white;
-         p{
-             color: black;
-             font-size: 30px;
-             text-align: center;
-         }
-     
-     }
-     .petitconteneur15:hover{
- 
-        //position: relative;
-        background-size: cover;
-        background-position: 30%;
-        align-items: center;
-        width: 100%;
-        height: 300px;
-        justify-content: center;
-        align-content:center;
-        padding: 1em;
-        box-sizing: border-box;
-        display: flex;
-        background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/powers.png);
-        animation: animStitre .5s ease-in;
-            p{
-               display: none;
-            }
-        
-        }
-     .petitconteneur16{
-       
+         position: relative;
          background-size: cover;
          background-position: 50%;
+         width: 100%;
+         height: 700px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 1em;
+         box-sizing: border-box;
+        
+         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/26141.jpeg);
+    
+         
+    
+         .conteneur7{
+           
+             display: flex;
+             flex-wrap: nowrap;
+             margin-bottom: 1.75em;
+             box-sizing: border-box;
+             width: 100%;
+             margin: 30px;
+           // height: 430px;
+           
+        
+         .petitconteneur15{
+     
+         //position: relative;
+         background-size: cover;
+         background-position: 30%;
          align-items: center;
          width: 100%;
          height: 300px;
@@ -87,44 +59,262 @@
          padding: 1em;
          box-sizing: border-box;
          display: flex;
-         margin-left: 30px;
-         background-color:white;
-         p{
-             color: black;
-             font-size: 30px;
-             text-align: center;
+        background-color:white;
+             p{
+                 color: black;
+                 font-size: 30px;
+                 text-align: center;
+             }
+         
          }
-   
+         .petitconteneur15:hover{
      
-     }
-
-     .petitconteneur16:hover{
+            //position: relative;
+            background-size: cover;
+            background-position: 30%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content:center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/powers.png);
+            animation: animStitre .5s ease-in;
+                p{
+                   display: none;
+                }
+            
+            }
+         .petitconteneur16{
+           
+             background-size: cover;
+             background-position: 50%;
+             align-items: center;
+             width: 100%;
+             height: 300px;
+             justify-content: center;
+             align-content:center;
+             padding: 1em;
+             box-sizing: border-box;
+             display: flex;
+             margin-left: 30px;
+             background-color:white;
+             p{
+                 color: black;
+                 font-size: 30px;
+                 text-align: center;
+             }
        
-        background-size: cover;
-        background-position: 10%;
-        align-items: center;
-        width: 100%;
-        height: 300px;
-        justify-content: center;
-        align-content:center;
-        padding: 1em;
-        box-sizing: border-box;
-        display: flex;
-        margin-left: 30px;
-        background-image:url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274932607_2030546407106071_1328556839799243362_n.png);
-        animation: animStitre .5s ease-in;
-        p{
-            display: none;
-        }
-  
+         
+         }
     
-    }
-
-   
-        
+         .petitconteneur16:hover{
+           
+            background-size: cover;
+            background-position: 10%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content:center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            margin-left: 30px;
+            background-image:url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274932607_2030546407106071_1328556839799243362_n.png);
+            animation: animStitre .5s ease-in;
+            p{
+                display: none;
+            }
       
-        .petitconteneur17{
         
+        }
+    
+       
+            
+          
+            .petitconteneur17{
+            
+                color: black;
+                font-size: 30px;
+                text-align: center;
+                
+                background-size: cover;
+                background-position: 50%;
+                align-items: center;
+                width: 100%;
+                height: 300px;
+                justify-content: center;
+                align-content:center;
+                padding: 1em;
+                box-sizing: border-box;
+                display: flex;
+                //margin-left: 30px;
+                background-color:white;
+                p{
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                }
+                //transition: transform 1s ease-in-out;
+               //overflow-y: clip;
+               nav.boutton {
+                   font-size: 5vw;
+                   display: flex;
+                   z-index: 1;
+                   position: absolute;
+                   flex-direction: row;
+                   justify-content: space-between;
+                   pointer-events: none;
+                   width: 120%;
+                   top: 50%;
+                   left: 50%;
+                   transform: translate(-50%,-50%);
+                   
+                   a{
+                       pointer-events: initial;
+                       transition: all 0.5s ease-in-out;
+                       padding: 5px;
+                       border: transparent 3px solid;
+                       border-radius: 20px;
+                   }
+                   
+                   a:hover{
+                       transform: translateY(-3px);
+                       z-index: 2;
+                       border: whitesmoke 3px solid;
+                       border-radius: 20px;
+                       cursor: pointer;
+                   }
+               }
+               
+       
+               
+               }
+    
+    
+               .conteneurs1{
+                //display: flex;
+               // justify-content: center;
+              //  align-items: center;
+              // position: static;
+               // width: 17.5vw;
+              //  height: 300px;
+              //  width: 100%;
+    
+            background-size: cover;
+            background-position: 50%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content: center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            margin-left: 30px;
+            background-color: white;
+            p{
+                grid-area: text;
+                color: black;
+                font-size: 30px;
+                text-align: center;
+            }
+    
+            .contenu{
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 95%;
+                border-radius: 20px;
+                background-color: rgb(253, 250, 250);
+                z-index: 10;
+                overflow-y: auto;
+                
+                a{
+                    z-index: 100;
+                    position: absolute;
+                    top: 2%;
+                    right: 5%;
+                    font-size: 3em;
+                    text-decoration: none;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    
+                }
+    
+                &.displayed{
+                    display: block;
+                    padding: 10px;
+                    width: 70%;
+                    height: 80%;
+                    
+                    span img{
+                        //position: absolute;
+                        height: 100%;
+                        width: auto;
+                        top: 50%;
+                        left: 50%;
+                        border-radius: 20px;
+                        transform: translate(-50%, -50%);
+                    }
+                    
+                    div{
+                        //display: grid;
+                        //height: 100%;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-areas: 
+                        "title title"
+                        "image text";
+                        gap: 5%;
+                        
+                        h2{
+                            text-align: center;
+                            justify-self: center;
+                            grid-area: title;
+                            font-family:song of coronos;
+                            font-size: 45px;
+                        }
+                        
+                        img{
+                            grid-area: image;
+                            width: 50%;
+                        }
+                        
+                        p{
+                            grid-area: text;
+                            color: black;
+                            font-size: 30px;
+                            text-align: center;
+    
+                            //position: absolute;
+                            font-size: 18px;
+                            bottom: 0;
+                        }
+    
+                        figure{
+                            grid-area: image;
+                        }
+                    }
+    
+                }
+            }
+    
+    
+    
+            
+            
+        }
+    
+         
+    
+        .petitconteneur17:hover{
+            
             color: black;
             font-size: 30px;
             text-align: center;
@@ -140,302 +330,943 @@
             box-sizing: border-box;
             display: flex;
             //margin-left: 30px;
+            background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/observation.jpeg);
+            p{
+                color: black;
+                font-size: 30px;
+                text-align: center;
+            }
+          
+           
+    
+           
+           }
+    
+         
+    
+         .petitconteneur18{
+            
+                
+            background-size: cover;
+            background-position: 50%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content:center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            margin-left: 30px;
             background-color:white;
             p{
                 color: black;
                 font-size: 30px;
                 text-align: center;
             }
-            //transition: transform 1s ease-in-out;
-           //overflow-y: clip;
-           nav.boutton {
-               font-size: 5vw;
-               display: flex;
-               z-index: 1;
-               position: absolute;
-               flex-direction: row;
-               justify-content: space-between;
-               pointer-events: none;
-               width: 120%;
-               top: 50%;
-               left: 50%;
-               transform: translate(-50%,-50%);
-               
-               a{
-                   pointer-events: initial;
-                   transition: all 0.5s ease-in-out;
-                   padding: 5px;
-                   border: transparent 3px solid;
-                   border-radius: 20px;
-               }
-               
-               a:hover{
-                   transform: translateY(-3px);
-                   z-index: 2;
-                   border: whitesmoke 3px solid;
-                   border-radius: 20px;
-                   cursor: pointer;
-               }
-           }
-           
-   
-           
-           }
-
-
-           .conteneurs1{
-            //display: flex;
-           // justify-content: center;
-          //  align-items: center;
-          // position: static;
-           // width: 17.5vw;
-          //  height: 300px;
-          //  width: 100%;
-
-        background-size: cover;
-        background-position: 50%;
-        align-items: center;
-        width: 100%;
-        height: 300px;
-        justify-content: center;
-        align-content: center;
-        padding: 1em;
-        box-sizing: border-box;
-        display: flex;
-        margin-left: 30px;
-        background-color: white;
-        p{
-            grid-area: text;
-            color: black;
-            font-size: 30px;
-            text-align: center;
-        }
-
-        .contenu{
-            display: none;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: 95%;
-            border-radius: 20px;
-            background-color: rgb(253, 250, 250);
-            z-index: 10;
-            overflow-y: auto;
-            
-            a{
-                z-index: 100;
-                position: absolute;
-                top: 2%;
-                right: 5%;
-                font-size: 3em;
-                text-decoration: none;
-                border-radius: 20px;
-                cursor: pointer;
-                
-            }
-
-            &.displayed{
-                display: block;
-                padding: 10px;
-                width: 70%;
-                height: 80%;
-                
-                span img{
-                    //position: absolute;
-                    height: 100%;
-                    width: auto;
-                    top: 50%;
-                    left: 50%;
-                    border-radius: 20px;
-                    transform: translate(-50%, -50%);
-                }
-                
-                div{
-                    //display: grid;
-                    //height: 100%;
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-areas: 
-                    "title title"
-                    "image text";
-                    gap: 5%;
-                    
-                    h2{
-                        text-align: center;
-                        justify-self: center;
-                        grid-area: title;
-                        font-family:song of coronos;
-                        font-size: 45px;
-                    }
-                    
-                    img{
-                        grid-area: image;
-                        width: 50%;
-                    }
-                    
-                    p{
-                        grid-area: text;
-                        color: black;
-                        font-size: 30px;
-                        text-align: center;
-
-                        //position: absolute;
-                        font-size: 18px;
-                        bottom: 0;
-                    }
-
-                    figure{
-                        grid-area: image;
-                    }
-                }
-
-            }
-        }
-
-
-
-        
-        
-    }
-
-     
-
-    .petitconteneur17:hover{
-        
-        color: black;
-        font-size: 30px;
-        text-align: center;
-        
-        background-size: cover;
-        background-position: 50%;
-        align-items: center;
-        width: 100%;
-        height: 300px;
-        justify-content: center;
-        align-content:center;
-        padding: 1em;
-        box-sizing: border-box;
-        display: flex;
-        //margin-left: 30px;
-        background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/observation.jpeg);
-        p{
-            color: black;
-            font-size: 30px;
-            text-align: center;
-        }
       
-       
-
-       
-       }
-
-     
-
-     .petitconteneur18{
         
-            
-        background-size: cover;
-        background-position: 50%;
-        align-items: center;
-        width: 100%;
-        height: 300px;
-        justify-content: center;
-        align-content:center;
-        padding: 1em;
-        box-sizing: border-box;
-        display: flex;
-        margin-left: 30px;
-        background-color:white;
-        p{
-            color: black;
-            font-size: 30px;
-            text-align: center;
         }
-  
     
-    }
-
-    .petitconteneur18:hover{
-        
+        .petitconteneur18:hover{
             
-        background-size: cover;
-        background-position: 10%;
-        align-items: center;
-        width: 100%;
-        height: 300px;
-        justify-content: center;
-        align-content:center;
-        padding: 1em;
-        box-sizing: border-box;
-        display: flex;
-        margin-left: 30px;
-         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/Knowledge_of_Evil__2_.jpeg);
-         animation: animStitre .5s ease-in;
-         p{
-                display: none;
-             }
+                
+            background-size: cover;
+            background-position: 10%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content:center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            margin-left: 30px;
+             background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/Knowledge_of_Evil__2_.jpeg);
+             animation: animStitre .5s ease-in;
+             p{
+                    display: none;
+                 }
+            
+      
         
-  
+        }
     
-    }
-
-
-
     
+    
+        
+         }
      }
- }
- 
- 
-
- 
-  .titreconteneur7{
-    font-size: 50px;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    color: black;
-    font-family: song of coronos;
- }
-
- .titreBanniere7{
-    font-size: 50px;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 5%;
-    display: flex;
-    color: black;
-    font-family: song of coronos; 
- }
-
-
-
-
- 
-  
- 
+     
+     
+    
+     
+      .titreconteneur7{
+        font-size: 50px;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        color: black;
+        font-family: song of coronos;
+     }
+    
+     .titreBanniere7{
+        font-size: 50px;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 5%;
+        display: flex;
+        color: black;
+        font-family: song of coronos; 
+     }
     
     
     
-  
     
-    
-
-    
-
-   //////////FORMAT DESKTOP
-@include desktop{
-
+     
+      
+     
 }
 
 
 //////////FORMAT TABLETTE
 @include tablet{
-
+    #banniere7{
+   
+    
+        // align-items: center;
+        // width: 100vw;
+         height: 430px;
+         display: flex;
+         position: relative;
+         background-size: cover;
+         background-position: 50%;
+         width: 100%;
+         height: 700px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 1em;
+         box-sizing: border-box;
+        
+         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/26141.jpeg);
+    
+         
+    
+         .conteneur7{
+           
+             display: flex;
+             flex-wrap: nowrap;
+             margin-bottom: 1.75em;
+             box-sizing: border-box;
+             width: 100%;
+             margin: 30px;
+           // height: 430px;
+           
+        
+         .petitconteneur15{
+     
+         //position: relative;
+         background-size: cover;
+         background-position: 30%;
+         align-items: center;
+         width: 100%;
+         height: 300px;
+         justify-content: center;
+         align-content:center;
+         padding: 1em;
+         box-sizing: border-box;
+         display: flex;
+        background-color:white;
+             p{
+                 color: black;
+                 font-size: 30px;
+                 text-align: center;
+             }
+         
+         }
+         .petitconteneur15:hover{
+     
+            //position: relative;
+            background-size: cover;
+            background-position: 30%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content:center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/powers.png);
+            animation: animStitre .5s ease-in;
+                p{
+                   display: none;
+                }
+            
+            }
+         .petitconteneur16{
+           
+             background-size: cover;
+             background-position: 50%;
+             align-items: center;
+             width: 100%;
+             height: 300px;
+             justify-content: center;
+             align-content:center;
+             padding: 1em;
+             box-sizing: border-box;
+             display: flex;
+             margin-left: 30px;
+             background-color:white;
+             p{
+                 color: black;
+                 font-size: 30px;
+                 text-align: center;
+             }
+       
+         
+         }
+    
+         .petitconteneur16:hover{
+           
+            background-size: cover;
+            background-position: 10%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content:center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            margin-left: 30px;
+            background-image:url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274932607_2030546407106071_1328556839799243362_n.png);
+            animation: animStitre .5s ease-in;
+            p{
+                display: none;
+            }
+      
+        
+        }
+    
+       
+            
+          
+            .petitconteneur17{
+            
+                color: black;
+                font-size: 30px;
+                text-align: center;
+                
+                background-size: cover;
+                background-position: 50%;
+                align-items: center;
+                width: 100%;
+                height: 300px;
+                justify-content: center;
+                align-content:center;
+                padding: 1em;
+                box-sizing: border-box;
+                display: flex;
+                //margin-left: 30px;
+                background-color:white;
+                p{
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                }
+                //transition: transform 1s ease-in-out;
+               //overflow-y: clip;
+               nav.boutton {
+                   font-size: 5vw;
+                   display: flex;
+                   z-index: 1;
+                   position: absolute;
+                   flex-direction: row;
+                   justify-content: space-between;
+                   pointer-events: none;
+                   width: 120%;
+                   top: 50%;
+                   left: 50%;
+                   transform: translate(-50%,-50%);
+                   
+                   a{
+                       pointer-events: initial;
+                       transition: all 0.5s ease-in-out;
+                       padding: 5px;
+                       border: transparent 3px solid;
+                       border-radius: 20px;
+                   }
+                   
+                   a:hover{
+                       transform: translateY(-3px);
+                       z-index: 2;
+                       border: whitesmoke 3px solid;
+                       border-radius: 20px;
+                       cursor: pointer;
+                   }
+               }
+               
+       
+               
+               }
+    
+    
+               .conteneurs1{
+                //display: flex;
+               // justify-content: center;
+              //  align-items: center;
+              // position: static;
+               // width: 17.5vw;
+              //  height: 300px;
+              //  width: 100%;
+    
+            background-size: cover;
+            background-position: 50%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content: center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            margin-left: 30px;
+            background-color: white;
+            p{
+                grid-area: text;
+                color: black;
+                font-size: 30px;
+                text-align: center;
+            }
+    
+            .contenu{
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 95%;
+                border-radius: 20px;
+                background-color: rgb(253, 250, 250);
+                z-index: 10;
+                overflow-y: auto;
+                
+                a{
+                    z-index: 100;
+                    position: absolute;
+                    top: 2%;
+                    right: 5%;
+                    font-size: 3em;
+                    text-decoration: none;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    
+                }
+    
+                &.displayed{
+                    display: block;
+                    padding: 10px;
+                    width: 70%;
+                    height: 80%;
+                    
+                    span img{
+                        //position: absolute;
+                        height: 100%;
+                        width: auto;
+                        top: 50%;
+                        left: 50%;
+                        border-radius: 20px;
+                        transform: translate(-50%, -50%);
+                    }
+                    
+                    div{
+                        //display: grid;
+                        //height: 100%;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-areas: 
+                        "title title"
+                        "image text";
+                        gap: 5%;
+                        
+                        h2{
+                            text-align: center;
+                            justify-self: center;
+                            grid-area: title;
+                            font-family:song of coronos;
+                            font-size: 45px;
+                        }
+                        
+                        img{
+                            grid-area: image;
+                            width: 50%;
+                        }
+                        
+                        p{
+                            grid-area: text;
+                            color: black;
+                            font-size: 30px;
+                            text-align: center;
+    
+                            //position: absolute;
+                            font-size: 18px;
+                            bottom: 0;
+                        }
+    
+                        figure{
+                            grid-area: image;
+                        }
+                    }
+    
+                }
+            }
+    
+    
+    
+            
+            
+        }
+    
+         
+    
+        .petitconteneur17:hover{
+            
+            color: black;
+            font-size: 30px;
+            text-align: center;
+            
+            background-size: cover;
+            background-position: 50%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content:center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            //margin-left: 30px;
+            background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/observation.jpeg);
+            p{
+                color: black;
+                font-size: 30px;
+                text-align: center;
+            }
+          
+           
+    
+           
+           }
+    
+         
+    
+         .petitconteneur18{
+            
+                
+            background-size: cover;
+            background-position: 50%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content:center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            margin-left: 30px;
+            background-color:white;
+            p{
+                color: black;
+                font-size: 30px;
+                text-align: center;
+            }
+      
+        
+        }
+    
+        .petitconteneur18:hover{
+            
+                
+            background-size: cover;
+            background-position: 10%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content:center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            margin-left: 30px;
+             background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/Knowledge_of_Evil__2_.jpeg);
+             animation: animStitre .5s ease-in;
+             p{
+                    display: none;
+                 }
+            
+      
+        
+        }
+    
+    
+    
+        
+         }
+     }
+     
+     
+    
+     
+      .titreconteneur7{
+        font-size: 50px;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        color: black;
+        font-family: song of coronos;
+     }
+    
+     .titreBanniere7{
+        font-size: 50px;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 5%;
+        display: flex;
+        color: black;
+        font-family: song of coronos; 
+     }
+    
+    
+    
+    
+     
+      
+     
 }
 
 //////////FORMAT MOBILE
 @include mobile{
-
+    #banniere7{
+   
+    
+        // align-items: center;
+        // width: 100vw;
+         height: 430px;
+         display: flex;
+         position: relative;
+         background-size: cover;
+         background-position: 50%;
+         width: 100%;
+         height: 1590px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 1em;
+         box-sizing: border-box;
+        
+         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/26141.jpeg);
+    
+         
+    
+         .conteneur7{
+           
+            // display: flex;
+             flex-wrap: nowrap;
+             margin-bottom: 1.75em;
+             box-sizing: border-box;
+             width: 100%;
+             //margin: 30px;
+           // height: 430px;
+           
+        
+         .petitconteneur15{
+     
+         //position: relative;
+         background-size: cover;
+         background-position: 30%;
+         align-items: center;
+         width: 100%;
+         height: 300px;
+         justify-content: center;
+         align-content:center;
+         padding: 1em;
+         box-sizing: border-box;
+         display: flex;
+        background-color:white;
+        margin-top: 20%;
+             p{
+                 color: black;
+                 font-size: 30px;
+                 text-align: center;
+             }
+         
+         }
+         .petitconteneur15:hover{
+     
+            //position: relative;
+            background-size: cover;
+            background-position: 30%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content:center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/powers.png);
+            animation: animStitre .5s ease-in;
+                p{
+                   display: none;
+                }
+            
+            }
+         .petitconteneur16{
+           
+             background-size: cover;
+             background-position: 50%;
+             align-items: center;
+             width: 100%;
+             height: 300px;
+             justify-content: center;
+             align-content:center;
+             padding: 1em;
+             box-sizing: border-box;
+             display: flex;
+             margin-top: 20%;
+             //margin-left: 30px;
+             background-color:white;
+             p{
+                 color: black;
+                 font-size: 30px;
+                 text-align: center;
+             }
+       
+         
+         }
+    
+         .petitconteneur16:hover{
+           
+            background-size: cover;
+            background-position: 10%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content:center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            //margin-left: 30px;
+            background-image:url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274932607_2030546407106071_1328556839799243362_n.png);
+            animation: animStitre .5s ease-in;
+            p{
+                display: none;
+            }
+      
+        
+        }
+    
+       
+            
+          
+            .petitconteneur17{
+            
+                color: black;
+                font-size: 30px;
+                text-align: center;
+                
+                background-size: cover;
+                background-position: 50%;
+                align-items: center;
+                width: 100%;
+                height: 300px;
+                justify-content: center;
+                align-content:center;
+                padding: 1em;
+                box-sizing: border-box;
+                display: flex;
+                //margin-left: 30px;
+                //margin-top: 20%;
+                background-color:white;
+                p{
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+                }
+                //transition: transform 1s ease-in-out;
+               //overflow-y: clip;
+               nav.boutton {
+                   font-size: 5vw;
+                   display: flex;
+                   z-index: 1;
+                   position: absolute;
+                   flex-direction: row;
+                   justify-content: space-between;
+                   pointer-events: none;
+                   width: 120%;
+                   top: 50%;
+                   left: 50%;
+                   transform: translate(-50%,-50%);
+                   
+                   a{
+                       pointer-events: initial;
+                       transition: all 0.5s ease-in-out;
+                       padding: 5px;
+                       border: transparent 3px solid;
+                       border-radius: 20px;
+                   }
+                   
+                   a:hover{
+                       transform: translateY(-3px);
+                       z-index: 2;
+                       border: whitesmoke 3px solid;
+                       border-radius: 20px;
+                       cursor: pointer;
+                   }
+               }
+               
+       
+               
+               }
+    
+    
+               .conteneurs1{
+                //display: flex;
+               // justify-content: center;
+              //  align-items: center;
+              // position: static;
+               // width: 17.5vw;
+              //  height: 300px;
+              //  width: 100%;
+    
+            background-size: cover;
+            background-position: 50%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content: center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            //margin-left: 30px;
+            margin-top: 20%;
+            background-color: white;
+            p{
+                grid-area: text;
+                color: black;
+                font-size: 30px;
+                text-align: center;
+            }
+    
+            .contenu{
+                display: none;
+                position: absolute;
+                top: 64%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 95%;
+                border-radius: 20px;
+                background-color: rgb(253, 250, 250);
+                z-index: 10;
+                overflow-y: auto;
+                
+                a{
+                    z-index: 100;
+                    position: absolute;
+                    top: 2%;
+                    right: 5%;
+                    font-size: 3em;
+                    text-decoration: none;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    
+                }
+    
+                &.displayed{
+                    display: block;
+                    padding: 10px;
+                    width: 93%;
+                    height: 450px;
+                    
+                    span img{
+                        //position: absolute;
+                        height: 100%;
+                        width: auto;
+                        top: 50%;
+                        left: 50%;
+                        border-radius: 20px;
+                        transform: translate(-50%, -50%);
+                    }
+                    
+                    div{
+                        //display: grid;
+                        //height: 100%;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-areas: 
+                        "title title"
+                        "image text";
+                        gap: 5%;
+                        
+                        h2{
+                            text-align: center;
+                            justify-self: center;
+                            grid-area: title;
+                            font-family:song of coronos;
+                            font-size: 45px;
+                        }
+                        
+                        img{
+                            grid-area: image;
+                            width: 50%;
+                        }
+                        
+                        p{
+                            grid-area: text;
+                            color: black;
+                            font-size: 30px;
+                            text-align: center;
+    
+                            //position: absolute;
+                            font-size: 18px;
+                            bottom: 0;
+                        }
+    
+                        figure{
+                            grid-area: image;
+                        }
+                    }
+    
+                }
+            }
+    
+    
+    
+            
+            
+        }
+    
+         
+    
+        .petitconteneur17:hover{
+            
+            color: black;
+            font-size: 30px;
+            text-align: center;
+            
+            background-size: cover;
+            background-position: 50%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content:center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            //margin-left: 30px;
+            background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/observation.jpeg);
+            p{
+                color: black;
+                font-size: 30px;
+                text-align: center;
+            }
+          
+           
+    
+           
+           }
+    
+         
+    
+         .petitconteneur18{
+            
+                
+            background-size: cover;
+            background-position: 50%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content:center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+            margin-top: 20%;
+            //margin-left: 30px;
+            background-color:white;
+            p{
+                color: black;
+                font-size: 30px;
+                text-align: center;
+            }
+      
+        
+        }
+    
+        .petitconteneur18:hover{
+            
+                
+            background-size: cover;
+            background-position: 10%;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            justify-content: center;
+            align-content:center;
+            padding: 1em;
+            box-sizing: border-box;
+            display: flex;
+           // margin-left: 30px;
+             background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/Knowledge_of_Evil__2_.jpeg);
+             animation: animStitre .5s ease-in;
+             p{
+                    display: none;
+                 }
+            
+      
+        
+        }
+    
+    
+    
+        
+         }
+     }
+     
+     
+    
+     
+      .titreconteneur7{
+        font-size: 50px;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        color: black;
+        font-family: song of coronos;
+     }
+    
+     .titreBanniere7{
+        font-size: 50px;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 5%;
+        display: flex;
+        color: black;
+        font-family: song of coronos; 
+     }
+    
+    
+    
+    
+     
+      
+     
 }

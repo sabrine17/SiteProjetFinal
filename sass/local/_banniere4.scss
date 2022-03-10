@@ -1,6 +1,10 @@
 ///////////////////BANNIERE 4/////////////////////////////////////////
 
-#banniere4{
+
+  //////////FORMAT DESKTOP
+@include desktop{
+
+  #banniere4{
    
     
     // align-items: center;
@@ -337,19 +341,691 @@
   .petitconteneur9.hover figcaption {
     top: 80px;
   }
-
-  //////////FORMAT DESKTOP
-@include desktop{
-
 }
 
 
 //////////FORMAT TABLETTE
 @include tablet{
 
+  #banniere4{
+   
+    
+    // align-items: center;
+    // width: 100vw;
+     height: 430px;
+     display: flex;
+     position: relative;
+     background-size: cover;
+     background-position: 50%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 1em;
+     box-sizing: border-box;
+     margin-top:5%;
+     
+     .conteneur4{
+       
+         display: flex;
+         flex-wrap: nowrap;
+         margin-bottom: 1.75em;
+         box-sizing: border-box;
+         width: 100%;
+         margin: 30px;
+       // height: 430px;
+    
+    
+     .petitconteneur7{
+ 
+     //position: relative;
+     background-size: cover;
+     background-position: 60%;
+     align-items: center;
+     width: 100%;
+     height: 430px;
+     justify-content: center;
+     align-content:center;
+     padding: 1em;
+     box-sizing: border-box;
+     display: flex;
+     background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274631622_381947913768786_5187954168988407428_n.png);
+      
+     font-family: 'Quattrocento', Arial, sans-serif;
+     position: relative;
+     overflow: hidden;
+     //margin: 10px;
+   
+     color: #141414;
+     text-align: left;
+     line-height: 1.4em;
+     
+     
+        p{
+             color:black;
+             font-size: 16px;
+         }
+     
+     }
+     .petitconteneur8{
+       
+         background-size: cover;
+         background-position: 50%;
+         align-items: center;
+         width: 100%;
+         height: 430px;
+         justify-content: center;
+         align-content:center;
+         padding: 1em;
+         box-sizing: border-box;
+         display: flex;
+         margin-left: 30px;
+         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/image3jeu.jpeg);
+      
+       
+
+         font-family: 'Quattrocento', Arial, sans-serif;
+         position: relative;
+         overflow: hidden;
+         margin: 10px;
+         color: #141414;
+         text-align: left;
+         line-height: 1.4em;
+
+         p{
+             color:black; 
+             font-size: 16px;
+         }
+   
+     
+     }
+     .petitconteneur9{
+        
+            
+         background-size: cover;
+         background-position: 65%;
+         align-items: center;
+         width: 100%;
+         height: 430px;
+         justify-content: center;
+         align-content:center;
+         padding: 1em;
+         box-sizing: border-box;
+         display: flex;
+         margin-left: 30px;
+         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274372864_2289969474476642_695698808113479992_n.png);
+         
+         
+         font-family: 'Quattrocento', Arial, sans-serif;
+         position: relative;
+         overflow: hidden;
+         margin: 10px;
+         color: #141414;
+         text-align: left;
+         line-height: 1.4em;
+         
+         
+         p{
+             color:black;
+             font-size: 16px;
+         }
+   
+     
+     }
+    
+     }
+ }
+ 
+ 
+  .button4{
+     background-color: #72735b;
+     border-radius: 90px;
+     padding: 20px;
+    
+     border-style: none;
+     justify-content: center;
+     margin: 0 auto;
+     display: flex;
+     position: absolute;
+     margin-top:500px;
+   a{
+       color: white;
+       font-size: 1em;
+   }
+  }
+ 
+  .titreconteneur4{
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top:10%;
+    font-family: song of coronos;
+ }
+
+
+ ////////HOVER////////////////////////////////
+
+ @import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+
+.petitconteneur7 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.petitconteneur7 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.petitconteneur7 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 50px 250px;
+}
+.petitconteneur7 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+.petitconteneur7 h3,
+.petitconteneur7 p {
+  margin: 0 0 10px;
+}
+.petitconteneur7 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+.petitconteneur7 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.petitconteneur7 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.petitconteneur7:hover figcaption,
+.petitconteneur7.hover figcaption {
+  top: 80px;
+}
+//8//
+
+  .petitconteneur8 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur8 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur8 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur8 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur8 h3,
+  .petitconteneur8 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur8 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur8 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur8 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur8:hover figcaption,
+  .petitconteneur8.hover figcaption {
+    top: 80px;
+  }
+
+//9
+
+  .petitconteneur9 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur9 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur9 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur9 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur9 h3,
+  .petitconteneur9 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur9 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur9 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur9 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur9:hover figcaption,
+  .petitconteneur9.hover figcaption {
+    top: 80px;
+  }
 }
 
 //////////FORMAT MOBILE
 @include mobile{
 
+  #banniere4{
+   
+    
+    // align-items: center;
+    // width: 100vw;
+     height: 430px;
+     display: flex;
+     position: relative;
+     background-size: cover;
+     background-position: 50%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 1em;
+     box-sizing: border-box;
+     margin-top:80%;
+     
+     .conteneur4{
+       
+        // display: flex;
+         flex-wrap: nowrap;
+         margin-bottom: 1.75em;
+         box-sizing: border-box;
+         width: 100%;
+         margin: 30px;
+       // height: 430px;
+    
+    
+     .petitconteneur7{
+ 
+     //position: relative;
+     background-size: cover;
+     background-position: 60%;
+     align-items: center;
+     width: 100%;
+     height: 430px;
+     justify-content: center;
+     align-content:center;
+     padding: 1em;
+     box-sizing: border-box;
+     display: flex;
+     background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274631622_381947913768786_5187954168988407428_n.png);
+      
+     font-family: 'Quattrocento', Arial, sans-serif;
+     position: relative;
+     overflow: hidden;
+     //margin: 10px;
+   
+     color: #141414;
+     text-align: left;
+     line-height: 1.4em;
+     margin-top: 80%;
+     
+     
+        p{
+             color:black;
+             font-size: 16px;
+         }
+     
+     }
+     .petitconteneur8{
+       
+         background-size: cover;
+         background-position: 50%;
+         align-items: center;
+         width: 100%;
+         height: 430px;
+         justify-content: center;
+         align-content:center;
+         padding: 1em;
+         box-sizing: border-box;
+         display: flex;
+         //margin-left: 30px;
+         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/image3jeu.jpeg);
+         margin-top: 20%;
+       
+
+         font-family: 'Quattrocento', Arial, sans-serif;
+         position: relative;
+         overflow: hidden;
+         //margin: 10px;
+         color: #141414;
+         text-align: left;
+         line-height: 1.4em;
+
+         p{
+             color:black; 
+             font-size: 16px;
+         }
+   
+     
+     }
+     .petitconteneur9{
+        
+            
+         background-size: cover;
+         background-position: 65%;
+         align-items: center;
+         width: 100%;
+         height: 430px;
+         justify-content: center;
+         align-content:center;
+         padding: 1em;
+         box-sizing: border-box;
+         display: flex;
+         margin-left: 30px;
+         background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274372864_2289969474476642_695698808113479992_n.png);
+         
+         
+         font-family: 'Quattrocento', Arial, sans-serif;
+         position: relative;
+         overflow: hidden;
+         margin: 10px;
+         color: #141414;
+         text-align: left;
+         line-height: 1.4em;
+         margin-top: 20%;
+         
+         
+         p{
+             color:black;
+             font-size: 16px;
+         }
+   
+     
+     }
+    
+     }
+ }
+ 
+ 
+  .button4{
+     background-color: #72735b;
+     border-radius: 90px;
+     padding: 20px;
+    
+     border-style: none;
+     justify-content: center;
+     margin: 0 auto;
+     display: flex;
+     position: absolute;
+     margin-top:500px;
+   a{
+       color: white;
+       font-size: 1em;
+   }
+  }
+ 
+  .titreconteneur4{
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top:650px;
+    font-family: song of coronos;
+ }
+
+
+ ////////HOVER////////////////////////////////
+
+ @import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+
+.petitconteneur7 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.petitconteneur7 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.petitconteneur7 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 50px 250px;
+}
+.petitconteneur7 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+.petitconteneur7 h3,
+.petitconteneur7 p {
+  margin: 0 0 10px;
+}
+.petitconteneur7 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+.petitconteneur7 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.petitconteneur7 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.petitconteneur7:hover figcaption,
+.petitconteneur7.hover figcaption {
+  top: 80px;
+}
+//8//
+
+  .petitconteneur8 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur8 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur8 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px 50px 250px;
+  }
+  .petitconteneur8 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur8 h3,
+  .petitconteneur8 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur8 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur8 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur8 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur8:hover figcaption,
+  .petitconteneur8.hover figcaption {
+    top: 80px;
+  }
+
+//9
+
+  .petitconteneur9 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur9 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur9 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur9 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur9 h3,
+  .petitconteneur9 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur9 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur9 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur9 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur9:hover figcaption,
+  .petitconteneur9.hover figcaption {
+    top: 80px;
+  }
 }

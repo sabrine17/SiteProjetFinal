@@ -710,12 +710,12 @@
      align-items: center;
      padding: 1em;
      box-sizing: border-box;
-     margin-top:5%;
+     margin-top:90%;
      
      
      .conteneur3{
        
-         display: flex;
+        // display: flex;
          flex-wrap: nowrap;
          margin-bottom: 1.75em;
          box-sizing: border-box;
@@ -744,10 +744,11 @@
      font-family: 'Quattrocento', Arial, sans-serif;
      position: relative;
      overflow: hidden;
-     margin: 10px;
+     //margin: 10px;
      color: #141414;
      text-align: left;
      line-height: 1.4em;
+     margin-top: 50%;
     
 
 
@@ -769,17 +770,18 @@
          padding: 1em;
          box-sizing: border-box;
          display: flex;
-         margin-left: 30px;
+         //margin-left: 30px;
          background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/Shadow-Of-The-Tomb-Raider-Cover.jpeg);
-
+         margin-top: 20%;
     font-family: 'Quattrocento', Arial, sans-serif;
     position: relative;
     overflow: hidden;
-    margin: 10px;
+   // margin: 10px;
     
     color: #141414;
     text-align: left;
     line-height: 1.4em;
+
     
        
          p{
@@ -802,14 +804,14 @@
          padding: 1em;
          box-sizing: border-box;
          display: flex;
-         margin-left: 30px;
+         //margin-left: 30px;
          background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/observation.jpeg);
 
          font-family: 'Quattrocento', Arial, sans-serif;
          position: relative;
          overflow: hidden;
          //margin: 10px;
-       
+         margin-top: 20%;
          color: #141414;
          text-align: left;
          line-height: 1.4em;
@@ -844,7 +846,7 @@
   }
  
   .titreconteneur3{
-    font-size: 50px;
+    font-size: 40px;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
@@ -1035,3 +1037,4 @@
     top: 80px;
   }
 }
+
