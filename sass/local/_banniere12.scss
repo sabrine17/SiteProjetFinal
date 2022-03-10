@@ -62,6 +62,239 @@
         }
      
      }
+
+
+     .conteneurs2{
+        //display: flex;
+       // justify-content: center;
+      //  align-items: center;
+      // position: static;
+       // width: 17.5vw;
+      //  height: 300px;
+      //  width: 100%;
+
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    //height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+    p{
+        grid-area: text;
+        color: black;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contenu{
+        display: none;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 100%;
+        border-radius: 20px;
+        background-color: rgb(253, 250, 250);
+        z-index: 10;
+        overflow-y: auto;
+        
+        a{
+            z-index: 100;
+            position: absolute;
+            top: 2%;
+            right: 5%;
+            font-size: 3em;
+            text-decoration: none;
+            border-radius: 20px;
+            cursor: pointer;
+            
+        }
+
+        &.displayed{
+            display: block;
+            padding: 10px;
+            //width: 70%;
+            height: 100%;
+            
+            span img{
+                //position: absolute;
+                height: 100%;
+                width: auto;
+                top: 50%;
+                left: 50%;
+                border-radius: 20px;
+                transform: translate(-50%, -50%);
+            }
+            
+            div{
+                //display: grid;
+                //height: 100%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "title title"
+                "image text";
+                gap: 5%;
+                
+                h2{
+                    text-align: center;
+                    justify-self: center;
+                    grid-area: title;
+                    font-family:song of coronos;
+                    font-size: 45px;
+                }
+                
+                img{
+                    grid-area: image;
+                    width: 50%;
+                }
+                
+                p{
+                    grid-area: text;
+                    color: black;
+                    font-size: 30px;
+                    text-align: center;
+
+                    //position: absolute;
+                    font-size: 18px;
+                    bottom: 0;
+                }
+
+                figure{
+                    grid-area: image;
+                }
+            }
+
+        }
+    }
+
+
+
+    
+    
+}
+.conteneurs3{
+    //display: flex;
+   // justify-content: center;
+  //  align-items: center;
+  // position: static;
+   // width: 17.5vw;
+  //  height: 300px;
+  //  width: 100%;
+
+background-size: cover;
+background-position: 50%;
+align-items: center;
+width: 100%;
+//height: 300px;
+justify-content: center;
+align-content: center;
+padding: 1em;
+box-sizing: border-box;
+display: flex;
+margin-left: 30px;
+background-color: white;
+p{
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contenu{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgb(253, 250, 250);
+    z-index: 10;
+    overflow-y: auto;
+    
+    a{
+        z-index: 100;
+        position: absolute;
+        top: 2%;
+        right: 5%;
+        font-size: 3em;
+        text-decoration: none;
+        border-radius: 20px;
+        cursor: pointer;
+        
+    }
+
+    &.displayed{
+        display: block;
+        padding: 10px;
+        //width: 70%;
+        height: 100%;
+        
+        span img{
+            //position: absolute;
+            height: 100%;
+            width: auto;
+            top: 50%;
+            left: 50%;
+            border-radius: 20px;
+            transform: translate(-50%, -50%);
+        }
+        
+        div{
+            //display: grid;
+            //height: 100%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "title title"
+            "image text";
+            gap: 5%;
+            
+            h2{
+                text-align: center;
+                justify-self: center;
+                grid-area: title;
+                font-family:song of coronos;
+                font-size: 45px;
+            }
+            
+            img{
+                grid-area: image;
+                width: 50%;
+            }
+            
+            p{
+                grid-area: text;
+                color: black;
+                font-size: 30px;
+                text-align: center;
+
+                //position: absolute;
+                font-size: 18px;
+                bottom: 0;
+            }
+
+            figure{
+                grid-area: image;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+}
+
      .petitconteneur24{
        
          background-size: cover;

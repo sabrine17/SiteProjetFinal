@@ -47,6 +47,7 @@ function handleMouseMove(event) {
 	}
 	
 
+
 	for(const closes of close){
 		closes.addEventListener("click", function(event){
 			console.log("jbvsb")

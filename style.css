@@ -1303,6 +1303,99 @@ button {
   margin: 0;
 }
 
+.wp-block-cover.banniereDis .conteneurs8 {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-color: white;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 p {
+  grid-area: text;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #fdfafa;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu a {
+  z-index: 100;
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  font-size: 3em;
+  text-decoration: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu.displayed {
+  display: block;
+  padding: 10px;
+  height: 100%;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu.displayed span img {
+  height: 100%;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu.displayed div {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title" "image text";
+  gap: 5%;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu.displayed div h2 {
+  text-align: center;
+  justify-self: center;
+  grid-area: title;
+  font-family: song of coronos;
+  font-size: 45px;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu.displayed div img {
+  grid-area: image;
+  width: 50%;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu.displayed div p {
+  grid-area: text;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-size: 18px;
+  bottom: 0;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu.displayed div figure {
+  grid-area: image;
+}
+
 /* Banniere1
 --------------------------------------------- */
 @media (min-width: 1200px) {
@@ -4472,6 +4565,192 @@ button {
   margin: 0 auto;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+#banniere12 .conteneur12 .conteneurs2 {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-color: white;
+}
+
+#banniere12 .conteneur12 .conteneurs2 p {
+  grid-area: text;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+#banniere12 .conteneur12 .conteneurs2 .contenu {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #fdfafa;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+#banniere12 .conteneur12 .conteneurs2 .contenu a {
+  z-index: 100;
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  font-size: 3em;
+  text-decoration: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#banniere12 .conteneur12 .conteneurs2 .contenu.displayed {
+  display: block;
+  padding: 10px;
+  height: 100%;
+}
+
+#banniere12 .conteneur12 .conteneurs2 .contenu.displayed span img {
+  height: 100%;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+}
+
+#banniere12 .conteneur12 .conteneurs2 .contenu.displayed div {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title" "image text";
+  gap: 5%;
+}
+
+#banniere12 .conteneur12 .conteneurs2 .contenu.displayed div h2 {
+  text-align: center;
+  justify-self: center;
+  grid-area: title;
+  font-family: song of coronos;
+  font-size: 45px;
+}
+
+#banniere12 .conteneur12 .conteneurs2 .contenu.displayed div img {
+  grid-area: image;
+  width: 50%;
+}
+
+#banniere12 .conteneur12 .conteneurs2 .contenu.displayed div p {
+  grid-area: text;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-size: 18px;
+  bottom: 0;
+}
+
+#banniere12 .conteneur12 .conteneurs2 .contenu.displayed div figure {
+  grid-area: image;
+}
+
+#banniere12 .conteneur12 .conteneurs3 {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-color: white;
+}
+
+#banniere12 .conteneur12 .conteneurs3 p {
+  grid-area: text;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+#banniere12 .conteneur12 .conteneurs3 .contenu {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #fdfafa;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+#banniere12 .conteneur12 .conteneurs3 .contenu a {
+  z-index: 100;
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  font-size: 3em;
+  text-decoration: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#banniere12 .conteneur12 .conteneurs3 .contenu.displayed {
+  display: block;
+  padding: 10px;
+  height: 100%;
+}
+
+#banniere12 .conteneur12 .conteneurs3 .contenu.displayed span img {
+  height: 100%;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+}
+
+#banniere12 .conteneur12 .conteneurs3 .contenu.displayed div {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title" "image text";
+  gap: 5%;
+}
+
+#banniere12 .conteneur12 .conteneurs3 .contenu.displayed div h2 {
+  text-align: center;
+  justify-self: center;
+  grid-area: title;
+  font-family: song of coronos;
+  font-size: 45px;
+}
+
+#banniere12 .conteneur12 .conteneurs3 .contenu.displayed div img {
+  grid-area: image;
+  width: 50%;
+}
+
+#banniere12 .conteneur12 .conteneurs3 .contenu.displayed div p {
+  grid-area: text;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-size: 18px;
+  bottom: 0;
+}
+
+#banniere12 .conteneur12 .conteneurs3 .contenu.displayed div figure {
+  grid-area: image;
 }
 
 #banniere12 .conteneur12 .petitconteneur24 {
