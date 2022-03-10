@@ -61,6 +61,30 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -523,11 +547,11 @@ a {
 }
 
 a:visited {
-  color: #800080;
+  color: #13441c;
 }
 
 a:hover, a:focus, a:active {
-  color: #191970;
+  color: #1a5e3c;
 }
 
 a:focus {
@@ -646,6 +670,7 @@ textarea {
   top: 100%;
   left: -999em;
   z-index: 99999;
+  background-color: black;
 }
 
 .main-navigation ul ul ul {
@@ -715,6 +740,186 @@ textarea {
 .post-navigation .nav-next {
   text-align: end;
   flex: 1 0 50%;
+}
+
+/* -----------------------------------------------------------------------------
+Bouton burger 
+------------------------------------------------------------------------------*/
+.menu-toggle {
+  padding: 0;
+  border: 0;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background: #fafbfc;
+}
+
+.menu-toggle:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+.menu-toggle:active {
+  transform: scale(0.99);
+}
+
+/*
+.main-navigation.toggled .menu-toggle{
+	transform : rotate(90deg);
+}
+*/
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+/* ---------------------------------------------------------------------------
+menu tablet
+------------------------------------------------------------------------------ */
+@media screen and (min-width: 37.5em) {
+  .essai1 {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+  .line1 {
+    display: none;
+  }
+  .line2 {
+    display: none;
+  }
+  .line3 {
+    display: none;
+  }
+  .main-navigation.toggled ul,
+  .main-navigation ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .main-navigation.toggled ul a[href='#']::after,
+  .main-navigation ul a[href='#']::after {
+    display: none;
+  }
+  .main-navigation.toggled ul li:hover ul,
+  .main-navigation ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 400px;
+    animation: anim-sous-menu .5s both;
+  }
+  .main-navigation.toggled ul ul,
+  .main-navigation ul ul {
+    display: none;
+  }
+}
+
+@keyframes anim-sous-menu {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+  margin: 0 0 1.5em;
+}
+
+.comment-navigation .nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
+  display: flex;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  flex: 1 0 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  text-align: end;
+  flex: 1 0 50%;
+}
+
+button {
+  margin-top: -10%;
+  margin-left: 80%;
+  float: right;
+}
+
+/* --------------------------------------------------------------------------------------
+  Les variables 
+  ---------------------------------------------------------------------------------------- */
+/*---------------------------------------------------------------------------------------
+  Le bouton burger
+  ----------------------------------------------------------------------------------------- */
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  background: none;
+}
+
+.line {
+  fill: none;
+  stroke: #022b0b;
+  stroke-width: 10;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 10;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 10;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 10;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 10;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 10;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 10;
+}
+
+.customize-partial-edit-shortcut-button {
+  display: none;
+}
+
+#buttonP {
+  background: none;
+  border: none;
 }
 
 /* Posts and pages
@@ -945,15 +1150,9 @@ textarea {
   margin: 0 auto;
 }
 
-#primary-menu {
-  background-color: #72735b;
-  width: 100%;
-  height: 5vh;
-}
-
-#primary-menu a {
-  color: white;
-  margin: 10px;
+.site-title {
+  font-size: 25px;
+  color: green;
 }
 
 .page-title {
@@ -968,530 +1167,7359 @@ textarea {
   display: none;
 }
 
-/* Banniere1
---------------------------------------------- */
-#bannierePrincipale {
-  background-position: 50%;
-  align-items: center;
-  width: 100vw;
-  height: 430px;
-  justify-content: center;
-  display: flex;
-  background-size: cover;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF12-e1644979375226.jpeg);
+@media (min-width: 501px) and (max-width: 1200px) {
+  .main-navigation {
+    width: 100%;
+    height: 15%;
+  }
 }
 
-#bannierePrincipale .conteneur1 .soustitre1 {
-  font-style: normal;
+@media (min-width: 1200px) {
+  .main-navigation {
+    width: 100%;
+    height: 15%;
+  }
+}
+
+.has-text-align-center .has-large-font-size {
+  font-family: song of coronos;
   font-size: 50px;
-  font-weight: 300;
-  letter-spacing: 5px;
-  color: white;
+}
+
+.titreBanniere {
+  font-size: 50px;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  display: flex;
+  color: black;
   font-family: song of coronos;
 }
 
-#bannierePrincipale .conteneur1 .soustitre2 {
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 100;
-  color: white;
+@media (min-width: 1200px) {
+  .titreBanniere1 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    display: flex;
+    color: black;
+    font-family: song of coronos;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+  .titreBanniere1 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    display: flex;
+    color: black;
+    font-family: song of coronos;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .titreBanniere1 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 80%;
+    display: flex;
+    color: black;
+    font-family: song of coronos;
+  }
+}
+
+.titreBanniere2 {
+  font-size: 50px;
   justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  color: black;
+  font-family: song of coronos;
+}
+
+/*.wp-block-columns {
+        -webkit-filter: blur(3px);
+        filter: blur(3px);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .wp-block-columns:hover {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }*/
+.wp-block-columns.are-vertically-aligned-center.bloctopdown {
+  filter: blur(3px);
+  transition: .3s ease-in-out;
+}
+
+.wp-block-columns.are-vertically-aligned-center.bloctopdown:hover {
+  filter: blur(0);
+}
+
+.has-text-align-center.txtAM.has-medium-font-size {
+  opacity: 1;
+  animation: animStitre 6s ease-in;
+}
+
+.wp-block-columns.blocAM {
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.wp-block-columns.blocAJ {
+  justify-content: center;
+}
+
+.wp-block-cover.alignleft.ptblocAj {
+  box-shadow: 5px 5px 18px 5px #CBCBCB;
+}
+
+.wp-block-cover.ptblocAj {
+  box-shadow: 5px 5px 18px 5px #CBCBCB;
+}
+
+.wp-block-cover.ptblocAj p {
+  opacity: 0;
+}
+
+.wp-block-cover.ptblocAj:hover {
+  box-shadow: 5px 5px 18px 5px #CBCBCB;
+}
+
+.wp-block-cover.ptblocAj:hover p {
+  opacity: 1;
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .wp-block-columns.blocAJ {
+    justify-content: center;
+    width: 88.2%;
+    margin: 0 auto;
+  }
+  .wp-block-cover.ptblocAj {
+    box-shadow: 5px 5px 18px 5px #CBCBCB;
+    margin-top: 6%;
+  }
+  .wp-block-cover.ptblocAj p {
+    opacity: 0;
+  }
+  .titreBanniere {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: flex;
+    color: black;
+    font-family: song of coronos;
+  }
+}
+
+.has-text-align-center.txtInLd.has-white-color.has-text-color.has-large-font-size {
+  opacity: 0;
+}
+
+.has-text-align-center.txtInLd.has-white-color.has-text-color.has-large-font-size:hover {
+  opacity: 1;
+}
+
+@keyframes animStitre {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  /*.wp-block-cover.banniereGameplay{
+    display: none;
+    }*/
+  .wp-block-cover.banniereTdBp {
+    display: none;
+  }
+}
+
+.wp-block-cover.banniereGameplay {
+  margin-top: 2%;
+}
+
+#post-646 {
+  margin: 0;
+}
+
+.entry-content {
+  margin: 0;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 {
+  background-size: cover;
+  background-position: 50%;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 30px;
+  background-color: white;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 p {
+  grid-area: text;
+  color: black;
+  font-size: 30px;
   text-align: center;
 }
 
-#bannierePrincipale .conteneur1 .button1 {
-  background-color: #72735b;
-  border-radius: 30px;
-  padding: 15px;
-  border-style: none;
-  justify-content: center;
-  margin: 0 auto;
-  display: flex;
+.wp-block-cover.banniereDis .conteneurs8 .contenu {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #fdfafa;
+  z-index: 10;
+  overflow-y: auto;
 }
 
-#bannierePrincipale .conteneur1 .button1 a {
-  color: white;
+.wp-block-cover.banniereDis .conteneurs8 .contenu a {
+  z-index: 100;
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  font-size: 3em;
+  text-decoration: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu.displayed {
+  display: block;
+  padding: 10px;
+  height: 100%;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu.displayed span img {
+  height: 100%;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu.displayed div {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title" "image text";
+  gap: 5%;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu.displayed div h2 {
+  text-align: center;
+  justify-self: center;
+  grid-area: title;
+  font-family: song of coronos;
+  font-size: 45px;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu.displayed div img {
+  grid-area: image;
+  width: 50%;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu.displayed div p {
+  grid-area: text;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-size: 18px;
+  bottom: 0;
+}
+
+.wp-block-cover.banniereDis .conteneurs8 .contenu.displayed div figure {
+  grid-area: image;
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  #primary-menu {
+    background-color: #72735b;
+    width: 100%;
+  }
+  #primary-menu a {
+    color: white;
+    margin: 20px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1200px) {
+  #primary-menu {
+    background-color: #72735b;
+    width: 100%;
+    height: 7.5vh;
+  }
+  #primary-menu a {
+    color: white;
+    margin: 20px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+  #primary-menu {
+    background-color: #72735b;
+    width: 100%;
+  }
+  #primary-menu a {
+    color: white;
+    margin: 20px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  #blocF {
+    text-align: center;
+  }
+  #blocF2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .site-footer {
+    margin-top: 400px;
+  }
+  #banniere8 .wp-block-button__link {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+  #banniere8 .wp-block-button__link {
+    font-size: 20px;
+  }
+}
+
+/* Banniere1
+--------------------------------------------- */
+@media (min-width: 1200px) {
+  #bannierePrincipale {
+    box-shadow: 1px 5px 25px -1px #485B27;
+    background-position: 50%;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF12-e1644979375226.jpeg);
+  }
+  #bannierePrincipale .conteneur1 .soustitre1 {
+    font-style: normal;
+    font-size: 80px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: white;
+    font-family: song of coronos;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+  }
+  #bannierePrincipale .conteneur1 .soustitre2 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 100;
+    color: white;
+    justify-content: center;
+    text-align: center;
+  }
+  #bannierePrincipale .conteneur1 .button1 {
+    background-color: #72735b;
+    border-radius: 30px;
+    padding: 15px;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+  }
+  #bannierePrincipale .conteneur1 .button1 a {
+    color: white;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+  #bannierePrincipale {
+    box-shadow: 1px 5px 25px -1px #485B27;
+    background-position: 50%;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF12-e1644979375226.jpeg);
+  }
+  #bannierePrincipale .conteneur1 .soustitre1 {
+    font-style: normal;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: white;
+    font-family: song of coronos;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+  }
+  #bannierePrincipale .conteneur1 .soustitre2 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 100;
+    color: white;
+    justify-content: center;
+    text-align: center;
+  }
+  #bannierePrincipale .conteneur1 .button1 {
+    background-color: #72735b;
+    border-radius: 30px;
+    padding: 15px;
+    border-style: none;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+  }
+  #bannierePrincipale .conteneur1 .button1 a {
+    color: white;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  #bannierePrincipale {
+    box-shadow: 1px 5px 25px -1px #485B27;
+    background-position: 50%;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF12-e1644979375226.jpeg);
+  }
+  #bannierePrincipale .conteneur1 .soustitre1 {
+    font-style: normal;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: white;
+    font-family: song of coronos;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+  }
+  #bannierePrincipale .conteneur1 .soustitre2 {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 100;
+    color: white;
+    justify-content: center;
+    text-align: center;
+  }
+  #bannierePrincipale .conteneur1 .button1 {
+    background-color: #72735b;
+    border-radius: 30px;
+    padding: 15px;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+  }
+  #bannierePrincipale .conteneur1 .button1 a {
+    color: white;
+  }
 }
 
 /* Banniere2
 --------------------------------------------- */
-#banniere2 {
-  margin-top: 5%;
-  background-position: 50%;
-  align-items: center;
-  width: 100vw;
-  height: 430px;
-  display: flex;
-  background-size: cover;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image.png);
+@media (min-width: 1200px) {
+  #banniere2 {
+    background-position: 50%;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    background-size: cover;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image.png);
+    background-blend-mode: darken;
+  }
+  #banniere2 .conteneur2 {
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    display: flex;
+    margin-bottom: 1.75em;
+    width: 100%;
+  }
+  #banniere2 .conteneur2 .petitconteneur2 {
+    background-color: #616658;
+    flex-basis: 30%;
+    color: white;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+  #banniere2 .conteneur2 .petitconteneur2 ul:nth-child(1) {
+    margin-top: 10px;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 {
+    flex-basis: 230px;
+    vertical-align: middle;
+    color: white;
+    margin-left: 3%;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 .expJeu {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 40%;
+    font-family: song of coronos;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 .listeJeu {
+    font-size: medium;
+    color: white;
+  }
 }
 
-#banniere2 .conteneur2 {
-  box-sizing: border-box;
-  flex-wrap: nowrap;
-  display: flex;
-  margin-bottom: 1.75em;
-  width: 100%;
+@media (min-width: 501px) and (max-width: 1200px) {
+  #banniere2 {
+    background-position: 50%;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    background-size: cover;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image.png);
+    background-blend-mode: darken;
+  }
+  #banniere2 .conteneur2 {
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    display: flex;
+    margin-bottom: 1.75em;
+    width: 100%;
+  }
+  #banniere2 .conteneur2 .petitconteneur2 {
+    background-color: #616658;
+    flex-basis: 30%;
+    color: white;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+  #banniere2 .conteneur2 .petitconteneur2 ul:nth-child(1) {
+    margin-top: 10px;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 {
+    flex-basis: 230px;
+    vertical-align: middle;
+    color: white;
+    margin-left: 3%;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 .expJeu {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 40%;
+    font-family: song of coronos;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 .listeJeu {
+    font-size: medium;
+    color: white;
+  }
 }
 
-#banniere2 .conteneur2 .petitconteneur2 {
-  background-color: #616658;
-  flex-basis: 30%;
-  color: white;
-  vertical-align: middle;
-  margin-left: 20px;
-}
-
-#banniere2 .conteneur2 .petitconteneur2 ul:nth-child(1) {
-  margin-top: 10px;
-}
-
-#banniere2 .conteneur2 .petitconteneurs2 {
-  flex-basis: 230px;
-  vertical-align: middle;
-  color: white;
-  margin-left: 3%;
-}
-
-#banniere2 .conteneur2 .petitconteneurs2 .expJeu {
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 300;
-  margin-top: 40%;
-}
-
-#banniere2 .conteneur2 .petitconteneurs2 .listeJeu {
-  font-size: small;
-  color: white;
+@media (min-width: 0px) and (max-width: 500px) {
+  #banniere2 {
+    background-position: 50%;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    background-size: cover;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image.png);
+    background-blend-mode: darken;
+  }
+  #banniere2 .conteneur2 {
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    display: flex;
+    margin-bottom: 1.75em;
+    width: 100%;
+  }
+  #banniere2 .conteneur2 .petitconteneur2 {
+    background-color: #616658;
+    color: white;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+  #banniere2 .conteneur2 .petitconteneur2 ul:nth-child(1) {
+    margin-top: 10px;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 {
+    flex-basis: 230px;
+    vertical-align: middle;
+    color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 .expJeu {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 40%;
+    font-family: song of coronos;
+  }
+  #banniere2 .conteneur2 .petitconteneurs2 .listeJeu {
+    font-size: medium;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  }
 }
 
 /* Banniere3
 --------------------------------------------- */
-#banniere3 {
-  height: 430px;
-  display: flex;
-  position: relative;
-  background-size: cover;
-  background-position: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-  box-sizing: border-box;
-  margin-top: 5%;
+@media (min-width: 1200px) {
+  #banniere3 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 5%;
+  }
+  #banniere3 .conteneur3 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  #banniere3 .conteneur3 .petitconteneur4 {
+    background-size: cover;
+    background-position: 70%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274221606_1504779299919368_1601362333053082089_n.png);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur4 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere3 .conteneur3 .petitconteneur5 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/Shadow-Of-The-Tomb-Raider-Cover.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur5 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere3 .conteneur3 .petitconteneur6 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/observation.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur6 p {
+    color: #030303;
+    font-size: 16px;
+  }
+  .button3 {
+    background-color: #72735b;
+    border-radius: 90px;
+    padding: 20px;
+    border-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    margin-top: 500px;
+  }
+  .button3 a {
+    color: white;
+    font-size: 1em;
+  }
+  .titreconteneur3 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 5%;
+    font-family: song of coronos;
+  }
+  .petitconteneur4 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur4 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur4 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur4 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur4 h3,
+  .petitconteneur4 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur4 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur4 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur4 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur4:hover figcaption,
+  .petitconteneur4.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur5 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur5 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur5 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur5 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur5 h3,
+  .petitconteneur5 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur5 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur5 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur5 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur5:hover figcaption,
+  .petitconteneur5.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur6 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur6 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur6 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur6 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur6 h3,
+  .petitconteneur6 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur6 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur6 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur6 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur6:hover figcaption,
+  .petitconteneur6.hover figcaption {
+    top: 80px;
+  }
 }
 
-#banniere3 .conteneur3 {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-bottom: 1.75em;
-  box-sizing: border-box;
-  width: 100%;
+@media (min-width: 501px) and (max-width: 1200px) {
+  #banniere3 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 5%;
+  }
+  #banniere3 .conteneur3 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  #banniere3 .conteneur3 .petitconteneur4 {
+    background-size: cover;
+    background-position: 70%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274221606_1504779299919368_1601362333053082089_n.png);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur4 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere3 .conteneur3 .petitconteneur5 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/Shadow-Of-The-Tomb-Raider-Cover.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur5 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere3 .conteneur3 .petitconteneur6 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/observation.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur6 p {
+    color: #030303;
+    font-size: 16px;
+  }
+  .button3 {
+    background-color: #72735b;
+    border-radius: 90px;
+    padding: 20px;
+    border-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    margin-top: 500px;
+  }
+  .button3 a {
+    color: white;
+    font-size: 1em;
+  }
+  .titreconteneur3 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 5%;
+    font-family: song of coronos;
+  }
+  .petitconteneur4 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur4 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur4 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur4 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur4 h3,
+  .petitconteneur4 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur4 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur4 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur4 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur4:hover figcaption,
+  .petitconteneur4.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur5 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur5 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur5 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur5 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur5 h3,
+  .petitconteneur5 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur5 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur5 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur5 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur5:hover figcaption,
+  .petitconteneur5.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur6 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur6 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur6 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur6 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur6 h3,
+  .petitconteneur6 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur6 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur6 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur6 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur6:hover figcaption,
+  .petitconteneur6.hover figcaption {
+    top: 80px;
+  }
 }
 
-#banniere3 .conteneur3 .petitconteneur4 {
-  background-size: cover;
-  background-position: 50%;
-  align-items: center;
-  width: 100%;
-  height: 430px;
-  justify-content: center;
-  align-content: center;
-  padding: 1em;
-  box-sizing: border-box;
-  display: flex;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF9.jpeg);
-}
-
-#banniere3 .conteneur3 .petitconteneur4 p {
-  color: white;
-  font-size: 40px;
-}
-
-#banniere3 .conteneur3 .petitconteneur5 {
-  background-size: cover;
-  background-position: 50%;
-  align-items: center;
-  width: 100%;
-  height: 430px;
-  justify-content: center;
-  align-content: center;
-  padding: 1em;
-  box-sizing: border-box;
-  display: flex;
-  margin-left: 30px;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF7.jpeg);
-}
-
-#banniere3 .conteneur3 .petitconteneur5 p {
-  color: white;
-  font-size: 40px;
-}
-
-#banniere3 .conteneur3 .petitconteneur6 {
-  background-size: cover;
-  background-position: 50%;
-  align-items: center;
-  width: 100%;
-  height: 430px;
-  justify-content: center;
-  align-content: center;
-  padding: 1em;
-  box-sizing: border-box;
-  display: flex;
-  margin-left: 30px;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
-}
-
-#banniere3 .conteneur3 .petitconteneur6 p {
-  color: white;
-  font-size: 40px;
-}
-
-.button3 {
-  background-color: #72735b;
-  border-radius: 90px;
-  padding: 20px;
-  border-style: none;
-  justify-content: center;
-  margin: 0 auto;
-  display: flex;
-  position: absolute;
-  margin-top: 500px;
-}
-
-.button3 a {
-  color: white;
-  font-size: 1em;
-}
-
-.titreconteneur3 {
-  font-size: 40px;
-  justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-  display: flex;
-  color: black;
-  margin-top: 5%;
+@media (min-width: 0px) and (max-width: 500px) {
+  #banniere3 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 90%;
+  }
+  #banniere3 .conteneur3 {
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  #banniere3 .conteneur3 .petitconteneur4 {
+    background-size: cover;
+    background-position: 70%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274221606_1504779299919368_1601362333053082089_n.png);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+    margin-top: 50%;
+  }
+  #banniere3 .conteneur3 .petitconteneur4 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere3 .conteneur3 .petitconteneur5 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/Shadow-Of-The-Tomb-Raider-Cover.jpeg);
+    margin-top: 20%;
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur5 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere3 .conteneur3 .petitconteneur6 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/observation.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20%;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere3 .conteneur3 .petitconteneur6 p {
+    color: #030303;
+    font-size: 16px;
+  }
+  .button3 {
+    background-color: #72735b;
+    border-radius: 90px;
+    padding: 20px;
+    border-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    margin-top: 500px;
+  }
+  .button3 a {
+    color: white;
+    font-size: 1em;
+  }
+  .titreconteneur3 {
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 5%;
+    font-family: song of coronos;
+  }
+  .petitconteneur4 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur4 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur4 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur4 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur4 h3,
+  .petitconteneur4 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur4 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur4 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur4 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur4:hover figcaption,
+  .petitconteneur4.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur5 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur5 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur5 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur5 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur5 h3,
+  .petitconteneur5 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur5 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur5 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur5 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur5:hover figcaption,
+  .petitconteneur5.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur6 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur6 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur6 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur6 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur6 h3,
+  .petitconteneur6 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur6 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur6 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur6 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur6:hover figcaption,
+  .petitconteneur6.hover figcaption {
+    top: 80px;
+  }
 }
 
 /* Banniere4
 --------------------------------------------- */
-#banniere4 {
-  height: 430px;
-  display: flex;
-  position: relative;
-  background-size: cover;
-  background-position: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-  box-sizing: border-box;
-  margin-top: 5%;
+@media (min-width: 1200px) {
+  #banniere4 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 5%;
+  }
+  #banniere4 .conteneur4 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+  }
+  #banniere4 .conteneur4 .petitconteneur7 {
+    background-size: cover;
+    background-position: 60%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274631622_381947913768786_5187954168988407428_n.png);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere4 .conteneur4 .petitconteneur7 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere4 .conteneur4 .petitconteneur8 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/image3jeu.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere4 .conteneur4 .petitconteneur8 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere4 .conteneur4 .petitconteneur9 {
+    background-size: cover;
+    background-position: 65%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274372864_2289969474476642_695698808113479992_n.png);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere4 .conteneur4 .petitconteneur9 p {
+    color: black;
+    font-size: 16px;
+  }
+  .button4 {
+    background-color: #72735b;
+    border-radius: 90px;
+    padding: 20px;
+    border-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    margin-top: 500px;
+  }
+  .button4 a {
+    color: white;
+    font-size: 1em;
+  }
+  .titreconteneur4 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 10%;
+    font-family: song of coronos;
+  }
+  .petitconteneur7 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur7 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur7 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur7 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur7 h3,
+  .petitconteneur7 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur7 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur7 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur7 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur7:hover figcaption,
+  .petitconteneur7.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur8 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur8 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur8 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur8 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur8 h3,
+  .petitconteneur8 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur8 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur8 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur8 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur8:hover figcaption,
+  .petitconteneur8.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur9 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur9 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur9 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur9 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur9 h3,
+  .petitconteneur9 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur9 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur9 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur9 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur9:hover figcaption,
+  .petitconteneur9.hover figcaption {
+    top: 80px;
+  }
 }
 
-#banniere4 .conteneur4 {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-bottom: 1.75em;
-  box-sizing: border-box;
-  width: 100%;
+@media (min-width: 501px) and (max-width: 1200px) {
+  #banniere4 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 5%;
+  }
+  #banniere4 .conteneur4 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+  }
+  #banniere4 .conteneur4 .petitconteneur7 {
+    background-size: cover;
+    background-position: 60%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274631622_381947913768786_5187954168988407428_n.png);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere4 .conteneur4 .petitconteneur7 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere4 .conteneur4 .petitconteneur8 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/image3jeu.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere4 .conteneur4 .petitconteneur8 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere4 .conteneur4 .petitconteneur9 {
+    background-size: cover;
+    background-position: 65%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274372864_2289969474476642_695698808113479992_n.png);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere4 .conteneur4 .petitconteneur9 p {
+    color: black;
+    font-size: 16px;
+  }
+  .button4 {
+    background-color: #72735b;
+    border-radius: 90px;
+    padding: 20px;
+    border-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    margin-top: 500px;
+  }
+  .button4 a {
+    color: white;
+    font-size: 1em;
+  }
+  .titreconteneur4 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 10%;
+    font-family: song of coronos;
+  }
+  .petitconteneur7 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur7 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur7 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur7 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur7 h3,
+  .petitconteneur7 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur7 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur7 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur7 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur7:hover figcaption,
+  .petitconteneur7.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur8 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur8 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur8 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur8 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur8 h3,
+  .petitconteneur8 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur8 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur8 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur8 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur8:hover figcaption,
+  .petitconteneur8.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur9 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur9 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur9 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur9 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur9 h3,
+  .petitconteneur9 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur9 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur9 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur9 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur9:hover figcaption,
+  .petitconteneur9.hover figcaption {
+    top: 80px;
+  }
 }
 
-#banniere4 .conteneur4 .petitconteneur7 {
-  background-size: cover;
-  background-position: 50%;
-  align-items: center;
-  width: 100%;
-  height: 430px;
-  justify-content: center;
-  align-content: center;
-  padding: 1em;
-  box-sizing: border-box;
-  display: flex;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF6.png);
-}
-
-#banniere4 .conteneur4 .petitconteneur7 p {
-  color: white;
-  font-size: 40px;
-}
-
-#banniere4 .conteneur4 .petitconteneur8 {
-  background-size: cover;
-  background-position: 50%;
-  align-items: center;
-  width: 100%;
-  height: 430px;
-  justify-content: center;
-  align-content: center;
-  padding: 1em;
-  box-sizing: border-box;
-  display: flex;
-  margin-left: 30px;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF5.png);
-}
-
-#banniere4 .conteneur4 .petitconteneur8 p {
-  color: white;
-  font-size: 40px;
-}
-
-#banniere4 .conteneur4 .petitconteneur9 {
-  background-size: cover;
-  background-position: 50%;
-  align-items: center;
-  width: 100%;
-  height: 430px;
-  justify-content: center;
-  align-content: center;
-  padding: 1em;
-  box-sizing: border-box;
-  display: flex;
-  margin-left: 30px;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF1-scaled.jpeg);
-}
-
-#banniere4 .conteneur4 .petitconteneur9 p {
-  color: white;
-  font-size: 40px;
-}
-
-.button4 {
-  background-color: #72735b;
-  border-radius: 90px;
-  padding: 20px;
-  border-style: none;
-  justify-content: center;
-  margin: 0 auto;
-  display: flex;
-  position: absolute;
-  margin-top: 500px;
-}
-
-.button4 a {
-  color: white;
-  font-size: 1em;
-}
-
-.titreconteneur4 {
-  font-size: 40px;
-  justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-  display: flex;
-  color: black;
-  margin-top: 10%;
+@media (min-width: 0px) and (max-width: 500px) {
+  #banniere4 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 80%;
+  }
+  #banniere4 .conteneur4 {
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+  }
+  #banniere4 .conteneur4 .petitconteneur7 {
+    background-size: cover;
+    background-position: 60%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274631622_381947913768786_5187954168988407428_n.png);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+    margin-top: 80%;
+  }
+  #banniere4 .conteneur4 .petitconteneur7 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere4 .conteneur4 .petitconteneur8 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/image3jeu.jpeg);
+    margin-top: 20%;
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere4 .conteneur4 .petitconteneur8 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere4 .conteneur4 .petitconteneur9 {
+    background-size: cover;
+    background-position: 65%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274372864_2289969474476642_695698808113479992_n.png);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+    margin-top: 20%;
+  }
+  #banniere4 .conteneur4 .petitconteneur9 p {
+    color: black;
+    font-size: 16px;
+  }
+  .button4 {
+    background-color: #72735b;
+    border-radius: 90px;
+    padding: 20px;
+    border-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    margin-top: 500px;
+  }
+  .button4 a {
+    color: white;
+    font-size: 1em;
+  }
+  .titreconteneur4 {
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 650px;
+    font-family: song of coronos;
+  }
+  .petitconteneur7 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur7 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur7 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur7 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur7 h3,
+  .petitconteneur7 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur7 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur7 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur7 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur7:hover figcaption,
+  .petitconteneur7.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur8 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur8 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur8 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px 50px 250px;
+  }
+  .petitconteneur8 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur8 h3,
+  .petitconteneur8 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur8 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur8 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur8 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur8:hover figcaption,
+  .petitconteneur8.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur9 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur9 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur9 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur9 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur9 h3,
+  .petitconteneur9 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur9 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur9 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur9 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur9:hover figcaption,
+  .petitconteneur9.hover figcaption {
+    top: 80px;
+  }
 }
 
 /* Banniere5
 --------------------------------------------- */
-#banniere5 {
-  height: 430px;
-  display: flex;
-  position: relative;
-  background-size: cover;
-  background-position: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
+@media (min-width: 1200px) {
+  #banniere5 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 5%;
+  }
+  #banniere5 .conteneur5 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+  }
+  #banniere5 .conteneur5 .petitconteneur9 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/precision-scaled.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere5 .conteneur5 .petitconteneur9 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere5 .conteneur5 .petitconteneur10 {
+    background-size: cover;
+    background-position: 60%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/275047523_700511151290770_6924656081934563097_n.png);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere5 .conteneur5 .petitconteneur10 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere5 .conteneur5 .petitconteneur11 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/tactic.jpg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere5 .conteneur5 .petitconteneur11 p {
+    color: black;
+    font-size: 16px;
+  }
+  .button5 {
+    background-color: #72735b;
+    border-radius: 90px;
+    padding: 20px;
+    border-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    margin-top: 500px;
+  }
+  .button5 a {
+    color: white;
+    font-size: 1em;
+  }
+  .titreconteneur5 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 10%;
+    font-family: song of coronos;
+  }
+  .petitconteneur9 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur9 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur9 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur9 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur9 h3,
+  .petitconteneur9 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur9 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur9 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur9 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur9:hover figcaption,
+  .petitconteneur9.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur10 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur10 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur10 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur10 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur10 h3,
+  .petitconteneur10 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur10 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur10 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur10 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur10:hover figcaption,
+  .petitconteneur10.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur11 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur11 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur11 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur11 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur11 h3,
+  .petitconteneur11 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur11 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur11 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur11 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur11:hover figcaption,
+  .petitconteneur11.hover figcaption {
+    top: 80px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+  /*.conteneur5{
   box-sizing: border-box;
-  margin-top: 5%;
+    flex-wrap: wrap;}*/
+  #banniere5 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 5%;
+  }
+  #banniere5 .conteneur5 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+  }
+  #banniere5 .conteneur5 .petitconteneur9 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/precision-scaled.jpeg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere5 .conteneur5 .petitconteneur9 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere5 .conteneur5 .petitconteneur10 {
+    background-size: cover;
+    background-position: 60%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/275047523_700511151290770_6924656081934563097_n.png);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere5 .conteneur5 .petitconteneur10 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere5 .conteneur5 .petitconteneur11 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/tactic.jpg);
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere5 .conteneur5 .petitconteneur11 p {
+    color: black;
+    font-size: 16px;
+  }
+  .button5 {
+    background-color: #72735b;
+    border-radius: 90px;
+    padding: 20px;
+    border-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    margin-top: 500px;
+  }
+  .button5 a {
+    color: white;
+    font-size: 1em;
+  }
+  .titreconteneur5 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 10%;
+    font-family: song of coronos;
+  }
+  .petitconteneur9 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur9 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur9 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur9 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur9 h3,
+  .petitconteneur9 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur9 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur9 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur9 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur9:hover figcaption,
+  .petitconteneur9.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur10 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur10 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur10 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur10 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur10 h3,
+  .petitconteneur10 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur10 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur10 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur10 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur10:hover figcaption,
+  .petitconteneur10.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur11 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur11 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur11 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur11 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur11 h3,
+  .petitconteneur11 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur11 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur11 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur11 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur11:hover figcaption,
+  .petitconteneur11.hover figcaption {
+    top: 80px;
+  }
 }
 
-#banniere5 .conteneur5 {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-bottom: 1.75em;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-#banniere5 .conteneur5 .petitconteneur9 {
-  background-size: cover;
-  background-position: 50%;
-  align-items: center;
-  width: 100%;
-  height: 430px;
-  justify-content: center;
-  align-content: center;
-  padding: 1em;
-  box-sizing: border-box;
-  display: flex;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/image.png);
-}
-
-#banniere5 .conteneur5 .petitconteneur9 p {
-  color: white;
-  font-size: 40px;
-}
-
-#banniere5 .conteneur5 .petitconteneur10 {
-  background-size: cover;
-  background-position: 50%;
-  align-items: center;
-  width: 100%;
-  height: 430px;
-  justify-content: center;
-  align-content: center;
-  padding: 1em;
-  box-sizing: border-box;
-  display: flex;
-  margin-left: 30px;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF12-e1644979375226.jpeg);
-}
-
-#banniere5 .conteneur5 .petitconteneur10 p {
-  color: white;
-  font-size: 40px;
-}
-
-#banniere5 .conteneur5 .petitconteneur11 {
-  background-size: cover;
-  background-position: 50%;
-  align-items: center;
-  width: 100%;
-  height: 430px;
-  justify-content: center;
-  align-content: center;
-  padding: 1em;
-  box-sizing: border-box;
-  display: flex;
-  margin-left: 30px;
-  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF7.jpeg);
-}
-
-#banniere5 .conteneur5 .petitconteneur11 p {
-  color: white;
-  font-size: 40px;
-}
-
-.button5 {
-  background-color: #72735b;
-  border-radius: 90px;
-  padding: 20px;
-  border-style: none;
-  justify-content: center;
-  margin: 0 auto;
-  display: flex;
-  position: absolute;
-  margin-top: 500px;
-}
-
-.button5 a {
-  color: white;
-  font-size: 1em;
-}
-
-.titreconteneur5 {
-  font-size: 40px;
-  justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-  display: flex;
-  color: black;
-  margin-top: 10%;
+@media (min-width: 0px) and (max-width: 500px) {
+  #banniere5 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 80%;
+  }
+  #banniere5 .conteneur5 {
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+  }
+  #banniere5 .conteneur5 .petitconteneur9 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/precision-scaled.jpeg);
+    margin-top: 80%;
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere5 .conteneur5 .petitconteneur9 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere5 .conteneur5 .petitconteneur10 {
+    background-size: cover;
+    background-position: 60%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/275047523_700511151290770_6924656081934563097_n.png);
+    margin-top: 20%;
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere5 .conteneur5 .petitconteneur10 p {
+    color: black;
+    font-size: 16px;
+  }
+  #banniere5 .conteneur5 .petitconteneur11 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/tactic.jpg);
+    margin-top: 20%;
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  #banniere5 .conteneur5 .petitconteneur11 p {
+    color: black;
+    font-size: 16px;
+  }
+  .button5 {
+    background-color: #72735b;
+    border-radius: 90px;
+    padding: 20px;
+    border-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    margin-top: 500px;
+  }
+  .button5 a {
+    color: white;
+    font-size: 1em;
+  }
+  .titreconteneur5 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 700px;
+    font-family: song of coronos;
+  }
+  .petitconteneur9 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur9 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur9 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur9 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur9 h3,
+  .petitconteneur9 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur9 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur9 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur9 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur9:hover figcaption,
+  .petitconteneur9.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur10 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur10 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur10 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur10 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur10 h3,
+  .petitconteneur10 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur10 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur10 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur10 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur10:hover figcaption,
+  .petitconteneur10.hover figcaption {
+    top: 80px;
+  }
+  .petitconteneur11 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .petitconteneur11 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .petitconteneur11 figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 50px 250px;
+  }
+  .petitconteneur11 figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .petitconteneur11 h3,
+  .petitconteneur11 p {
+    margin: 0 0 10px;
+  }
+  .petitconteneur11 h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .petitconteneur11 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .petitconteneur11 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .petitconteneur11:hover figcaption,
+  .petitconteneur11.hover figcaption {
+    top: 80px;
+  }
 }
 
 /* Banniere6
 --------------------------------------------- */
-#banniere6 {
-  height: 430px;
-  display: flex;
-  position: relative;
-  background-size: cover;
-  background-position: 50%;
+@media (min-width: 1200px) {
+  #banniere6 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 5%;
+    height: 600px;
+    background-color: #F2F6F8;
+  }
+  #banniere6 .conteneur6 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20%;
+  }
+  #banniere6 .conteneur6 .petitconteneur12 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+  }
+  #banniere6 .conteneur6 .petitconteneur12 p {
+    color: black;
+    font-size: 20px;
+  }
+  #banniere6 .conteneur6 .petitconteneur13 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere6 .conteneur6 .petitconteneur13 p {
+    color: black;
+    font-size: 20px;
+  }
+  #banniere6 .conteneur6 .petitconteneur14 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere6 .conteneur6 .petitconteneur14 p {
+    color: black;
+    font-size: 20px;
+  }
+  .titreconteneur6 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 10%;
+    font-family: song of coronos;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+  #banniere6 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 5%;
+    height: 600px;
+    background-color: #F2F6F8;
+  }
+  #banniere6 .conteneur6 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20%;
+  }
+  #banniere6 .conteneur6 .petitconteneur12 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+  }
+  #banniere6 .conteneur6 .petitconteneur12 p {
+    color: black;
+    font-size: 20px;
+  }
+  #banniere6 .conteneur6 .petitconteneur13 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere6 .conteneur6 .petitconteneur13 p {
+    color: black;
+    font-size: 20px;
+  }
+  #banniere6 .conteneur6 .petitconteneur14 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere6 .conteneur6 .petitconteneur14 p {
+    color: black;
+    font-size: 20px;
+  }
+  .titreconteneur6 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 10%;
+    font-family: song of coronos;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  #banniere6 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 750px;
+    height: 600px;
+    background-color: #F2F6F8;
+  }
+  #banniere6 .conteneur6 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20%;
+  }
+  #banniere6 .conteneur6 .petitconteneur12 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+  }
+  #banniere6 .conteneur6 .petitconteneur12 p {
+    color: black;
+    font-size: 20px;
+  }
+  #banniere6 .conteneur6 .petitconteneur13 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere6 .conteneur6 .petitconteneur13 p {
+    color: black;
+    font-size: 20px;
+  }
+  #banniere6 .conteneur6 .petitconteneur14 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere6 .conteneur6 .petitconteneur14 p {
+    color: black;
+    font-size: 20px;
+  }
+  .titreconteneur6 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 10%;
+    font-family: song of coronos;
+  }
+}
+
+/* Banniere 7
+--------------------------------------------- */
+@media (min-width: 1200px) {
+  #banniere7 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/26141.jpeg);
+  }
+  #banniere7 .conteneur7 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+  }
+  #banniere7 .conteneur7 .petitconteneur15 {
+    background-size: cover;
+    background-position: 30%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+  }
+  #banniere7 .conteneur7 .petitconteneur15 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .petitconteneur15:hover {
+    background-size: cover;
+    background-position: 30%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/powers.png);
+    animation: animStitre .5s ease-in;
+  }
+  #banniere7 .conteneur7 .petitconteneur15:hover p {
+    display: none;
+  }
+  #banniere7 .conteneur7 .petitconteneur16 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere7 .conteneur7 .petitconteneur16 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .petitconteneur16:hover {
+    background-size: cover;
+    background-position: 10%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274932607_2030546407106071_1328556839799243362_n.png);
+    animation: animStitre .5s ease-in;
+  }
+  #banniere7 .conteneur7 .petitconteneur16:hover p {
+    display: none;
+  }
+  #banniere7 .conteneur7 .petitconteneur17 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+  }
+  #banniere7 .conteneur7 .petitconteneur17 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .petitconteneur17 nav.boutton {
+    font-size: 5vw;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    pointer-events: none;
+    width: 120%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #banniere7 .conteneur7 .petitconteneur17 nav.boutton a {
+    pointer-events: initial;
+    transition: all 0.5s ease-in-out;
+    padding: 5px;
+    border: transparent 3px solid;
+    border-radius: 20px;
+  }
+  #banniere7 .conteneur7 .petitconteneur17 nav.boutton a:hover {
+    transform: translateY(-3px);
+    z-index: 2;
+    border: whitesmoke 3px solid;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #banniere7 .conteneur7 .conteneurs1 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere7 .conteneur7 .conteneurs1 p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 95%;
+    border-radius: 20px;
+    background-color: #fdfafa;
+    z-index: 10;
+    overflow-y: auto;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu a {
+    z-index: 100;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 3em;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed {
+    display: block;
+    padding: 10px;
+    width: 70%;
+    height: 80%;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed span img {
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title" "image text";
+    gap: 5%;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed div h2 {
+    text-align: center;
+    justify-self: center;
+    grid-area: title;
+    font-family: song of coronos;
+    font-size: 45px;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed div img {
+    grid-area: image;
+    width: 50%;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed div p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-size: 18px;
+    bottom: 0;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed div figure {
+    grid-area: image;
+  }
+  #banniere7 .conteneur7 .petitconteneur17:hover {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/observation.jpeg);
+  }
+  #banniere7 .conteneur7 .petitconteneur17:hover p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .petitconteneur18 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere7 .conteneur7 .petitconteneur18 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .petitconteneur18:hover {
+    background-size: cover;
+    background-position: 10%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/Knowledge_of_Evil__2_.jpeg);
+    animation: animStitre .5s ease-in;
+  }
+  #banniere7 .conteneur7 .petitconteneur18:hover p {
+    display: none;
+  }
+  .titreconteneur7 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    font-family: song of coronos;
+  }
+  .titreBanniere7 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+    display: flex;
+    color: black;
+    font-family: song of coronos;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+  #banniere7 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/26141.jpeg);
+  }
+  #banniere7 .conteneur7 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+  }
+  #banniere7 .conteneur7 .petitconteneur15 {
+    background-size: cover;
+    background-position: 30%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+  }
+  #banniere7 .conteneur7 .petitconteneur15 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .petitconteneur15:hover {
+    background-size: cover;
+    background-position: 30%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/powers.png);
+    animation: animStitre .5s ease-in;
+  }
+  #banniere7 .conteneur7 .petitconteneur15:hover p {
+    display: none;
+  }
+  #banniere7 .conteneur7 .petitconteneur16 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere7 .conteneur7 .petitconteneur16 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .petitconteneur16:hover {
+    background-size: cover;
+    background-position: 10%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274932607_2030546407106071_1328556839799243362_n.png);
+    animation: animStitre .5s ease-in;
+  }
+  #banniere7 .conteneur7 .petitconteneur16:hover p {
+    display: none;
+  }
+  #banniere7 .conteneur7 .petitconteneur17 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+  }
+  #banniere7 .conteneur7 .petitconteneur17 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .petitconteneur17 nav.boutton {
+    font-size: 5vw;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    pointer-events: none;
+    width: 120%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #banniere7 .conteneur7 .petitconteneur17 nav.boutton a {
+    pointer-events: initial;
+    transition: all 0.5s ease-in-out;
+    padding: 5px;
+    border: transparent 3px solid;
+    border-radius: 20px;
+  }
+  #banniere7 .conteneur7 .petitconteneur17 nav.boutton a:hover {
+    transform: translateY(-3px);
+    z-index: 2;
+    border: whitesmoke 3px solid;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #banniere7 .conteneur7 .conteneurs1 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere7 .conteneur7 .conteneurs1 p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 95%;
+    border-radius: 20px;
+    background-color: #fdfafa;
+    z-index: 10;
+    overflow-y: auto;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu a {
+    z-index: 100;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 3em;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed {
+    display: block;
+    padding: 10px;
+    width: 70%;
+    height: 80%;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed span img {
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title" "image text";
+    gap: 5%;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed div h2 {
+    text-align: center;
+    justify-self: center;
+    grid-area: title;
+    font-family: song of coronos;
+    font-size: 45px;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed div img {
+    grid-area: image;
+    width: 50%;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed div p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-size: 18px;
+    bottom: 0;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed div figure {
+    grid-area: image;
+  }
+  #banniere7 .conteneur7 .petitconteneur17:hover {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/observation.jpeg);
+  }
+  #banniere7 .conteneur7 .petitconteneur17:hover p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .petitconteneur18 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere7 .conteneur7 .petitconteneur18 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .petitconteneur18:hover {
+    background-size: cover;
+    background-position: 10%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/Knowledge_of_Evil__2_.jpeg);
+    animation: animStitre .5s ease-in;
+  }
+  #banniere7 .conteneur7 .petitconteneur18:hover p {
+    display: none;
+  }
+  .titreconteneur7 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    font-family: song of coronos;
+  }
+  .titreBanniere7 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+    display: flex;
+    color: black;
+    font-family: song of coronos;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  #banniere7 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 1590px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/26141.jpeg);
+  }
+  #banniere7 .conteneur7 {
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  #banniere7 .conteneur7 .petitconteneur15 {
+    background-size: cover;
+    background-position: 30%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+    margin-top: 20%;
+  }
+  #banniere7 .conteneur7 .petitconteneur15 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .petitconteneur15:hover {
+    background-size: cover;
+    background-position: 30%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/powers.png);
+    animation: animStitre .5s ease-in;
+  }
+  #banniere7 .conteneur7 .petitconteneur15:hover p {
+    display: none;
+  }
+  #banniere7 .conteneur7 .petitconteneur16 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 20%;
+    background-color: white;
+  }
+  #banniere7 .conteneur7 .petitconteneur16 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .petitconteneur16:hover {
+    background-size: cover;
+    background-position: 10%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274932607_2030546407106071_1328556839799243362_n.png);
+    animation: animStitre .5s ease-in;
+  }
+  #banniere7 .conteneur7 .petitconteneur16:hover p {
+    display: none;
+  }
+  #banniere7 .conteneur7 .petitconteneur17 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+  }
+  #banniere7 .conteneur7 .petitconteneur17 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .petitconteneur17 nav.boutton {
+    font-size: 5vw;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    pointer-events: none;
+    width: 120%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #banniere7 .conteneur7 .petitconteneur17 nav.boutton a {
+    pointer-events: initial;
+    transition: all 0.5s ease-in-out;
+    padding: 5px;
+    border: transparent 3px solid;
+    border-radius: 20px;
+  }
+  #banniere7 .conteneur7 .petitconteneur17 nav.boutton a:hover {
+    transform: translateY(-3px);
+    z-index: 2;
+    border: whitesmoke 3px solid;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #banniere7 .conteneur7 .conteneurs1 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 20%;
+    background-color: white;
+  }
+  #banniere7 .conteneur7 .conteneurs1 p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu {
+    display: none;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 95%;
+    border-radius: 20px;
+    background-color: #fdfafa;
+    z-index: 10;
+    overflow-y: auto;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu a {
+    z-index: 100;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 3em;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed {
+    display: block;
+    padding: 10px;
+    width: 93%;
+    height: 450px;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed span img {
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title" "image text";
+    gap: 5%;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed div h2 {
+    text-align: center;
+    justify-self: center;
+    grid-area: title;
+    font-family: song of coronos;
+    font-size: 45px;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed div img {
+    grid-area: image;
+    width: 50%;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed div p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-size: 18px;
+    bottom: 0;
+  }
+  #banniere7 .conteneur7 .conteneurs1 .contenu.displayed div figure {
+    grid-area: image;
+  }
+  #banniere7 .conteneur7 .petitconteneur17:hover {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/observation.jpeg);
+  }
+  #banniere7 .conteneur7 .petitconteneur17:hover p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .petitconteneur18 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 20%;
+    background-color: white;
+  }
+  #banniere7 .conteneur7 .petitconteneur18 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere7 .conteneur7 .petitconteneur18:hover {
+    background-size: cover;
+    background-position: 10%;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/Knowledge_of_Evil__2_.jpeg);
+    animation: animStitre .5s ease-in;
+  }
+  #banniere7 .conteneur7 .petitconteneur18:hover p {
+    display: none;
+  }
+  .titreconteneur7 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    font-family: song of coronos;
+  }
+  .titreBanniere7 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+    display: flex;
+    color: black;
+    font-family: song of coronos;
+  }
+}
+
+/* Banniere8
+--------------------------------------------- */
+.petitconteneur4 * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+.petitconteneur4 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.petitconteneur4 figcaption {
+  position: absolute;
+  top: calc(77%);
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
-  box-sizing: border-box;
-  margin-top: 5%;
-  height: 600px;
-  background-color: #F2F6F8;
+  background-color: #ffffff;
+  padding: 60px 50px 250px;
 }
 
-#banniere6 .conteneur6 {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-bottom: 1.75em;
-  box-sizing: border-box;
+.petitconteneur4 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
   width: 100%;
-  padding: 20%;
+  height: 80px;
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
 }
 
-#banniere6 .conteneur6 .petitconteneur12 {
-  background-size: cover;
-  background-position: 50%;
-  align-items: center;
-  width: 50%;
-  height: 500px;
-  justify-content: center;
-  align-content: center;
-  padding: 1em;
+.petitconteneur4 h3,
+.petitconteneur4 p {
+  margin: 0 0 10px;
+}
+
+.petitconteneur4 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.petitconteneur4 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.petitconteneur4 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.petitconteneur4:hover figcaption,
+.petitconteneur4.hover figcaption {
+  top: 80px;
+}
+
+.petitconteneur5 * {
   box-sizing: border-box;
-  display: flex;
-  background-color: white;
+  transition: all 0.35s ease;
 }
 
-#banniere6 .conteneur6 .petitconteneur12 p {
-  color: black;
-  font-size: 20px;
+.petitconteneur5 img {
+  max-width: 100%;
+  vertical-align: top;
 }
 
-#banniere6 .conteneur6 .petitconteneur13 {
-  background-size: cover;
-  background-position: 50%;
-  align-items: center;
-  width: 50%;
-  height: 500px;
-  justify-content: center;
-  align-content: center;
-  padding: 1em;
+.petitconteneur5 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 50px 250px;
+}
+
+.petitconteneur5 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+
+.petitconteneur5 h3,
+.petitconteneur5 p {
+  margin: 0 0 10px;
+}
+
+.petitconteneur5 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.petitconteneur5 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.petitconteneur5 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.petitconteneur5:hover figcaption,
+.petitconteneur5.hover figcaption {
+  top: 80px;
+}
+
+.petitconteneur6 * {
   box-sizing: border-box;
-  display: flex;
-  margin-left: 30px;
-  background-color: white;
+  transition: all 0.35s ease;
 }
 
-#banniere6 .conteneur6 .petitconteneur13 p {
-  color: black;
-  font-size: 20px;
+.petitconteneur6 img {
+  max-width: 100%;
+  vertical-align: top;
 }
 
-#banniere6 .conteneur6 .petitconteneur14 {
-  background-size: cover;
-  background-position: 50%;
-  align-items: center;
-  width: 50%;
-  height: 500px;
+.petitconteneur6 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 50px 250px;
+}
+
+.petitconteneur6 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+
+.petitconteneur6 h3,
+.petitconteneur6 p {
+  margin: 0 0 10px;
+}
+
+.petitconteneur6 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.petitconteneur6 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.petitconteneur6 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.petitconteneur6:hover figcaption,
+.petitconteneur6.hover figcaption {
+  top: 80px;
+}
+
+.wp-block-columns.are-vertically-aligned-center.txtBanniere8 {
   justify-content: center;
-  align-content: center;
-  padding: 1em;
+}
+
+/* Banniere9
+--------------------------------------------- */
+.petitconteneur4 * {
   box-sizing: border-box;
-  display: flex;
-  margin-left: 30px;
-  background-color: white;
+  transition: all 0.35s ease;
 }
 
-#banniere6 .conteneur6 .petitconteneur14 p {
-  color: black;
-  font-size: 20px;
+.petitconteneur4 img {
+  max-width: 100%;
+  vertical-align: top;
 }
 
-.titreconteneur6 {
-  font-size: 40px;
-  justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-  display: flex;
-  color: black;
-  margin-top: 10%;
+.petitconteneur4 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 50px 250px;
+}
+
+.petitconteneur4 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+
+.petitconteneur4 h3,
+.petitconteneur4 p {
+  margin: 0 0 10px;
+}
+
+.petitconteneur4 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.petitconteneur4 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.petitconteneur4 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.petitconteneur4:hover figcaption,
+.petitconteneur4.hover figcaption {
+  top: 80px;
+}
+
+.petitconteneur5 * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+.petitconteneur5 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.petitconteneur5 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 50px 250px;
+}
+
+.petitconteneur5 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+
+.petitconteneur5 h3,
+.petitconteneur5 p {
+  margin: 0 0 10px;
+}
+
+.petitconteneur5 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.petitconteneur5 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.petitconteneur5 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.petitconteneur5:hover figcaption,
+.petitconteneur5.hover figcaption {
+  top: 80px;
+}
+
+.petitconteneur6 * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+.petitconteneur6 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.petitconteneur6 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 50px 250px;
+}
+
+.petitconteneur6 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+
+.petitconteneur6 h3,
+.petitconteneur6 p {
+  margin: 0 0 10px;
+}
+
+.petitconteneur6 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.petitconteneur6 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.petitconteneur6 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.petitconteneur6:hover figcaption,
+.petitconteneur6.hover figcaption {
+  top: 80px;
+}
+
+/* Banniere10
+--------------------------------------------- */
+.petitconteneur4 * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+.petitconteneur4 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.petitconteneur4 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 50px 250px;
+}
+
+.petitconteneur4 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+
+.petitconteneur4 h3,
+.petitconteneur4 p {
+  margin: 0 0 10px;
+}
+
+.petitconteneur4 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.petitconteneur4 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.petitconteneur4 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.petitconteneur4:hover figcaption,
+.petitconteneur4.hover figcaption {
+  top: 80px;
+}
+
+.petitconteneur5 * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+.petitconteneur5 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.petitconteneur5 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 50px 250px;
+}
+
+.petitconteneur5 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+
+.petitconteneur5 h3,
+.petitconteneur5 p {
+  margin: 0 0 10px;
+}
+
+.petitconteneur5 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.petitconteneur5 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.petitconteneur5 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.petitconteneur5:hover figcaption,
+.petitconteneur5.hover figcaption {
+  top: 80px;
+}
+
+.petitconteneur6 * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+.petitconteneur6 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.petitconteneur6 figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 50px 250px;
+}
+
+.petitconteneur6 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+
+.petitconteneur6 h3,
+.petitconteneur6 p {
+  margin: 0 0 10px;
+}
+
+.petitconteneur6 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.petitconteneur6 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.petitconteneur6 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.petitconteneur6:hover figcaption,
+.petitconteneur6.hover figcaption {
+  top: 80px;
+}
+
+/* Banniere11
+--------------------------------------------- */
+@media (min-width: 1200px) {
+  #banniere11 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 5%;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
+  }
+  #banniere11 .conteneur11 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+  }
+  #banniere11 .conteneur11 .petitconteneur19 {
+    background-size: cover;
+    background-position: 63%;
+    align-items: center;
+    width: 30%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+  }
+  #banniere11 .conteneur11 .petitconteneur19 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere11 .conteneur11 .petitconteneur20 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 30%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere11 .conteneur11 .petitconteneur20 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  .video {
+    display: none;
+  }
+  .titreconteneur11 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    font-family: song of coronos;
+  }
+  .petitconteneur19:hover {
+    background-size: cover;
+    background-position: 63%;
+    align-items: center;
+    width: 30%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/275194890_351991120185850_9033791743860771601_n.jpg);
+    animation: animStitre 1s ease-in;
+  }
+  .petitconteneur19:hover p {
+    display: none;
+  }
+  .petitconteneur20:hover {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 30%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+  }
+  .petitconteneur20:hover p {
+    display: none;
+  }
+  .petitconteneur20:hover .video {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+  #banniere11 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 5%;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
+  }
+  #banniere11 .conteneur11 {
+    display: grid;
+    grid-template-columns: auto auto;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #banniere11 .conteneur11 .petitconteneur19 {
+    background-size: cover;
+    background-position: 63%;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+  }
+  #banniere11 .conteneur11 .petitconteneur19 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere11 .conteneur11 .petitconteneur20 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere11 .conteneur11 .petitconteneur20 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  .video {
+    display: none;
+  }
+  .titreconteneur11 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    font-family: song of coronos;
+  }
+  .petitconteneur19:hover {
+    background-size: cover;
+    background-position: 63%;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/273558051_1414875268948416_8087533727439344630_n.jpg);
+    animation: animStitre 1s ease-in;
+  }
+  .petitconteneur19:hover p {
+    display: none;
+  }
+  .petitconteneur20:hover {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+  }
+  .petitconteneur20:hover p {
+    display: none;
+  }
+  .petitconteneur20:hover .video {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  #banniere11 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 10%;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/enchantedF8.jpeg);
+  }
+  #banniere11 .conteneur11 {
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+  }
+  #banniere11 .conteneur11 .petitconteneur19 {
+    background-size: cover;
+    background-position: 63%;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+    margin-bottom: 10px;
+  }
+  #banniere11 .conteneur11 .petitconteneur19 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere11 .conteneur11 .petitconteneur20 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+  }
+  #banniere11 .conteneur11 .petitconteneur20 p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  .video {
+    display: none;
+  }
+  .titreconteneur11 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 300px;
+    margin-bottom: 5%;
+    font-family: song of coronos;
+  }
+  .petitconteneur19:hover {
+    background-size: cover;
+    background-position: 63%;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10px;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/273558051_1414875268948416_8087533727439344630_n.jpg);
+    animation: animStitre 1s ease-in;
+  }
+  .petitconteneur19:hover p {
+    display: none;
+  }
+  .petitconteneur20:hover {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+  }
+  .petitconteneur20:hover p {
+    display: none;
+  }
+  .petitconteneur20:hover .video {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Banniere12
+--------------------------------------------- */
+@media (min-width: 1200px) {
+  #banniere12 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 5%;
+  }
+  #banniere12 .conteneur12 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+    box-shadow: 1px 5px 25px -1px #485B27;
+  }
+  #banniere12 .conteneur12 .petitconteneur23 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/352890-admin-scaled.jpeg);
+  }
+  #banniere12 .conteneur12 .petitconteneur23 p {
+    color: white;
+    font-size: 40px;
+  }
+  #banniere12 .conteneur12 .petitconteneur23 .miniconteneur23 {
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/img_bottomup-1.png);
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #banniere12 .conteneur12 .conteneurs2 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere12 .conteneur12 .conteneurs2 p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #fdfafa;
+    z-index: 10;
+    overflow-y: auto;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu a {
+    z-index: 100;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 3em;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed {
+    display: block;
+    padding: 10px;
+    height: 700px;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed span img {
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title" "image text";
+    gap: 5%;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed div h2 {
+    text-align: center;
+    justify-self: center;
+    grid-area: title;
+    font-family: song of coronos;
+    font-size: 45px;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed div img {
+    grid-area: image;
+    width: 50%;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed div p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-size: 18px;
+    bottom: 0;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed div figure {
+    grid-area: image;
+  }
+  #banniere12 .conteneur12 .conteneurs3 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere12 .conteneur12 .conteneurs3 p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #fdfafa;
+    z-index: 10;
+    overflow-y: auto;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu a {
+    z-index: 100;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 3em;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed {
+    display: block;
+    padding: 10px;
+    height: 700px;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed span img {
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title" "image image" "text";
+    gap: 5%;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div h2 {
+    text-align: center;
+    justify-self: center;
+    grid-area: title;
+    font-family: song of coronos;
+    font-size: 45px;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div img {
+    grid-area: image;
+    width: 50%;
+    height: 378px;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div .imgC {
+    display: flex;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 18px;
+    bottom: 0;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div figure {
+    grid-area: image;
+  }
+  #banniere12 .conteneur12 .petitconteneur24 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere12 .conteneur12 .petitconteneur24 p {
+    color: white;
+    font-size: 40px;
+  }
+  #banniere12 .conteneur12 .petitconteneur24 .miniconteneur24 {
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/img_topdown.png);
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: center;
+  }
+  .titreconteneur12 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    font-family: song of coronos;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+  #banniere12 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 5%;
+  }
+  #banniere12 .conteneur12 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: 1px 5px 25px -1px #485B27;
+  }
+  #banniere12 .conteneur12 .petitconteneur23 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/352890-admin-scaled.jpeg);
+  }
+  #banniere12 .conteneur12 .petitconteneur23 p {
+    color: white;
+    font-size: 40px;
+  }
+  #banniere12 .conteneur12 .petitconteneur23 .miniconteneur23 {
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/img_bottomup-1.png);
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #banniere12 .conteneur12 .conteneurs2 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere12 .conteneur12 .conteneurs2 p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #fdfafa;
+    z-index: 10;
+    overflow-y: auto;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu a {
+    z-index: 100;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 3em;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed {
+    display: block;
+    padding: 10px;
+    height: 700px;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed span img {
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title" "image text";
+    gap: 5%;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed div h2 {
+    text-align: center;
+    justify-self: center;
+    grid-area: title;
+    font-family: song of coronos;
+    font-size: 45px;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed div img {
+    grid-area: image;
+    width: 50%;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed div p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-size: 18px;
+    bottom: 0;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed div figure {
+    grid-area: image;
+  }
+  #banniere12 .conteneur12 .conteneurs3 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere12 .conteneur12 .conteneurs3 p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #fdfafa;
+    z-index: 10;
+    overflow-y: auto;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu a {
+    z-index: 100;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 3em;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed {
+    display: block;
+    padding: 10px;
+    height: 700px;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed span img {
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title" "image image" "text";
+    gap: 5%;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div h2 {
+    text-align: center;
+    justify-self: center;
+    grid-area: title;
+    font-family: song of coronos;
+    font-size: 45px;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div img {
+    grid-area: image;
+    width: 50%;
+    height: 378px;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div .imgC {
+    display: flex;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 18px;
+    bottom: 0;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div figure {
+    grid-area: image;
+  }
+  #banniere12 .conteneur12 .petitconteneur24 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere12 .conteneur12 .petitconteneur24 p {
+    color: white;
+    font-size: 40px;
+  }
+  #banniere12 .conteneur12 .petitconteneur24 .miniconteneur24 {
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/img_topdown.png);
+    width: 500px;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: center;
+  }
+  .titreconteneur12 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    font-family: song of coronos;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  #banniere12 {
+    height: 430px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 350px;
+  }
+  #banniere12 .conteneur12 {
+    flex-wrap: nowrap;
+    margin-bottom: 1.75em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 30px;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    box-shadow: 1px 5px 25px -1px #485B27;
+  }
+  #banniere12 .conteneur12 .petitconteneur23 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/02/352890-admin-scaled.jpeg);
+  }
+  #banniere12 .conteneur12 .petitconteneur23 p {
+    color: white;
+    font-size: 40px;
+  }
+  #banniere12 .conteneur12 .petitconteneur23 .miniconteneur23 {
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/img_bottomup-1.png);
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #banniere12 .conteneur12 .conteneurs2 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  #banniere12 .conteneur12 .conteneurs2 p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu {
+    display: none;
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #fdfafa;
+    z-index: 10;
+    overflow-y: auto;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu a {
+    z-index: 100;
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    font-size: 3em;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed {
+    display: block;
+    padding: 10px;
+    height: 500px;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed span img {
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title" "image text";
+    gap: 5%;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed div h2 {
+    text-align: center;
+    justify-self: center;
+    grid-area: title;
+    font-family: song of coronos;
+    font-size: 45px;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed div img {
+    grid-area: image;
+    width: 50%;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed div p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-size: 18px;
+    bottom: 0;
+  }
+  #banniere12 .conteneur12 .conteneurs2 .contenu.displayed div figure {
+    grid-area: image;
+  }
+  #banniere12 .conteneur12 .conteneurs3 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 30px;
+    background-color: white;
+  }
+  #banniere12 .conteneur12 .conteneurs3 p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu {
+    display: none;
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #fdfafa;
+    z-index: 10;
+    overflow-y: auto;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu a {
+    z-index: 100;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 3em;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed {
+    display: block;
+    padding: 10px;
+    height: 700px;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed span img {
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title" "image image" "text";
+    gap: 5%;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div h2 {
+    text-align: center;
+    justify-self: center;
+    grid-area: title;
+    font-family: song of coronos;
+    font-size: 45px;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div img {
+    grid-area: image;
+    width: 100%;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div p {
+    grid-area: text;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 18px;
+    bottom: 0;
+  }
+  #banniere12 .conteneur12 .conteneurs3 .contenu.displayed div figure {
+    grid-area: image;
+  }
+  #banniere12 .conteneur12 .petitconteneur24 {
+    background-size: cover;
+    background-position: 50%;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+  }
+  #banniere12 .conteneur12 .petitconteneur24 p {
+    color: white;
+    font-size: 40px;
+  }
+  #banniere12 .conteneur12 .petitconteneur24 .miniconteneur24 {
+    background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/img_topdown.png);
+    width: 500px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: center;
+  }
+  .titreconteneur12 {
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    font-family: song of coronos;
+  }
+}
+
+/* Acte 1
+--------------------------------------------- */
+.entry-title {
+  display: none;
+}
+
+.entry-meta {
+  display: none;
+}
+
+.entry-footer {
+  display: none;
+}
+
+.wp-block-cover.imgIngredient:hover {
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/274882729_254844060183081_4304202101900814279_n.jpg);
+}
+
+.wp-block-cover.imgLd:hover {
+  background-image: url(http://localhost:8888/siteFormationSab/wp-content/uploads/2022/03/273558051_1414875268948416_8087533727439344630_n.jpg);
+}
+
+/* Acte 2
+--------------------------------------------- */
+@media (min-width: 1200px) {
+  .wp-block-columns.blocMotivation {
+    justify-content: center;
+    align-items: center;
+  }
+  .wp-block-cover.blocM {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocM h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocM figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocM * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocM img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocM figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocM figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+  }
+  .wp-block-cover.blocM h3,
+  .wp-block-cover.blocM p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocM h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocM p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocM a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocM:hover figcaption,
+  .wp-block-cover.blocM.hover figcaption {
+    top: 80px;
+  }
+  .wp-block-cover.blocMo {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMo h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMo figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocMo * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocMo img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocMo figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocMo figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #030000 100%);
+  }
+  .wp-block-cover.blocMo h3,
+  .wp-block-cover.blocMo p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocMo h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocMo p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocMo a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocMo:hover figcaption,
+  .wp-block-cover.blocMo.hover figcaption {
+    top: 80px;
+  }
+  .wp-block-cover.blocMot {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMot h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMot figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocMot * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocMot img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocMot figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocMot figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+  }
+  .wp-block-cover.blocMot h3,
+  .wp-block-cover.blocMot p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocMot h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocMot p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocMot a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocMot:hover figcaption,
+  .wp-block-cover.blocMot.hover figcaption {
+    top: 80px;
+  }
+  .wp-block-cover.blocMoti {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMoti h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMoti figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocMoti * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocMoti img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocMoti figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocMoti figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+  }
+  .wp-block-cover.blocMoti h3,
+  .wp-block-cover.blocMoti p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocMoti h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocMoti p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocMoti a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocMoti:hover figcaption,
+  .wp-block-cover.blocMoti.hover figcaption {
+    top: 80px;
+  }
+  .wp-block-cover.blocMotiv {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMotiv h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMotiv figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocMotiv * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocMotiv img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocMotiv figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocMotiv figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+  }
+  .wp-block-cover.blocMotiv h3,
+  .wp-block-cover.blocMotiv p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocMotiv h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocMotiv p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocMotiv a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocMotiv:hover figcaption,
+  .wp-block-cover.blocMotiv.hover figcaption {
+    top: 80px;
+  }
+  .wp-block-cover.blocMotiva {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMotiva h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMotiva figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocMotiva * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocMotiva img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocMotiva figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocMotiva figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+  }
+  .wp-block-cover.blocMotiva h3,
+  .wp-block-cover.blocMotiva p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocMotiva h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocMotiva p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocMotiva a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocMotiva:hover figcaption,
+  .wp-block-cover.blocMotiva.hover figcaption {
+    top: 80px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+  .wp-block-columns.blocMotivation {
+    justify-content: center;
+    align-items: center;
+  }
+  .wp-block-cover.blocM {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocM h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocM figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocM * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocM img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocM figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocM figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+  }
+  .wp-block-cover.blocM h3,
+  .wp-block-cover.blocM p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocM h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocM p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocM a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocM:hover figcaption,
+  .wp-block-cover.blocM.hover figcaption {
+    top: 80px;
+  }
+  .wp-block-cover.blocMo {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMo h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMo figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocMo * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocMo img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocMo figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocMo figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #030000 100%);
+  }
+  .wp-block-cover.blocMo h3,
+  .wp-block-cover.blocMo p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocMo h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocMo p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocMo a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocMo:hover figcaption,
+  .wp-block-cover.blocMo.hover figcaption {
+    top: 80px;
+  }
+  .wp-block-cover.blocMot {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMot h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMot figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocMot * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocMot img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocMot figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocMot figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+  }
+  .wp-block-cover.blocMot h3,
+  .wp-block-cover.blocMot p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocMot h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocMot p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocMot a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocMot:hover figcaption,
+  .wp-block-cover.blocMot.hover figcaption {
+    top: 80px;
+  }
+  .wp-block-cover.blocMoti {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMoti h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMoti figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocMoti * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocMoti img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocMoti figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocMoti figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+  }
+  .wp-block-cover.blocMoti h3,
+  .wp-block-cover.blocMoti p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocMoti h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocMoti p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocMoti a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocMoti:hover figcaption,
+  .wp-block-cover.blocMoti.hover figcaption {
+    top: 80px;
+  }
+  .wp-block-cover.blocMotiv {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMotiv h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMotiv figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocMotiv * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocMotiv img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocMotiv figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocMotiv figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+  }
+  .wp-block-cover.blocMotiv h3,
+  .wp-block-cover.blocMotiv p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocMotiv h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocMotiv p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocMotiv a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocMotiv:hover figcaption,
+  .wp-block-cover.blocMotiv.hover figcaption {
+    top: 80px;
+  }
+  .wp-block-cover.blocMotiva {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMotiva h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMotiva figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocMotiva * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocMotiva img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocMotiva figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocMotiva figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+  }
+  .wp-block-cover.blocMotiva h3,
+  .wp-block-cover.blocMotiva p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocMotiva h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocMotiva p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocMotiva a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocMotiva:hover figcaption,
+  .wp-block-cover.blocMotiva.hover figcaption {
+    top: 80px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .wp-block-columns.blocMotivation {
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    /*min-height: 250px;
+    
+    justify-content: center;
+    align-items: center;
+   */
+  }
+  .wp-block-cover.blocM {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocM h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocM figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocM * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocM img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocM figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocM figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+  }
+  .wp-block-cover.blocM h3,
+  .wp-block-cover.blocM p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocM h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocM p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocM a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocM:hover figcaption,
+  .wp-block-cover.blocM.hover figcaption {
+    top: 80px;
+  }
+  .wp-block-cover.blocMo {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10%;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMo h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMo figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocMo * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocMo img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocMo figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocMo figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #030000 100%);
+  }
+  .wp-block-cover.blocMo h3,
+  .wp-block-cover.blocMo p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocMo h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocMo p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocMo a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocMo:hover figcaption,
+  .wp-block-cover.blocMo.hover figcaption {
+    top: 80px;
+  }
+  .wp-block-cover.blocMot {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10%;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMot h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMot figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocMot * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocMot img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocMot figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocMot figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+  }
+  .wp-block-cover.blocMot h3,
+  .wp-block-cover.blocMot p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocMot h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocMot p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocMot a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocMot:hover figcaption,
+  .wp-block-cover.blocMot.hover figcaption {
+    top: 80px;
+  }
+  .wp-block-cover.blocMoti {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10%;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMoti h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMoti figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocMoti * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocMoti img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocMoti figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocMoti figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+  }
+  .wp-block-cover.blocMoti h3,
+  .wp-block-cover.blocMoti p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocMoti h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocMoti p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocMoti a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocMoti:hover figcaption,
+  .wp-block-cover.blocMoti.hover figcaption {
+    top: 80px;
+  }
+  .wp-block-cover.blocMotiv {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10%;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMotiv h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMotiv figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocMotiv * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocMotiv img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocMotiv figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocMotiv figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+  }
+  .wp-block-cover.blocMotiv h3,
+  .wp-block-cover.blocMotiv p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocMotiv h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocMotiv p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocMotiv a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocMotiv:hover figcaption,
+  .wp-block-cover.blocMotiv.hover figcaption {
+    top: 80px;
+  }
+  .wp-block-cover.blocMotiva {
+    font-family: 'Quattrocento', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10%;
+    color: #141414;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMotiva h3 {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+  }
+  .wp-block-cover.blocMotiva figcaption {
+    color: white;
+  }
+  .wp-block-cover.blocMotiva * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+  .wp-block-cover.blocMotiva img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .wp-block-cover.blocMotiva figcaption {
+    position: absolute;
+    top: calc(77%);
+    width: 100%;
+    background-color: #000000;
+    padding: 18px 10px 300px;
+  }
+  .wp-block-cover.blocMotiva figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000000 100%);
+  }
+  .wp-block-cover.blocMotiva h3,
+  .wp-block-cover.blocMotiva p {
+    margin: 0 0 10px;
+  }
+  .wp-block-cover.blocMotiva h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .wp-block-cover.blocMotiva p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .wp-block-cover.blocMotiva a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .wp-block-cover.blocMotiva:hover figcaption,
+  .wp-block-cover.blocMotiva.hover figcaption {
+    top: 80px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
