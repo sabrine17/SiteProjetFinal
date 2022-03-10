@@ -190,9 +190,12 @@ function description(id){
 }
 
 
-// ouverture bloc de contenu conteneur 24
+
+
+
+// ouverture bloc de contenu conteneur 
 (function(){
-	let project = document.getElementsByClassName("wp-block-cover banniereDis")
+	let project = document.getElementsByClassName("wp-banniereEssai")
 	let close = document.getElementsByClassName("close")
 	
 	let descOuvert = false
